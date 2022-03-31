@@ -1,0 +1,865 @@
+Battery History (0% used, 340 used of 4096KB, 8 strings using 316):
+                    0 (14) RESET:TIME: 2022-03-29-06-55-08
+                    0 (1) 095 status=charging health=good plug=none temp=243 volt=4283 charge=2876 modemRailChargemAh=0 wifiRailChargemAh=0 +running +wake_lock +wifi_full_lock +wifi_radio +audio +screen phone_signal_strength=good brightness=dim +wifi +usb_data wifi_signal_strength=4 wifi_suppl=completed +camera +ble_scan
+                    0 (2) 095 fg=u0a160:"com.cashwalk.cashwalk"
+                    0 (2) 095 fg=u0a153:"com.google.android.apps.meetings"
+                    0 (2) 095 top=u0a153:"com.google.android.apps.meetings"
+                    0 (2) 095 user=0:"0"
+                    0 (2) 095 userfg=0:"0"
+                 +5ms (2) 095 stats=0:"wakelock-change"
+                +38ms (2) 095 stats=0:"dump"
+            +43s236ms (2) 095 +longwake=u0a153:"AudioMix"
+            +43s340ms (2) 095 +longwake=u0a153:"AudioIn"
+            +44s663ms (2) 095 +longwake=u0a153:"vclib:wakelock"
+          +3m10s693ms (2) 095 stats=0:"dump"
+
+Per-PID Stats:
+  PID 1459 wake time: +219ms
+  PID 2084 wake time: +21ms
+  PID 2084 wake time: +220ms
+  PID 1785 wake time: +13ms
+  PID 0 wake time: +12m14s943ms
+  PID 10392 wake time: +3m26s72ms
+
+Daily stats:
+  Current start time: 2022-03-29-06-39-05
+  Next min deadline: 2022-03-30-01-00-00
+  Next max deadline: 2022-03-30-03-00-00
+  Daily from 2022-03-27-01-20-12 to 2022-03-28-01-11-36:
+    Discharge step durations:
+      #0: +2h27m13s81ms to 95 (screen-off, power-save-off, device-idle-off)
+      #1: +2h43m38s75ms to 96 (screen-off, power-save-off, device-idle-off)
+      #2: +3h31m35s878ms to 97 (screen-off, power-save-off, device-idle-off)
+      #3: +4h7m23s609ms to 98 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 13d 8h 46m 6s 0ms  (from 4 steps)
+        Discharge screen off time: 13d 8h 46m 6s 0ms  (from 4 steps)
+    Charge step durations:
+      #0: +4m57s43ms to 100 (power-save-off, device-idle-off)
+      #1: +4m4s247ms to 99 (screen-off, power-save-off, device-idle-off)
+      #2: +3m26s828ms to 98 (screen-off, power-save-off, device-idle-off)
+      #3: +2m57s355ms to 97 (screen-off, power-save-off, device-idle-off)
+      #4: +2m34s958ms to 96 (power-save-off, device-idle-off)
+      #5: +2m17s156ms to 95 (screen-off, power-save-off, device-idle-off)
+      #6: +2m2s669ms to 94 (screen-off, power-save-off, device-idle-off)
+      #7: +1m51s392ms to 93 (screen-off, power-save-off, device-idle-off)
+      #8: +1m41s15ms to 92 (screen-off, power-save-off, device-idle-off)
+      #9: +1m33s338ms to 91 (screen-off, power-save-off, device-idle-off)
+      #10: +1m26s202ms to 90 (screen-off, power-save-off, device-idle-off)
+      #11: +1m20s345ms to 89 (screen-off, power-save-off, device-idle-off)
+      #12: +1m13s876ms to 88 (screen-off, power-save-off, device-idle-off)
+      #13: +1m10s333ms to 87 (screen-off, power-save-off, device-idle-off)
+      #14: +1m9s635ms to 86 (power-save-off, device-idle-off)
+      #15: +1m9s636ms to 85 (screen-off, power-save-off, device-idle-off)
+      #16: +1m9s616ms to 84 (screen-off, power-save-off, device-idle-off)
+        Charge total time: 3h 32m 19s 0ms  (from 17 steps)
+        Charge screen off time: 3h 15m 42s 900ms  (from 14 steps)
+    Package changes:
+      Update com.google.android.youtube vers=1528288704
+      Update com.google.android.youtube vers=1528288704
+      Update com.cashwalk.cashwalk vers=444
+      Update com.cashwalk.cashwalk vers=444
+      Update com.google.android.apps.meetings vers=2768295
+      Update com.google.android.apps.meetings vers=2768295
+      Update net.daum.android.map vers=54421
+      Update net.daum.android.map vers=54421
+      Update us.zoom.videomeetings vers=651001
+      Update us.zoom.videomeetings vers=651001
+      Update tv.twitch.android.app vers=1206000
+      Update tv.twitch.android.app vers=1206000
+      Update com.google.android.apps.youtube.music vers=47050240
+      Update com.google.android.apps.youtube.music vers=47050240
+      Update com.spotify.music vers=84944134
+      Update com.spotify.music vers=84944134
+  Daily from 2022-03-25-03-20-14 to 2022-03-26-01-34-15:
+    Discharge step durations:
+      #0: +1h5m11s75ms to 22 (screen-off, power-save-off, device-idle-off)
+      #1: +1h4m1s183ms to 23 (screen-off, power-save-off, device-idle-off)
+      #2: +1h7m0s816ms to 24 (screen-off, power-save-off, device-idle-off)
+      #3: +1h5m7s893ms to 25 (screen-off, power-save-off, device-idle-off)
+      #4: +1h9m51s846ms to 26 (screen-off, power-save-off, device-idle-off)
+      #5: +1h19m37s965ms to 27 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 4d 18h 7m 26s 300ms  (from 6 steps)
+        Discharge screen off time: 4d 18h 7m 26s 300ms  (from 6 steps)
+    Charge step durations:
+      #0: +1m29s317ms to 38 (screen-on, power-save-off, device-idle-off)
+      #1: +1m30s37ms to 37 (screen-on, power-save-off, device-idle-off)
+      #2: +1m29s665ms to 36 (screen-on, power-save-off, device-idle-off)
+      #3: +24m26s274ms to 35 (screen-on, power-save-off, device-idle-off)
+      #4: +37s989ms to 34 (screen-off, power-save-off, device-idle-off)
+      #5: +38s321ms to 33 (screen-off, power-save-off, device-idle-off)
+      #6: +38s181ms to 32 (screen-off, power-save-off, device-idle-off)
+      #7: +38s303ms to 31 (screen-off, power-save-off, device-idle-off)
+      #8: +37s157ms to 30 (screen-off, power-save-off, device-idle-off)
+      #9: +37s832ms to 29 (screen-off, power-save-off, device-idle-off)
+      #10: +37s909ms to 28 (screen-off, power-save-off, device-idle-off)
+      #11: +37s977ms to 27 (screen-off, power-save-off, device-idle-off)
+      #12: +37s500ms to 26 (screen-off, power-save-off, device-idle-off)
+      #13: +37s699ms to 25 (screen-off, power-save-off, device-idle-off)
+      #14: +37s567ms to 24 (screen-off, power-save-off, device-idle-off)
+        Charge total time: 3h 59m 4s 800ms  (from 15 steps)
+        Charge screen off time: 1h 3m 5s 700ms  (from 11 steps)
+        Charge screen on time: 12h 3m 2s 300ms  (from 4 steps)
+  Daily from 2022-03-24-03-33-32 to 2022-03-25-03-20-14:
+    Discharge step durations:
+      #0: +1h21m45s178ms to 29 (screen-off, power-save-off, device-idle-off)
+      #1: +1h20m0s233ms to 30 (screen-off, power-save-off, device-idle-off)
+      #2: +58m23s193ms to 31 (screen-off, power-save-off, device-idle-off)
+      #3: +1h9m0s790ms to 32 (screen-off, power-save-off, device-idle-off)
+      #4: +1h46m9s808ms to 33 (screen-off, power-save-off, device-idle-off)
+      #5: +1h27m28s113ms to 34 (screen-off, power-save-off, device-idle-off)
+      #6: +1h41m5s889ms to 35 (screen-off, power-save-off, device-idle-off)
+      #7: +1h56m3s295ms to 36 (screen-off, power-save-off, device-idle-off)
+      #8: +1h24m33s601ms to 37 (screen-off, power-save-off, device-idle-off)
+      #9: +1h25m52s725ms to 38 (screen-off, power-save-off, device-idle-off)
+      #10: +1h17m19s339ms to 39 (screen-off, power-save-off, device-idle-off)
+      #11: +1h8m19s596ms to 40 (screen-off, power-save-off, device-idle-off)
+      #12: +1h36m13s698ms to 41 (screen-off, power-save-off, device-idle-off)
+      #13: +2h3m23s710ms to 42 (screen-off, power-save-off, device-idle-off)
+      #14: +1h49m13s490ms to 43 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 6d 5h 25m 51s 0ms  (from 15 steps)
+        Discharge screen off time: 6d 5h 25m 51s 0ms  (from 15 steps)
+    Package changes:
+      Update com.android.vending vers=82981310
+      Update com.android.vending vers=82981310
+  Daily from 2022-03-23-03-14-51 to 2022-03-24-03-33-32:
+    Discharge step durations:
+      #0: +1h48m8s215ms to 45 (screen-off, power-save-off, device-idle-off)
+      #1: +1h59m54s526ms to 46 (screen-off, power-save-off, device-idle-off)
+      #2: +2h28m40s820ms to 47 (screen-off, power-save-off, device-idle-off)
+      #3: +2h4m47s801ms to 48 (screen-off, power-save-off, device-idle-off)
+      #4: +1h54m39s830ms to 49 (screen-off, power-save-off, device-idle-off)
+      #5: +1h48m1s45ms to 50 (screen-off, power-save-off, device-idle-off)
+      #6: +1h47m35s196ms to 51 (screen-off, power-save-off, device-idle-off)
+      #7: +1h47m44s970ms to 52 (screen-off, power-save-off, device-idle-off)
+      #8: +1h40m3s848ms to 53 (screen-off, power-save-off, device-idle-off)
+      #9: +1h48m48s607ms to 54 (screen-off, power-save-off, device-idle-off)
+      #10: +1h48m44s230ms to 55 (screen-off, power-save-off, device-idle-off)
+      #11: +1h27m18s45ms to 56 (screen-off, power-save-off, device-idle-off)
+        Discharge total time: 7d 18h 43m 46s 100ms  (from 12 steps)
+        Discharge screen off time: 7d 18h 43m 46s 100ms  (from 12 steps)
+  Daily from 2022-03-22-03-51-14 to 2022-03-23-03-14-51:
+    Discharge step durations:
+      #0: +1h7m48s256ms to 58 (screen-off, power-save-off, device-idle-off)
+      #1: +1h1m39s197ms to 59 (screen-off, power-save-off, device-idle-off)
+      #2: +57m43s555ms to 60 (screen-off, power-save-off, device-idle-off)
+      #3: +51m19s214ms to 61 (screen-off, power-save-off, device-idle-off)
+      #4: +1h3m42s944ms to 62 (screen-off, power-save-off, device-idle-off)
+      #5: +1h16m47s993ms to 63 (power-save-off, device-idle-off)
+      #6: +2h56m49s512ms to 64 (power-save-off, device-idle-off)
+      #7: +2h58m56s785ms to 65 (power-save-off, device-idle-off)
+      #8: +2h55m46s146ms to 66 (power-save-off, device-idle-off)
+      #9: +2h35m48s965ms to 67 (power-save-off, device-idle-off)
+      #10: +2h38m1s245ms to 68 (power-save-off, device-idle-off)
+      #11: +1h59m16s954ms to 69 (power-save-off, device-idle-off)
+        Discharge total time: 7d 18h 37m 19s 700ms  (from 12 steps)
+        Discharge screen off time: 4d 4h 44m 23s 300ms  (from 5 steps)
+    Package changes:
+      Update com.google.android.apps.youtube.music vers=46951240
+      Update com.google.android.apps.youtube.music vers=46951240
+      Update com.spotify.music vers=84681836
+      Update com.spotify.music vers=84681836
+      Update com.google.android.tts vers=210354702
+      Update com.google.android.tts vers=210354702
+      Update com.nhn.android.nmap vers=51601001
+      Update com.nhn.android.nmap vers=51601001
+  Daily from 2022-03-19-01-13-31 to 2022-03-22-03-51-14:
+    Discharge step durations:
+      #0: +1h7m29s444ms to 72 (power-save-off, device-idle-off)
+      #1: +1h5m11s0ms to 73 (power-save-off, device-idle-off)
+      #2: +1h17m16s866ms to 74 (power-save-off, device-idle-off)
+      #3: +1h17m32s958ms to 75 (power-save-off, device-idle-off)
+      #4: +1h22m49s954ms to 76 (power-save-off, device-idle-off)
+      #5: +1h17m3s15ms to 77 (power-save-off, device-idle-off)
+      #6: +1h6m52s480ms to 78 (power-save-off, device-idle-off)
+        Discharge total time: 5d 2h 26m 35s 900ms  (from 7 steps)
+    Package changes:
+      Update com.snowcorp.soda.android vers=30060002
+      Update com.snowcorp.soda.android vers=30060002
+  Daily from 2022-03-18-01-20-50 to 2022-03-19-01-13-31:
+    Discharge step durations:
+      #0: +1h7m47s141ms to 80 (power-save-off, device-idle-off)
+      #1: +1h22m4s685ms to 81 (screen-off, power-save-off, device-idle-off)
+      #2: +1h19m36s68ms to 82 (screen-off, power-save-off, device-idle-off)
+      #3: +1h23m17s465ms to 83 (screen-off, power-save-off, device-idle-off)
+      #4: +37m35s546ms to 84 (screen-off, power-save-off, device-idle-off)
+      #5: +31m58s0ms to 85 (screen-off, power-save-off, device-idle-off)
+      #6: +25m37s266ms to 86 (screen-off, power-save-off, device-idle-off)
+      #7: +26m40s60ms to 87 (screen-off, power-save-off, device-idle-off)
+      #8: +23m23s372ms to 88 (screen-off, power-save-off, device-idle-off)
+      #9: +25m30s141ms to 89 (screen-off, power-save-off, device-idle-off)
+      #10: +29m6s538ms to 90 (screen-off, power-save-off, device-idle-off)
+      #11: +28m52s221ms to 91 (screen-off, power-save-off, device-idle-off)
+      #12: +33m12s334ms to 92 (power-save-off, device-idle-off)
+      #13: +7m4s709ms to 93 (screen-on, power-save-off, device-idle-off)
+      #14: +7m12s779ms to 94 (screen-on, power-save-off, device-idle-off)
+      #15: +7m5s801ms to 95 (screen-on, power-save-off, device-idle-off)
+      #16: +7m0s619ms to 96 (power-save-off, device-idle-off)
+      #17: +3m56s368ms to 97 (screen-on, power-save-off, device-idle-off)
+      #18: +3m56s367ms to 97 (screen-on, power-save-off, device-idle-off)
+      #19: +20m15s412ms to 98 (power-save-off, device-idle-off)
+      #20: +35m43s302ms to 80 (power-save-off, device-idle-off)
+      #21: +1h15m27s194ms to 81 (power-save-off, device-idle-off)
+      #22: +9m46s212ms to 82 (screen-on, power-save-off, device-idle-off)
+      #23: +1h49m26s286ms to 83 (power-save-off, device-idle-off)
+      #24: +1h59m44s862ms to 84 (power-save-off, device-idle-off)
+      #25: +2h17m59s403ms to 85 (power-save-off, device-idle-off)
+      #26: +1h55m59s415ms to 86 (power-save-off, device-idle-off)
+        Discharge total time: 3d 4h 15m 16s 900ms  (from 27 steps)
+        Discharge screen off time: 2d 23h 46m 16s 0ms  (from 11 steps)
+        Discharge screen on time: 10h 50m 37s 200ms  (from 6 steps)
+    Charge step durations:
+      #0: +3m22s907ms to 100 (screen-on, power-save-off, device-idle-off)
+      #1: +1h25m7s856ms to 99 (screen-on, power-save-off, device-idle-off)
+      #2: +1m24s388ms to 100 (screen-on, power-save-off, device-idle-off)
+      #3: +3m11s253ms to 99 (screen-on, power-save-off, device-idle-off)
+      #4: +4m46s581ms to 98 (screen-on, power-save-off, device-idle-off)
+      #5: +3m52s738ms to 97 (screen-on, power-save-off, device-idle-off)
+      #6: +3m31s544ms to 96 (screen-on, power-save-off, device-idle-off)
+      #7: +3m28s33ms to 95 (screen-on, power-save-off, device-idle-off)
+      #8: +3m20s940ms to 94 (screen-on, power-save-off, device-idle-off)
+      #9: +3m1s614ms to 93 (screen-on, power-save-off, device-idle-off)
+      #10: +3m0s974ms to 92 (screen-on, power-save-off, device-idle-off)
+      #11: +2m55s351ms to 91 (screen-on, power-save-off, device-idle-off)
+      #12: +2m47s978ms to 90 (screen-on, power-save-off, device-idle-off)
+      #13: +2m43s758ms to 89 (screen-on, power-save-off, device-idle-off)
+      #14: +2m38s498ms to 88 (screen-on, power-save-off, device-idle-off)
+      #15: +2m42s699ms to 87 (screen-on, power-save-off, device-idle-off)
+      #16: +2m26s538ms to 86 (screen-on, power-save-off, device-idle-off)
+      #17: +2m26s541ms to 85 (screen-on, power-save-off, device-idle-off)
+      #18: +2m55s732ms to 84 (screen-on, power-save-off, device-idle-off)
+      #19: +2m37s567ms to 83 (screen-on, power-save-off, device-idle-off)
+      #20: +2m48s451ms to 82 (screen-on, power-save-off, device-idle-off)
+        Charge total time: 11h 31m 25s 400ms  (from 21 steps)
+        Charge screen on time: 11h 31m 25s 400ms  (from 21 steps)
+    Package changes:
+      Update com.android.vending vers=82971710
+      Update com.android.vending vers=82971710
+      Update com.lexa.fakegps vers=2081
+      Update com.lexa.fakegps vers=2081
+      Update com.fakelocator.fakegpslocationspoofer vers=10
+      Update com.fakelocator.fakegpslocationspoofer vers=10
+  Daily from 2022-03-17-01-48-32 to 2022-03-18-01-20-50:
+    Discharge step durations:
+      #0: +3h0m23s289ms to 88 (power-save-off, device-idle-off)
+      #1: +48m22s290ms to 89 (power-save-off, device-idle-off)
+      #2: +58m20s502ms to 90 (power-save-off, device-idle-off)
+      #3: +1h58m26s980ms to 91 (power-save-off, device-idle-off)
+      #4: +1h28m19s210ms to 92 (power-save-off, device-idle-off)
+      #5: +1h7m0s347ms to 93 (power-save-off, device-idle-off)
+      #6: +1h1m41s750ms to 94 (power-save-off, device-idle-off)
+      #7: +1h12m55s859ms to 95 (power-save-off, device-idle-off)
+      #8: +2h11m7s923ms to 96 (power-save-off, device-idle-off)
+      #9: +2h2m6s257ms to 97 (power-save-off, device-idle-off)
+      #10: +3h29m20s544ms to 98 (power-save-off, device-idle-off)
+        Discharge total time: 7d 7h 28m 1s 300ms  (from 11 steps)
+    Charge step durations:
+      #0: +4m47s843ms to 100 (screen-on, power-save-off, device-idle-off)
+      #1: +3m47s819ms to 99 (screen-on, power-save-off, device-idle-off)
+      #2: +2m53s652ms to 98 (power-save-off, device-idle-off)
+      #3: +35m39s998ms to 97 (screen-on, power-save-off, device-idle-off)
+      #4: +1m30s45ms to 97 (screen-on, power-save-off, device-idle-off)
+      #5: +1m18s438ms to 96 (screen-on, power-save-off, device-idle-off)
+      #6: +2m56s559ms to 95 (screen-on, power-save-off, device-idle-off)
+      #7: +4m11s310ms to 94 (screen-on, power-save-off, device-idle-off)
+      #8: +3m36s553ms to 93 (screen-on, power-save-off, device-idle-off)
+      #9: +3m15s405ms to 92 (screen-on, power-save-off, device-idle-off)
+      #10: +3m26s605ms to 91 (screen-on, power-save-off, device-idle-off)
+      #11: +2m31s390ms to 90 (screen-on, power-save-off, device-idle-off)
+      #12: +3m6s282ms to 89 (screen-on, power-save-off, device-idle-off)
+        Charge total time: 9h 21m 46s 900ms  (from 13 steps)
+        Charge screen on time: 9h 44m 28s 700ms  (from 12 steps)
+  Daily from 2022-03-16-01-00-55 to 2022-03-17-01-48-32:
+    Discharge step durations:
+      #0: +2h4m51s323ms to 87 (screen-off, power-save-off, device-idle-off)
+      #1: +2h9m20s510ms to 88 (screen-off, power-save-off, device-idle-off)
+      #2: +2h6m8s992ms to 89 (screen-off, power-save-off, device-idle-off)
+      #3: +1h7m7s937ms to 90 (screen-off, power-save-off, device-idle-off)
+      #4: +1h0m48s492ms to 91 (screen-off, power-save-off, device-idle-off)
+      #5: +37m21s439ms to 92 (screen-off, power-save-off, device-idle-off)
+      #6: +4m17s4ms to 93 (screen-off, power-save-off, device-idle-off)
+      #7: +43m18s157ms to 94 (screen-off, power-save-off, device-idle-off)
+      #8: +36m14s136ms to 95 (screen-off, power-save-off, device-idle-off)
+      #9: +56m18s519ms to 96 (screen-off, power-save-off, device-idle-off)
+      #10: +23m5s788ms to 97 (screen-off, power-save-off, device-idle-off)
+      #11: +35m47s390ms to 98 (screen-off, power-save-off, device-idle-off)
+      #12: +14m52s188ms to 98 (power-save-off, device-idle-off)
+        Discharge total time: 4d 1h 22m 32s 800ms  (from 13 steps)
+        Discharge screen off time: 4d 7h 25m 30s 700ms  (from 12 steps)
+    Charge step durations:
+      #0: +1m8s174ms to 100 (screen-on, power-save-off, device-idle-off)
+        Charge total time: 1h 53m 37s 400ms  (from 1 steps)
+        Charge screen on time: 1h 53m 37s 400ms  (from 1 steps)
+  Daily from 2022-03-14-01-11-38 to 2022-03-15-01-00-47:
+    Discharge step durations:
+      #0: +3h52m47s501ms to 81 (screen-off, power-save-off, device-idle-off)
+      #1: +3h25m14s696ms to 82 (screen-off, power-save-off, device-idle-off)
+      #2: +3m2s435ms to 78 (screen-on, power-save-off, device-idle-off)
+      #3: +2m36s717ms to 79 (screen-on, power-save-off, device-idle-off)
+      #4: +7m4s52ms to 80 (screen-on, power-save-off, device-idle-off)
+      #5: +4m54s52ms to 81 (screen-on, power-save-off, device-idle-off)
+        Discharge total time: 5d 6h 34m 17s 500ms  (from 6 steps)
+        Discharge screen off time: 15d 5h 1m 49s 800ms  (from 2 steps)
+        Discharge screen on time: 7h 20m 31s 400ms  (from 4 steps)
+    Charge step durations:
+      #0: +2m38s394ms to 100 (screen-off, power-save-off, device-idle-off)
+      #1: +2m54s384ms to 99 (screen-off, power-save-off, device-idle-off)
+      #2: +2m47s537ms to 98 (screen-off, power-save-off, device-idle-off)
+      #3: +2m38s679ms to 97 (screen-off, power-save-off, device-idle-off)
+      #4: +2m21s629ms to 96 (power-save-off, device-idle-off)
+      #5: +2m11s461ms to 95 (screen-off, power-save-off, device-idle-off)
+      #6: +2m7s700ms to 94 (screen-off, power-save-off, device-idle-off)
+      #7: +2m4s304ms to 93 (screen-off, power-save-off, device-idle-off)
+      #8: +2m1s106ms to 92 (screen-off, power-save-off, device-idle-off)
+      #9: +1m56s375ms to 91 (screen-off, power-save-off, device-idle-off)
+      #10: +1m59s503ms to 90 (power-save-off, device-idle-off)
+      #11: +1m51s94ms to 89 (screen-off, power-save-off, device-idle-off)
+      #12: +1m48s272ms to 88 (screen-off, power-save-off, device-idle-off)
+      #13: +1m47s631ms to 87 (screen-off, power-save-off, device-idle-off)
+      #14: +1m50s747ms to 86 (power-save-off, device-idle-off)
+      #15: +2m2s263ms to 85 (screen-on, power-save-off, device-idle-off)
+      #16: +2m18s227ms to 84 (screen-on, power-save-off, device-idle-off)
+      #17: +2m5s560ms to 83 (screen-on, power-save-off, device-idle-off)
+      #18: +12h49m21s357ms to 82 (screen-on, power-save-off, device-idle-off)
+      #19: +3m37s731ms to 84 (screen-on, power-save-off, device-idle-off)
+      #20: +2m20s263ms to 83 (screen-on, power-save-off, device-idle-off)
+      #21: +38m17s503ms to 82 (screen-on, power-save-off, device-idle-off)
+      #22: +4m1s626ms to 81 (power-save-off, device-idle-off)
+      #23: +4m29s633ms to 80 (screen-on, power-save-off, device-idle-off)
+      #24: +46m42s219ms to 79 (screen-on, power-save-off, device-idle-off)
+      #25: +6m42s388ms to 83 (screen-on, power-save-off, device-idle-off)
+      #26: +3m17s684ms to 82 (screen-on, power-save-off, device-idle-off)
+      #27: +1m27s259ms to 81 (power-save-off, device-idle-off)
+      #28: +1m9s249ms to 80 (screen-off, power-save-off, device-idle-off)
+      #29: +1m7s795ms to 79 (screen-off, power-save-off, device-idle-off)
+      #30: +1m4s855ms to 78 (screen-off, power-save-off, device-idle-off)
+      #31: +1m1s553ms to 77 (screen-off, power-save-off, device-idle-off)
+      #32: +57s737ms to 76 (screen-off, power-save-off, device-idle-off)
+      #33: +53s407ms to 75 (screen-off, power-save-off, device-idle-off)
+      #34: +52s13ms to 74 (screen-off, power-save-off, device-idle-off)
+      #35: +52s19ms to 73 (screen-off, power-save-off, device-idle-off)
+        Charge total time: 1d 18h 56m 54s 300ms  (from 36 steps)
+        Charge screen off time: 2h 53m 47s 800ms  (from 20 steps)
+        Charge screen on time: 5d 13h 31m 20s 200ms  (from 11 steps)
+    Package changes:
+      Update com.google.android.gms vers=220618037
+      Update com.google.android.gms vers=220618037
+      Update com.google.android.apps.meetings vers=2741430
+      Update com.google.android.apps.meetings vers=2741430
+      Update com.campmobile.snow vers=31110101
+      Update com.campmobile.snow vers=31110101
+      Update com.google.android.apps.youtube.music vers=46851240
+      Update com.google.android.apps.youtube.music vers=46851240
+      Update tv.twitch.android.app vers=1205020
+      Update tv.twitch.android.app vers=1205020
+      Update com.nhn.android.nmap vers=51600007
+      Update com.nhn.android.nmap vers=51600007
+
+Statistics since last charge:
+  System starts: 0, currently on battery: true
+  Estimated battery capacity: 2915 mAh
+  Min learned battery capacity: 2944 mAh
+  Max learned battery capacity: 2944 mAh
+  Time on battery: 3m 10s 738ms (100.0%) realtime, 3m 10s 738ms (100.0%) uptime
+  Time on battery screen off: 0ms (0.0%) realtime, 0ms (0.0%) uptime
+  Time on battery screen doze: 0ms (0.0%)
+  Total run time: 3m 10s 743ms realtime, 3m 10s 743ms uptime
+  Discharge: 0 mAh
+  Screen off discharge: 0 mAh
+  Screen doze discharge: 0 mAh
+  Screen on discharge: 0 mAh
+  Device light doze discharge: 0 mAh
+  Device deep doze discharge: 0 mAh
+  Start clock time: 2022-03-29-06-55-08
+  Screen on: 3m 10s 738ms (100.0%) 0x, Interactive: 3m 10s 738ms (100.0%)
+  Screen brightnesses:
+    dim 3m 10s 738ms (100.0%)
+  Total full wakelock time: 3m 10s 734ms
+
+  CONNECTIVITY POWER SUMMARY START
+  Logging duration for connectivity statistics: 3m 10s 738ms 
+  Cellular Statistics:
+     Cellular kernel active time: 0ms (0.0%)
+     Cellular Sleep time:  0ms (0.0%)
+     Cellular Idle time:   3m 9s 994ms (99.6%)
+     Cellular Rx time:     897ms (0.5%)
+     Cellular Tx time:     
+       less than 0dBm:  0ms (0.0%)
+       0dBm to 8dBm:  0ms (0.0%)
+       8dBm to 15dBm:  0ms (0.0%)
+       15dBm to 20dBm:  0ms (0.0%)
+       above 20dBm:  0ms (0.0%)
+     Cellular Battery drain: 5.57mAh
+     Cellular data received: 0B
+     Cellular data sent: 0B
+     Cellular packets received: 0
+     Cellular packets sent: 0
+     Cellular Radio Access Technology: (no activity)
+     Cellular Rx signal strength (RSRP):
+       good (-108dBm to -98dBm):  3m 10s 738ms (100.0%) 
+  Wifi Statistics:
+     Wifi kernel active time: 3m 10s 738ms (100.0%)
+     WiFi Scan time:  0ms (0.0%)
+     WiFi Sleep time:  4s 358ms (2.3%)
+     WiFi Idle time:   2m 56s 606ms (92.6%)
+     WiFi Rx time:     5s 282ms (2.8%)
+     WiFi Tx time:     4s 493ms (2.4%)
+     WiFi Battery drain: 4.50mAh
+     Wifi data received: 10.92MB
+     Wifi data sent: 5.62MB
+     Wifi packets received: 16986
+     Wifi packets sent: 13765
+     Wifi states:
+       sta 3m 10s 738ms (100.0%) 
+     Wifi supplicant states:
+       completed 3m 10s 738ms (100.0%) 
+     Wifi Rx signal strength (RSSI):
+         great (greater than -55dBm): 3m 10s 738ms (100.0%) 
+  GPS Statistics:
+     GPS signal quality (Top 4 Average CN0):
+      poor (less than 20 dBHz): 0ms (0.0%) 
+      good (greater than 20 dBHz): 0ms (0.0%) 
+  CONNECTIVITY POWER SUMMARY END
+
+  Bluetooth total received: 0B, sent: 0B
+  Bluetooth scan time: 3m 10s 738ms 
+     Bluetooth Idle time:   232ms (0.1%)
+     Bluetooth Rx time:     8s 577ms (4.5%)
+     Bluetooth Tx time:     1ms (0.0%)
+     Bluetooth Battery drain: 0.0525mAh
+
+  Device battery use since last full charge
+    Amount discharged (lower bound): 0
+    Amount discharged (upper bound): 0
+    Amount discharged while screen on: 0
+    Amount discharged while screen off: 0
+    Amount discharged while screen doze: 0
+
+  Estimated power use (mAh):
+    Capacity: 2915, Computed drain: 71.0, actual drain: 0
+    Uid u0a153: 56.3 ( cpu=2.51 wifi=4.50 camera=45.3 ) Including smearing: 59.7 ( proportional=3.47 )
+    Screen: 9.90 Excluded from smearing
+    Uid 1047: 2.03 ( cpu=2.03 ) Excluded from smearing
+    Uid 1000: 1.07 ( cpu=0.966 sensor=0.101 ) Excluded from smearing
+    Uid 0: 0.717 ( cpu=0.717 ) Excluded from smearing
+    Idle: 0.572 Excluded from smearing
+    Uid 1041: 0.225 ( cpu=0.225 ) Excluded from smearing
+    Cell standby: 0.0530 ( radio=0.0530 ) Excluded from smearing
+    Uid u0a73: 0.0315 ( cpu=0.0101 bt=0.0214 ) Including smearing: 0.0335 ( proportional=0.00194 )
+    Bluetooth: 0.0314 ( cpu=0.000326 bt=0.0310 ) Including smearing: 0.0333 ( proportional=0.00193 )
+    Wifi: 0.0227 ( cpu=0.0225 wifi=0.000264 ) Including smearing: 0.0241 ( proportional=0.00140 )
+    Uid 1036: 0.0121 ( cpu=0.0121 ) Excluded from smearing
+    Uid 1070: 0.00944 ( cpu=0.00944 ) Excluded from smearing
+    Uid 1001: 0.00172 ( cpu=0.00172 ) Excluded from smearing
+    Uid 1066: 0.00152 ( cpu=0.00152 ) Excluded from smearing
+    Uid u0a137: 0.000729 ( cpu=0.000729 ) Excluded from smearing
+    Uid u0a90: 0.000721 ( cpu=0.000721 ) Including smearing: 0.000765 ( proportional=0.0000444 )
+    Uid 1073: 0.000562 ( cpu=0.000562 ) Excluded from smearing
+    Uid u0a160: 0.000468 ( cpu=0.000468 ) Including smearing: 0.000497 ( proportional=0.0000289 )
+    Uid u0a156: 0.000464 ( cpu=0.000464 ) Including smearing: 0.000493 ( proportional=0.0000286 )
+    Uid 1069: 0.000251 ( cpu=0.000251 ) Excluded from smearing
+    Uid 9999: 0.0000346 ( cpu=0.0000346 ) Excluded from smearing
+
+  Resource Power Manager Stats
+    Easel.Suspend: 3m 10s 890ms realtime (0 times)
+    SLPI.Sleep: 49s 263ms realtime (74613 times)
+    CDSP.Sleep: 3m 10s 890ms realtime (0 times)
+
+  CPU freqs: 300000 403200 480000 576000 652800 748800 825600 902400 979200 1056000 1132800 1228800 1324800 1420800 1516800 1612800 1689600 1766400 825600 902400 979200 1056000 1209600 1286400 1363200 1459200 1536000 1612800 1689600 1766400 1843200 1920000 1996800 2092800 2169600 2246400 2323200 2400000 2476800 2553600 2649600 2803200
+
+  0:
+    Total cpu time: u=1s 663ms s=53s 570ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 20 170 620 1770 2840 3880 4270 4660 3050 12930 20 40 100 190 590 340 390 400 240 180 110 70 50 60 1290 0 0 0 0 0 0 0 0 0
+    Proc irq/311-wcd9xxx:
+      CPU: 0ms usr + 30ms krn ; 0ms fg
+    Proc kworker/u17:3:
+      CPU: 0ms usr + 340ms krn ; 0ms fg
+    Proc kworker/u17:0:
+      CPU: 0ms usr + 450ms krn ; 0ms fg
+    Proc kworker/u16:9:
+      CPU: 0ms usr + 1s 390ms krn ; 0ms fg
+    Proc kworker/3:1H:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc ksoftirqd/3:
+      CPU: 0ms usr + 340ms krn ; 0ms fg
+    Proc ksoftirqd/2:
+      CPU: 0ms usr + 330ms krn ; 0ms fg
+    Proc ksoftirqd/1:
+      CPU: 0ms usr + 230ms krn ; 0ms fg
+    Proc ksoftirqd/0:
+      CPU: 0ms usr + 380ms krn ; 0ms fg
+    Proc IPCRTR_dsps_sme:
+      CPU: 0ms usr + 1s 410ms krn ; 0ms fg
+    Proc cds_ol_rx_threa:
+      CPU: 0ms usr + 170ms krn ; 0ms fg
+    Proc crtc_event:111:
+      CPU: 0ms usr + 260ms krn ; 0ms fg
+    Proc kworker/u16:24:
+      CPU: 0ms usr + 2s 350ms krn ; 0ms fg
+    Proc kworker/u16:23:
+      CPU: 0ms usr + 1s 390ms krn ; 0ms fg
+    Proc kworker/u16:18:
+      CPU: 0ms usr + 1s 10ms krn ; 0ms fg
+    Proc kworker/u16:16:
+      CPU: 0ms usr + 1s 0ms krn ; 0ms fg
+    Proc kworker/u16:15:
+      CPU: 0ms usr + 1s 60ms krn ; 0ms fg
+    Proc kworker/u16:13:
+      CPU: 0ms usr + 60ms krn ; 0ms fg
+    Proc rcuos/0:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc rcuop/7:
+      CPU: 0ms usr + 30ms krn ; 0ms fg
+    Proc rcuop/6:
+      CPU: 0ms usr + 130ms krn ; 0ms fg
+    Proc rcuop/5:
+      CPU: 0ms usr + 50ms krn ; 0ms fg
+    Proc rcuop/4:
+      CPU: 0ms usr + 160ms krn ; 0ms fg
+    Proc rcuop/3:
+      CPU: 0ms usr + 30ms krn ; 0ms fg
+    Proc rcuop/2:
+      CPU: 0ms usr + 140ms krn ; 0ms fg
+    Proc rcuop/1:
+      CPU: 0ms usr + 60ms krn ; 0ms fg
+    Proc rcuop/0:
+      CPU: 0ms usr + 190ms krn ; 0ms fg
+    Proc kworker/7:2:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc kworker/6:0:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc kworker/5:2:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc kworker/4:0:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc kworker/3:1:
+      CPU: 0ms usr + 270ms krn ; 0ms fg
+    Proc kworker/3:0:
+      CPU: 0ms usr + 470ms krn ; 0ms fg
+    Proc kworker/2:3:
+      CPU: 0ms usr + 170ms krn ; 0ms fg
+    Proc kworker/1:4:
+      CPU: 0ms usr + 200ms krn ; 0ms fg
+    Proc kworker/1:2:
+      CPU: 0ms usr + 80ms krn ; 0ms fg
+    Proc kworker/0:3:
+      CPU: 0ms usr + 220ms krn ; 0ms fg
+    Proc kworker/0:0:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc wlan_logging_th:
+      CPU: 0ms usr + 80ms krn ; 0ms fg
+    Proc rcu_sched:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc rcu_preempt:
+      CPU: 0ms usr + 570ms krn ; 0ms fg
+    Proc vold:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc netd:
+      CPU: 70ms usr + 70ms krn ; 0ms fg
+    Proc init:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc adbd:
+      CPU: 30ms usr + 70ms krn ; 0ms fg
+    Proc kgsl_worker_thr:
+      CPU: 0ms usr + 1s 750ms krn ; 0ms fg
+    Proc smem_native_lpa:
+      CPU: 0ms usr + 460ms krn ; 0ms fg
+    Proc smem_native_dsp:
+      CPU: 0ms usr + 110ms krn ; 0ms fg
+    Proc ueventd:
+      CPU: 30ms usr + 10ms krn ; 0ms fg
+    Proc crtc_commit:111:
+      CPU: 0ms usr + 1s 730ms krn ; 0ms fg
+    Proc msm_irqbalance:
+      CPU: 210ms usr + 460ms krn ; 0ms fg
+    Proc iptables-restore:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc system:
+      CPU: 0ms usr + 80ms krn ; 0ms fg
+    Proc ip6tables-restore:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc dsps_smem_glink:
+      CPU: 0ms usr + 180ms krn ; 0ms fg
+    Proc android.hardware.power-service.pixel-libperfmgr:
+      CPU: 10ms usr + 20ms krn ; 0ms fg
+    Proc irq/1055-dma-gr:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc thermal-engine:
+      CPU: 70ms usr + 210ms krn ; 0ms fg
+    Proc dsps_IPCRTR:
+      CPU: 0ms usr + 1s 420ms krn ; 0ms fg
+    Proc sugov:4:
+      CPU: 0ms usr + 560ms krn ; 0ms fg
+    Proc sugov:0:
+      CPU: 0ms usr + 2s 280ms krn ; 0ms fg
+    Proc irq/80-1436400.:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc lpass_smem_glin:
+      CPU: 0ms usr + 480ms krn ; 0ms fg
+    Proc cds_mc_thread:
+      CPU: 0ms usr + 370ms krn ; 0ms fg
+  1000:
+    Wake lock *alarm* realtime
+    Wake lock com.android.server.stats.StatsCompanionService.PullingAlarmListener realtime
+    Wake lock NetworkStats realtime
+    Wake lock *telephony-radio* realtime
+    Sensor 41: 3m 10s 737ms realtime (0 times)
+    Sensor 11053: 3m 10s 737ms realtime (0 times)
+    Sensor 11055: 3m 10s 737ms realtime (0 times)
+    Sensor 32774: 3m 10s 737ms realtime (0 times)
+    Foreground for: 3m 10s 737ms 
+    Total running: 3m 10s 737ms 
+    Total cpu time: u=38s 447ms s=31s 310ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 10 70 410 1180 3380 5240 7530 8040 9020 6020 24840 20 40 160 310 980 670 660 700 450 260 220 170 80 30 150 0 0 0 0 0 0 0 0 0
+    Proc vendor.google.wireless_charger@1.2-service-vendor:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc servicemanager:
+      CPU: 40ms usr + 10ms krn ; 0ms fg
+    Proc android.hardware.sensors@2.0-service:
+      CPU: 2s 830ms usr + 1s 820ms krn ; 0ms fg
+    Proc android.hardware.graphics.composer@2.3-service:
+      CPU: 2s 410ms usr + 2s 250ms krn ; 0ms fg
+    Proc vendor.qti.hardware.display.allocator@1.0-service:
+      CPU: 10ms usr + 20ms krn ; 0ms fg
+    Proc android.system.suspend@1.0-service:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc android.hardware.health@2.0-service.crosshatch:
+      CPU: 10ms usr + 50ms krn ; 0ms fg
+    Proc android.hardware.thermal@2.0-service.pixel:
+      CPU: 10ms usr + 20ms krn ; 0ms fg
+    Proc surfaceflinger:
+      CPU: 6s 580ms usr + 3s 870ms krn ; 0ms fg
+    Proc system:
+      CPU: 4s 840ms usr + 5s 770ms krn ; 0ms fg
+    Proc hwservicemanager:
+      CPU: 50ms usr + 10ms krn ; 0ms fg
+    Proc small_hals.crosshatch-service:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc vndservicemanager:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+    Apk android:
+      Wakeup alarm *walarm*:WifiConnectivityManager Schedule Periodic Scan Timer: 0 times
+  1001:
+    Wake lock RILJ_ACK_WL realtime
+    Wake lock *telephony-radio* realtime
+    Foreground for: 3m 10s 737ms 
+    Total running: 3m 10s 737ms 
+    Total cpu time: u=100ms s=23ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 0 10 20 10 10 90 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc com.android.phone:
+      CPU: 70ms usr + 20ms krn ; 0ms fg
+    Proc ipacm:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc qcrild:
+      CPU: 190ms usr + 40ms krn ; 0ms fg
+    Proc com.qualcomm.qti.telephonyservice:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+  1002:
+    Wake lock bluetooth_timer realtime
+    Foreground for: 3m 10s 737ms 
+    Total running: 3m 10s 737ms 
+    Total cpu time: u=3ms s=20ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0
+    Proc com.android.bluetooth:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc android.hardware.bluetooth@1.0-service-qti:
+      CPU: 0ms usr + 30ms krn ; 0ms fg
+  1010:
+    Total cpu time: u=970ms s=647ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 10 30 70 120 160 180 180 160 530 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc wpa_supplicant:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc wificond:
+      CPU: 20ms usr + 80ms krn ; 0ms fg
+    Proc vendor.google.wifi_ext@1.0-service-vendor:
+      CPU: 1s 240ms usr + 860ms krn ; 0ms fg
+  1013:
+    Proc mediaserver:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc media.metrics:
+      CPU: 20ms usr + 0ms krn ; 0ms fg
+  1027:
+    Foreground for: 3m 10s 736ms 
+    Total running: 3m 10s 736ms 
+  1036:
+    Total cpu time: u=470ms s=457ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 10 40 60 90 80 100 60 230 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc logd:
+      CPU: 410ms usr + 410ms krn ; 0ms fg
+    Proc logcat:
+      CPU: 250ms usr + 220ms krn ; 0ms fg
+  1040:
+    Proc media.extractor:
+      CPU: 20ms usr + 10ms krn ; 0ms fg
+  1041:
+    Total cpu time: u=10s 470ms s=4s 13ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 30 100 290 1090 1950 2630 2840 2910 1880 7280 10 10 70 90 410 300 270 270 170 130 60 60 40 10 80 0 0 0 0 0 0 0 0 0
+    Proc android.hardware.audio.service:
+      CPU: 1s 310ms usr + 1s 310ms krn ; 0ms fg
+    Proc audioserver:
+      CPU: 3s 80ms usr + 150ms krn ; 0ms fg
+  1046:
+    Proc vendor.qti.media.c2@1.0-service:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc media.swcodec:
+      CPU: 180ms usr + 140ms krn ; 0ms fg
+  1047:
+    Total cpu time: u=1m 39s 564ms s=46s 997ms 
+    Total cpu time per freq: 0 0 0 0 0 0 10 30 60 300 900 3160 4860 6550 6890 7040 4170 15970 400 860 2620 5470 18140 12760 14080 13290 8590 6070 3870 2790 1800 1000 2150 0 0 0 0 0 0 0 0 0
+    Proc cameraserver:
+      CPU: 3s 130ms usr + 1s 980ms krn ; 0ms fg
+    Proc android.hardware.camera.provider@2.4-service_64:
+      CPU: 35s 340ms usr + 16s 340ms krn ; 0ms fg
+  1066:
+    Total cpu time: u=100ms s=13ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 10 10 10 20 10 10 50 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc statsd:
+      CPU: 180ms usr + 40ms krn ; 0ms fg
+  1068:
+    Foreground for: 3m 10s 736ms 
+    Total running: 3m 10s 736ms 
+  1069:
+    Total cpu time: u=0ms s=20ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc lmkd:
+      CPU: 0ms usr + 70ms krn ; 0ms fg
+  1070:
+    Total cpu time: u=163ms s=493ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 10 0 10 0 20 630 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc llkd:
+      CPU: 240ms usr + 1s 90ms krn ; 0ms fg
+  1073:
+    Foreground for: 3m 10s 736ms 
+    Total running: 3m 10s 736ms 
+    Total cpu time: u=24ms s=17ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 10 0 10 10 0 0 10 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc com.android.networkstack.process:
+      CPU: 80ms usr + 30ms krn ; 0ms fg
+  9999:
+    Total cpu time: u=0ms s=3ms 
+    (nothing executed)
+  u0a67:
+    Cached for: 3m 10s 736ms 
+    Total running: 3m 10s 736ms 
+  u0a73:
+    Bluetooth Scan (total actual realtime): 3m 10s 736ms  (0 times) (currently running)
+    Bluetooth Scan Results: 0 (0 in background)
+    Foreground for: 3m 10s 736ms 
+    Total running: 3m 10s 736ms 
+    Total cpu time: u=497ms s=216ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 10 30 50 30 50 30 430 0 0 0 0 10 0 10 0 0 0 20 0 0 0 30 0 0 0 0 0 0 0 0 0
+    Proc com.google.android.gms:
+      CPU: 100ms usr + 110ms krn ; 0ms fg
+    Proc com.google.process.gservices:
+      CPU: 70ms usr + 20ms krn ; 0ms fg
+    Proc com.google.android.gms.ui:
+      CPU: 50ms usr + 40ms krn ; 0ms fg
+    Proc com.google.android.gms.unstable:
+      CPU: 70ms usr + 120ms krn ; 0ms fg
+    Proc com.google.android.gms.persistent:
+      CPU: 630ms usr + 310ms krn ; 0ms fg
+  u0a80:
+    Cached for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+  u0a85:
+    Cached for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+  u0a87:
+    Cached for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+  u0a90:
+    Wi-Fi network: 184B received, 360B sent (packets 4 received, 6 sent)
+    Foreground services: 3m 10s 735ms realtime (0 times) (running)
+    Fg Service for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+    Total cpu time: u=40ms s=10ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 20 10 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc com.android.vending:
+      CPU: 70ms usr + 20ms krn ; 0ms fg
+    Proc com.android.vending:instant_app_installer:
+      CPU: 150ms usr + 0ms krn ; 0ms fg
+  u0a105:
+    Cached for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+  u0a130:
+    Background for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+    Proc com.android.inputmethod.latin:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+  u0a135:
+    Foreground for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+    Proc com.android.launcher3:
+      CPU: 90ms usr + 40ms krn ; 0ms fg
+  u0a137:
+    Foreground for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+    Total cpu time: u=53ms s=0ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 0 10 10 10 0 20 0 0 0 0 10 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc com.android.systemui:
+      CPU: 630ms usr + 280ms krn ; 0ms fg
+  u0a141:
+    Foreground for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+  u0a142:
+    Foreground for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+    Proc android.ext.services:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+  u0a145:
+    Background for: 7ms 
+    Cached for: 3m 10s 728ms 
+    Total running: 3m 10s 735ms 
+    Proc com.android.cellbroadcastreceiver.module:
+      CPU: 10ms usr + 0ms krn ; 0ms fg
+  u0a146:
+    Cached for: 3m 10s 735ms 
+    Total running: 3m 10s 735ms 
+  u0a153:
+    Wi-Fi network: 10.92MB received, 5.62MB sent (packets 16982 received, 13759 sent)
+    Wifi Running: 0ms (0.0%)
+    Full Wifi Lock: 3m 10s 734ms (100.0%)
+    Wifi Scan (blamed): 0ms (0.0%) 0x
+    Wifi Scan (actual): 0ms (0.0%) 0x
+    Background Wifi Scan: 0ms (0.0%) 0x
+       WiFi Scan time:  0ms (0.0%)
+       WiFi Sleep time:  4s 369ms (2.3%)
+       WiFi Idle time:   2m 56s 606ms (92.6%)
+       WiFi Rx time:     5s 280ms (2.8%)
+       WiFi Tx time:     4s 491ms (2.4%)
+    Wake lock AudioMix realtime
+    Wake lock AudioIn realtime
+    Wake lock vclib:wakelock realtime
+    Wake lock WindowManager: 3m 10s 734ms full (0 times) (running) realtime
+    TOTAL wake: 3m 10s 734ms full realtime
+    Camera: 3m 10s 734ms realtime (0 times) (running)
+    Audio: 3m 10s 734ms realtime (0 times) (running)
+    Foreground activities: 3m 10s 734ms realtime (0 times) (running)
+    Top for: 3m 10s 734ms 
+    Total running: 3m 10s 734ms 
+    Total cpu time: u=2m 14s 860ms s=38s 320ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 10 50 190 720 1340 2320 2660 3050 1880 7870 630 1590 5140 9790 30630 21560 22300 22050 13770 10040 6150 4410 3080 1840 3800 0 0 0 0 0 0 0 0 0
+    Proc com.google.android.apps.meetings:
+      CPU: 41s 580ms usr + 11s 560ms krn ; 0ms fg
+  u0a156:
+    Cached for: 3m 10s 734ms 
+    Total running: 3m 10s 734ms 
+    Total cpu time: u=27ms s=7ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc com.google.android.apps.youtube.music:
+      CPU: 80ms usr + 40ms krn ; 0ms fg
+  u0a160:
+    Foreground services: 3m 10s 734ms realtime (0 times) (running)
+    Fg Service for: 3m 10s 734ms 
+    Total running: 3m 10s 734ms 
+    Total cpu time: u=50ms s=23ms 
+    Total cpu time per freq: 0 0 0 0 0 0 0 0 0 0 10 0 0 10 0 0 10 30 0 0 0 0 0 0 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    Proc com.cashwalk.cashwalk:
+      CPU: 90ms usr + 40ms krn ; 0ms fg
+    Proc com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0:
+      CPU: 60ms usr + 40ms krn ; 0ms fg
+
+Total cpu time reads: 0
+Batched cpu time reads: 0
+Batching Duration (min): 707
+All UID cpu time reads since the later of device start or stats reset: 12
+UIDs removed since the later of device start or stats reset: 0
