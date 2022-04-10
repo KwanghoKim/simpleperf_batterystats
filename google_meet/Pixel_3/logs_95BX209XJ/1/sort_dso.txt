@@ -1,0 +1,64 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 180 --call-graph fp --app com.google.android.apps.meetings
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 136866
+Event count: 104148046584
+
+Overhead  Shared Object
+77.97%    /data/app/~~En4F_bNH30sBqASWkSV_Pg==/com.google.android.apps.meetings-ys_liWP7KvgzcsZ0Q-CgJQ==/base.apk
+6.64%     [kernel.kallsyms]
+4.03%     /vendor/lib64/egl/libGLESv2_adreno.so
+3.99%     /apex/com.android.runtime/lib64/bionic/libc.so
+2.98%     /system/lib64/libhwui.so
+1.53%     /apex/com.android.art/lib64/libart.so
+0.46%     /system/framework/arm64/boot-framework.oat
+0.41%     unknown
+0.24%     /system/lib64/libgui.so
+0.22%     /system/lib64/libbinder.so
+0.19%     /apex/com.android.art/javalib/arm64/boot.oat
+0.14%     /system/lib64/libutils.so
+0.13%     /vendor/lib64/libgsl.so
+0.11%     /system/lib64/libandroid_runtime.so
+0.08%     /apex/com.android.art/lib64/libart-compiler.so
+0.07%     /system/lib64/libui.so
+0.06%     /vendor/lib64/egl/eglSubDriverAndroid.so
+0.06%     /system/lib64/libcamera_metadata.so
+0.06%     /system/lib64/libc++.so
+0.05%     /apex/com.android.art/lib64/libprofile.so
+0.05%     /vendor/lib/modules/wlan.ko
+0.05%     /system/lib64/libEGL.so
+0.05%     /vendor/lib64/egl/libEGL_adreno.so
+0.05%     /data/user_de/0/com.google.android.gms/app_chimera/m/00000016/CronetDynamite.apk
+0.04%     /system/lib64/libnativedisplay.so
+0.04%     /system/lib64/libGLESv2.so
+0.04%     /data/app/~~En4F_bNH30sBqASWkSV_Pg==/com.google.android.apps.meetings-ys_liWP7KvgzcsZ0Q-CgJQ==/oat/arm64/base.odex
+0.04%     /system/lib64/libaudioclient.so
+0.03%     /system/lib64/libcamera_client.so
+0.03%     /apex/com.android.art/lib64/libartbase.so
+0.03%     /system/lib64/libGLESv1_CM.so
+0.03%     /apex/com.android.art/javalib/arm64/boot-core-libart.oat
+0.02%     /system/lib64/libcutils.so
+0.01%     /vendor/lib64/hw/gralloc.sdm845.so
+0.01%     /apex/com.android.runtime/lib64/bionic/libm.so
+0.01%     /apex/com.android.art/lib64/libopenjdk.so
+0.01%     /system/lib64/libartpalette-system.so
+0.01%     /system/lib64/libsync.so
+0.01%     /system/lib64/libnativewindow.so
+0.01%     /vendor/lib64/libadreno_utils.so
+0.01%     /apex/com.android.art/lib64/libnativehelper.so
+0.01%     /apex/com.android.runtime/bin/linker64
+0.01%     /vendor/lib64/libqdMetaData.so
+0.00%     /apex/com.android.art/lib64/libartpalette.so
+0.00%     /apex/com.android.art/javalib/arm64/boot-core-icu4j.oat
+0.00%     /apex/com.android.art/lib64/libvixl.so
+0.00%     /system/bin/app_process64
+0.00%     /vendor/lib64/libgrallocutils.so
+0.00%     /apex/com.android.art/lib64/libjavacore.so
+0.00%     /apex/com.android.vndk.v30/lib64/libcutils.so
+0.00%     /system/lib64/liblog.so
+0.00%     /system/lib64/libbase.so
+0.00%     /apex/com.android.runtime/lib64/bionic/libdl.so
+0.00%     /apex/com.android.art/lib64/libicui18n.so
+0.00%     /apex/com.android.art/lib64/libicuuc.so
+0.00%     /apex/com.android.art/lib64/libicu_jni.so
+0.00%     /system/lib64/libnetd_client.so

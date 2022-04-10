@@ -1,0 +1,485 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 5 --call-graph fp --app com.zamface
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 589
+Event count: 297833303
+
+Overhead  Command          Pid    Tid    Shared Object                                                                                             Symbol
+1.94%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f6fb0]
+1.35%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+7de90]
+1.26%     mqt_native_modu  16484  16590  /apex/com.android.art/lib64/libart.so                                                                     artInstanceOfFromCode
+1.23%     mqt_native_modu  16484  16590  /apex/com.android.art/lib64/libart.so                                                                     art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)
+1.18%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51d4c]
+1.03%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  android::uirenderer::RenderNode::prepareTreeImpl(android::uirenderer::TreeObserver&, android::uirenderer::TreeInfo&, bool)
+0.99%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60140]
+0.95%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f6f80]
+0.86%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51e24]
+0.78%     mqt_native_modu  16484  16590  /apex/com.android.art/lib64/libart.so                                                                     void art::mirror::ObjectArray<art::mirror::Object>::AssignableCheckingMemcpy<false>(int, art::ObjPtr<art::mirror::ObjectArray<art::mirror::Object> >, int, int, bool)
+0.78%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+7915c]
+0.76%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51b1c]
+0.70%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+791a0]
+0.67%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+77348]
+0.67%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60da4]
+0.66%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+79178]
+0.65%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+50910]
+0.65%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+adcc]
+0.65%     mqt_js           16484  16588  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __memcpy
+0.65%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+53244]
+0.64%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52af0]
+0.62%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+29368]
+0.62%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51eb0]
+0.62%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+6036c]
+0.61%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51fb4]
+0.60%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52a60]
+0.60%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+50a14]
+0.60%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f6fc4]
+0.58%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+da410]
+0.58%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+9ac9c]
+0.57%     mqt_native_modu  16484  16590  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.util.HashMap.get
+0.55%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+59b4c]
+0.55%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60060]
+0.55%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+5213c]
+0.54%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+593e8]
+0.53%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+54f80]
+0.52%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51dbc]
+0.52%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libjsi.so             libjsi.so[+ab64]
+0.51%     mqt_native_modu  16484  16590  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::Allocator<scudo::AndroidConfig, &(scudo_malloc_postinit)>::deallocate(void*, scudo::Chunk::Origin, unsigned long, unsigned long)
+0.50%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  @plt
+0.50%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+77310]
+0.50%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  android::uirenderer::skiapipeline::EndReorderBarrierDrawable::onDraw(SkCanvas*)
+0.49%     mface.co.kr/...  16484  16995  /apex/com.android.art/javalib/arm64/boot.oat                                                              art_jni_trampoline
+0.49%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfolly_json.so      folly::dynamic::size() const
+0.49%     mqt_js           16484  16588  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::Allocator<scudo::AndroidConfig, &(scudo_malloc_postinit)>::allocate(unsigned long, scudo::Chunk::Origin, unsigned long, bool)
+0.48%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+62860]
+0.47%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libc++_shared.so      @plt
+0.47%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libc++_shared.so      operator new(unsigned long)
+0.47%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+ac2c]
+0.47%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         update_cpu_capacity
+0.46%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  android::uirenderer::skiapipeline::SkiaDisplayList::prepareListAndChildren(android::uirenderer::TreeObserver&, android::uirenderer::TreeInfo&, bool, std::__1::function<void (android::uirenderer::RenderNode*, android::uirenderer::TreeObserver&, android::uirenderer::TreeInfo&, bool)>)
+0.45%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60d98]
+0.45%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+54ea8]
+0.45%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.yoga.YogaNodeJNIBase.calculateLayout
+0.45%     mface.co.kr/...  16484  16995  /apex/com.android.art/lib64/libart.so                                                                     MterpInvokeVirtual
+0.45%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!325eecd4b75f86b12ebfefb45dece7!781e7d0!
+0.45%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::(anonymous namespace)::ArgArray::BuildArgArrayFromVarArgs(art::ScopedObjectAccessAlreadyRunnable const&, art::ObjPtr<art::mirror::Object>, std::__va_list)
+0.44%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52078]
+0.44%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+373e8]
+0.43%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f4d48]
+0.43%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+37360]
+0.43%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+29310]
+0.43%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52154]
+0.43%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60480]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f6f90]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+49e00]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52ac8]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+4a588]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51784]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52fac]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+504a4]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52a30]
+0.42%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+605b8]
+0.41%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+6042c]
+0.41%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+5fa90]
+0.41%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         __wake_up.cfi
+0.41%     mface.co.kr/...  16484  16998  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            RSA_private_key_to_bytes
+0.41%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         pagevec_lru_move_fn
+0.41%     mqt_native_modu  16484  16590  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.util.ArrayList.iterator
+0.41%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libjsi.so             @plt
+0.41%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+a58c]
+0.41%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+ea9a4]
+0.41%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52ec0]
+0.40%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfolly_json.so      folly::dynamic::destroy()
+0.40%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+50f44]
+0.40%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+ea764]
+0.40%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkCanvas::translate(float, float)
+0.40%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+76ae8]
+0.40%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::SizeClassAllocatorLocalCache<scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true> >::refill(scudo::SizeClassAllocatorLocalCache<scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true> >::PerClass*, unsigned long)
+0.39%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+67920]
+0.39%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60f68]
+0.39%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51068]
+0.39%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+5030c]
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f71b4]
+0.38%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         eventfd_write.cfi
+0.38%     mqt_js           16484  16588  /apex/com.android.art/javalib/arm64/boot.oat                                                              art_jni_trampoline
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+4a1d4]
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+536e4]
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+a045c]
+0.38%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         el0_svc_naked
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+602f8]
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+50340]
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          @plt
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+54810]
+0.38%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           @plt
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f6f58]
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52a2c]
+0.37%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         clear_page
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+ea58c]
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51d88]
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+49d6c]
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+776d0]
+0.37%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+a5a8]
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+36f38]
+0.37%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+50238]
+0.36%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60824]
+0.36%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+34800]
+0.36%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+ea9b0]
+0.36%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+9e018]
+0.36%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+8b2c8]
+0.36%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrTextBlob::flush(GrTextTarget*, SkSurfaceProps const&, GrDistanceFieldAdjustTable const*, SkPaint const&, SkRGBA4f<(SkAlphaType)2> const&, GrClip const&, SkMatrix const&, SkPoint)
+0.35%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+52eb4]
+0.35%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60e3c]
+0.35%     mface.co.kr/...  16484  16995  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            RSA_private_key_to_bytes
+0.35%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+7733c]
+0.35%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+53870]
+0.35%     mqt_js           16484  16588  /apex/com.android.art/lib64/libart.so                                                                     art::Thread::DecodeJObject(_jobject*) const
+0.35%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+f6f88]
+0.34%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+306c4]
+0.34%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+60f08]
+0.34%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+94210]
+0.34%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkCanvas::restoreToCount(int)
+0.34%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51ed0]
+0.34%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         kfree.cfi
+0.34%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         __check_object_size.cfi
+0.34%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+4c85c]
+0.34%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+603b8]
+0.33%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+49de4]
+0.33%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!77df12deb6a622478efa8fb9929034!781e7d0!
+0.33%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+49d8c]
+0.33%     mqt_js           16484  16588  /apex/com.android.art/lib64/libart.so                                                                     art::JNI<false>::GetStringCritical(_JNIEnv*, _jstring*, unsigned char*)
+0.33%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!6af18ac20950c482271b6eb82acd58!781e7d0!
+0.33%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+a5ac]
+0.33%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+ac68]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+53584]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+5df68]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51e20]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+36f50]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51de4]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+5e35c]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+8b2cc]
+0.32%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+64694]
+0.32%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  android::uirenderer::skiapipeline::RenderNodeDrawable::drawContent(SkCanvas*) const
+0.31%     mface.co.kr/...  16484  16995  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            RSAPublicKey_dup
+0.31%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+51db0]
+0.31%     com.zamface      16484  16484  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.util.ArrayDeque.addLast
+0.30%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrTextBlob::mustRegenerate(SkPaint const&, bool, SkMaskFilterBase::BlurRec const&, SkMatrix const&, SkPoint)
+0.30%     mface.co.kr/...  16484  16995  /apex/com.android.runtime/lib64/bionic/libc.so                                                            pthread_getspecific
+0.30%     mface.co.kr/...  16484  16995  /apex/com.android.art/lib64/libart.so                                                                     art_quick_invoke_stub
+0.29%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         ep_send_events_proc.cfi
+0.29%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrBitmapTextureMaker::GrBitmapTextureMaker(GrRecordingContext*, SkBitmap const&, GrBitmapTextureMaker::Cached, SkBackingFit, bool)
+0.29%     mface.co.kr/...  16484  16998  /apex/com.android.art/javalib/arm64/boot-core-libart.oat                                                  java.lang.CaseMapper.toUpperCase
+0.29%     mface.co.kr/...  16484  16998  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __memcpy
+0.29%     mface.co.kr/...  16484  16995  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            ASN1_item_ex_i2d
+0.28%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art_quick_imt_conflict_trampoline
+0.27%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  @plt
+0.27%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::Thread::DecodeJObject(_jobject*) const
+0.27%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::(anonymous namespace)::ArgArray::BuildArgArrayFromObjectArray(art::ObjPtr<art::mirror::Object>, art::ObjPtr<art::mirror::ObjectArray<art::mirror::Object> >, art::ArtMethod*, art::Thread*)
+0.27%     mface.co.kr/...  16484  16998  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            asn1_cb
+0.27%     mqt_native_modu  16484  16590  /apex/com.android.art/lib64/libart.so                                                                     art::IndirectReferenceTable::GetChecked(void*) const
+0.27%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         el0_da
+0.26%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::JNI<false>::DeleteLocalRef(_JNIEnv*, _jobject*)
+0.26%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         __wake_up_sync.cfi
+0.26%     mface.co.kr/...  16484  16998  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            c2i_ASN1_BIT_STRING
+0.26%     mqt_native_modu  16484  16590  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.lang.reflect.Method.getName
+0.26%     mqt_native_modu  16484  16590  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::SizeClassAllocatorLocalCache<scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true> >::refill(scudo::SizeClassAllocatorLocalCache<scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true> >::PerClass*, unsigned long)
+0.25%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  facebook::jni::basic_strong_ref<facebook::jni::HybridClass<facebook::react::ReadableNativeArray, facebook::react::NativeArray>::JavaPart, facebook::jni::LocalReferenceAllocator> facebook::jni::HybridClass<facebook::react::ReadableNativeArray, facebook::react::NativeArray>::newObjectCxxArgs<folly::dynamic const&>(folly::dynamic const&&&)
+0.25%     OkHttp Dispatch  16484  16998  /apex/com.android.art/lib64/libart.so                                                                     art::Dbg::DbgThreadLifecycleCallback::ThreadDeath(art::Thread*)
+0.24%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            getuid
+0.24%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrOpsTask::recordOp(std::__1::unique_ptr<GrOp, std::__1::default_delete<GrOp> >, GrProcessorSet::Analysis, GrAppliedClip*, GrXferProcessor::DstProxyView const*, GrCaps const&)
+0.24%     mface.co.kr/...  16484  16998  /apex/com.android.art/javalib/arm64/boot.oat                                                              sun.security.x509.AVA.toRFC2253CanonicalString
+0.23%     mqt_native_modu  16484  16590  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::Allocator<scudo::AndroidConfig, &(scudo_malloc_postinit)>::quarantineOrDeallocateChunk(void*, scudo::Chunk::UnpackedHeader*, unsigned long)
+0.23%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libyoga.so            libyoga.so[+adf0]
+0.23%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::JNI<false>::GetObjectField(_JNIEnv*, _jobject*, _jfieldID*)
+0.23%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!3862b457ac15503e5ab03b3a3cf98a!781e7d0!
+0.23%     mface.co.kr/...  16484  16998  /apex/com.android.art/lib64/libart.so                                                                     MterpInvokeDirectRange
+0.23%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkClipStack::isRRect(SkRect const&, SkRRect*, bool*) const
+0.23%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!d0051afa8fb0bb02a68e169738355f!781e7d0!
+0.22%     mface.co.kr/...  16484  16998  /apex/com.android.art/javalib/arm64/boot-core-icu4j.oat                                                   android.icu.text.Normalizer$NFKDMode.getNormalizer2
+0.22%     mface.co.kr/...  16484  16998  /apex/com.android.art/javalib/arm64/boot.oat                                                              sun.security.util.Cache$EqualByteArray.equals
+0.22%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.bridge.ReadableNativeArray.size
+0.21%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!f56be09eb88f86833124f1df42e945!781e7d0!
+0.21%     mqt_native_modu  16484  16590  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.lang.String.hashCode
+0.21%     mqt_native_modu  16484  16590  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::HybridMutex::unlock()
+0.21%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         ktime_get_ts64.cfi
+0.20%     mface.co.kr/...  16484  16998  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            BIO_write
+0.20%     mface.co.kr/...  16484  16998  /apex/com.android.conscrypt/lib64/libcrypto.so                                                            i2d_RSAPublicKey
+0.20%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::ClassLinker::FindArrayClass(art::Thread*, art::ObjPtr<art::mirror::Class>)
+0.19%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+37480]
+0.19%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.uimanager.MatrixMathHelper.decomposeMatrix
+0.19%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfolly_json.so      folly::Optional<decltype(fp.begin(0))> folly::f14::detail::F14BasicMap<folly::dynamic, folly::dynamic, folly::detail::DynamicHasher, folly::detail::DynamicKeyEqual, std::__ndk1::allocator<std::__ndk1::pair<folly::dynamic const, folly::dynamic> > >::findLocal<folly::f14::detail::F14BasicMap<folly::dynamic, folly::dynamic, folly::detail::DynamicHasher, folly::detail::DynamicKeyEqual, std::__ndk1::allocator<std::__ndk1::pair<folly::dynamic const, folly::dynamic> > > const, folly::Range<char const*> >(folly::f14::detail::F14BasicMap<folly::dynamic, folly::dynamic, folly::detail::DynamicHasher, folly::detail::DynamicKeyEqual, std::__ndk1::allocator<std::__ndk1::pair<folly::dynamic const, folly::dynamic> > > const&, folly::Range<char const*> const&)
+0.19%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+4a1c8]
+0.18%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+c6f50]
+0.18%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!3410d9d1e446615cc8c1108b0a094b!781e7d0!
+0.17%     RenderThread     16484  16854  /apex/com.android.runtime/lib64/bionic/libc.so                                                            memset
+0.17%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libart-compiler.so                                                            art::ReferenceTypePropagation::Run()
+0.17%     Jit thread pool  16484  16498  [kernel.kallsyms]                                                                                         page_add_new_anon_rmap.cfi
+0.17%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libart-compiler.so                                                            art::CodeGenerator::Compile(art::CodeAllocator*)
+0.17%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libart-compiler.so                                                            art::HInstructionBuilder::Build()
+0.17%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrOverrideInputFragmentProcessor::GrOverrideInputFragmentProcessor(std::__1::unique_ptr<GrFragmentProcessor, std::__1::default_delete<GrFragmentProcessor> >, bool, SkRGBA4f<(SkAlphaType)2>, SkRGBA4f<(SkAlphaType)2>)
+0.17%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::ClassTable::Lookup(char const*, unsigned long)
+0.17%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreanimated.so      @plt
+0.16%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libart-compiler.so                                                            art::GlobalValueNumberer::VisitBasicBlock(art::HBasicBlock*)
+0.16%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libart-compiler.so                                                            art::SsaLivenessAnalysis::ComputeLiveRanges()
+0.16%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libartbase.so                                                                 art::BitVector::GetHighestBitSet() const
+0.16%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkMatrix::preTranslate(float, float)
+0.16%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!28254c066fd778faffa7894b1bd8b1!781e7d0!
+0.16%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::JniMethodEnd(unsigned int, art::Thread*)
+0.16%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::JNI<false>::NewLocalRef(_JNIEnv*, _jobject*)
+0.16%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  facebook::react::ReadableNativeMap::importValues()
+0.15%     com.zamface      16484  16484  /system/framework/arm64/boot-framework.oat                                                                android.graphics.RenderNode.getRotationX
+0.15%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           libfbjni.so[+12200]
+0.15%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+1aab94]
+0.15%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrGLGpu::flushGLState(GrRenderTarget*, GrProgramInfo const&)
+0.15%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!815b8cb62190c7cd7725f0840561e0!781e7d0!
+0.15%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art_quick_invoke_stub
+0.15%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!c55728a16e4dcd73880a6943a64c43!781e7d0!
+0.14%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::JniMethodStart(art::Thread*)
+0.14%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkClipStack::Element::contains(SkRect const&) const
+0.14%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!a29e79b812f1156decf04621551fe3!781e7d0!
+0.14%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         binder_update_page_range
+0.14%     RenderThread     16484  16854  /apex/com.android.runtime/lib64/bionic/libc.so                                                            @plt
+0.14%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrTextContext::drawGlyphRunList(GrRecordingContext*, GrTextTarget*, GrClip const&, SkMatrix const&, SkSurfaceProps const&, SkGlyphRunList const&)
+0.14%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::System_arraycopy(_JNIEnv*, _jclass*, _jobject*, int, _jobject*, int, int)
+0.14%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrOpFlushState::recordDraw(GrGeometryProcessor const*, GrMesh const*, int, GrPipeline::FixedDynamicState const*, GrPipeline::DynamicStateArrays const*, GrPrimitiveType)
+0.14%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::IndirectReferenceTable::Add(art::IRTSegmentState, art::ObjPtr<art::mirror::Object>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*)
+0.13%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!dffd67d09c9fbd41403800b400eba6!781e7d0!
+0.13%     com.zamface      16484  16484  /system/lib64/libandroid_runtime.so                                                                       android_os_Binder_clearCallingIdentity()
+0.13%     com.zamface      16484  16484  /system/lib64/libbinder.so                                                                                android::internal::Stability::get(android::IBinder*)
+0.13%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkArenaAlloc::reset()
+0.13%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::mirror::Class::AllocObject(art::Thread*)
+0.13%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            SystemProperties::AreaSerial()
+0.13%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             art_jni_trampoline
+0.13%     com.zamface      16484  16484  /apex/com.android.art/javalib/arm64/boot.oat                                                              art_jni_trampoline
+0.13%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  facebook::jni::HybridClass<facebook::react::WritableNativeMap, facebook::react::ReadableNativeMap>::JavaPart::cthis() const
+0.13%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           facebook::jni::detail::HybridDestructor::setNativePointer(std::__ndk1::unique_ptr<facebook::jni::detail::BaseHybridClass, std::__ndk1::default_delete<facebook::jni::detail::BaseHybridClass> >)
+0.13%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.views.view.ReactViewGroup.setBackfaceVisibilityDependantOpacity
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  std::__ndk1::pair<std::__ndk1::__hash_iterator<std::__ndk1::__hash_node<std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, void*>*>, bool> std::__ndk1::__hash_table<std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, std::__ndk1::__unordered_map_hasher<folly::dynamic, std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, folly::detail::DynamicHasher, true>, std::__ndk1::__unordered_map_equal<folly::dynamic, std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, folly::detail::DynamicKeyEqual, true>, std::__ndk1::allocator<std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic> > >::__emplace_unique_impl<std::__ndk1::piecewise_construct_t const&, std::__ndk1::tuple<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >&&>, std::__ndk1::tuple<> >(std::__ndk1::piecewise_construct_t const&&&, std::__ndk1::tuple<std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >&&>&&, std::__ndk1::tuple<>&&)
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libjsi.so             std::__ndk1::__hash_table<std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, std::__ndk1::__unordered_map_hasher<folly::dynamic, std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, folly::detail::DynamicHasher, true>, std::__ndk1::__unordered_map_equal<folly::dynamic, std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic>, folly::detail::DynamicKeyEqual, true>, std::__ndk1::allocator<std::__ndk1::__hash_value_type<folly::dynamic, folly::dynamic> > >::__rehash(unsigned long)
+0.12%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::IndirectReferenceTable::Remove(art::IRTSegmentState, void*)
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  facebook::jni::basic_strong_ref<facebook::jni::detail::JTypeFor<facebook::jni::HybridClass<facebook::react::ReadableNativeMap, facebook::react::NativeMap>::JavaPart, facebook::jni::HybridClass<facebook::react::NativeMap, facebook::jni::detail::BaseHybridClass>::JavaPart, void>::_javaobject*, facebook::jni::LocalReferenceAllocator> facebook::jni::JClass::newObject<facebook::jni::detail::JTypeFor<facebook::jni::HybridClass<facebook::react::ReadableNativeMap, facebook::react::NativeMap>::JavaPart, facebook::jni::HybridClass<facebook::react::NativeMap, facebook::jni::detail::BaseHybridClass>::JavaPart, void>::_javaobject*, facebook::jni::basic_strong_ref<facebook::jni::detail::HybridData, facebook::jni::LocalReferenceAllocator> >(facebook::jni::JConstructor<facebook::jni::detail::JTypeFor<facebook::jni::HybridClass<facebook::react::ReadableNativeMap, facebook::react::NativeMap>::JavaPart, facebook::jni::HybridClass<facebook::react::NativeMap, facebook::jni::detail::BaseHybridClass>::JavaPart, void>::_javaobject* (facebook::jni::basic_strong_ref<facebook::jni::detail::HybridData, facebook::jni::LocalReferenceAllocator>)>, facebook::jni::basic_strong_ref<facebook::jni::detail::HybridData, facebook::jni::LocalReferenceAllocator>) const
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  facebook::react::WritableNativeMap::putInt(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> >, int)
+0.12%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+5efc0]
+0.12%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  virtual thunk to GrRenderTargetProxy::~GrRenderTargetProxy()
+0.12%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           facebook::jni::detail::utf16toUTF8(unsigned short const*, unsigned long)
+0.12%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __memcpy
+0.12%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::GoToRunnable(art::Thread*)
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           facebook::jni::throwCppExceptionIf(bool)
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreanimated.so      facebook::jni::base_owned_ref<facebook::jni::JString, facebook::jni::LocalReferenceAllocator>::set(_jstring*)
+0.12%     com.zamface      16484  16484  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.util.HashMap.get
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           facebook::jni::detail::currentOrNull()
+0.12%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrColorFragmentProcessorAnalysis::GrColorFragmentProcessorAnalysis(GrProcessorAnalysisColor const&, std::__1::unique_ptr<GrFragmentProcessor, std::__1::default_delete<GrFragmentProcessor> > const*, int)
+0.12%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         __alloc_fd.cfi
+0.12%     RenderThread     16484  16854  /vendor/lib64/egl/eglSubDriverAndroid.so                                                                  eglSubDriverAndroid.so[+6e54]
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libreactnativejni.so  facebook::jni::basic_strong_ref<facebook::jni::HybridClass<facebook::react::ReadableNativeMap, facebook::react::NativeMap>::JavaPart, facebook::jni::LocalReferenceAllocator> facebook::jni::JavaClass<facebook::jni::HybridClass<facebook::react::ReadableNativeMap, facebook::react::NativeMap>::JavaPart, facebook::jni::HybridClass<facebook::react::NativeMap, facebook::jni::detail::BaseHybridClass>::JavaPart, void>::newInstance<facebook::jni::basic_strong_ref<facebook::jni::detail::HybridData, facebook::jni::LocalReferenceAllocator> >(facebook::jni::basic_strong_ref<facebook::jni::detail::HybridData, facebook::jni::LocalReferenceAllocator>)
+0.12%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         pagevec_lru_move_fn
+0.12%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libhermes.so          libhermes.so[+4b79c]
+0.11%     com.zamface      16484  16484  /system/lib64/libhwui.so                                                                                  android::uirenderer::RecordingCanvas::didTranslate(float, float)
+0.11%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!cae4d7065135223aef2c80f52bc1f1!781e7d0!
+0.11%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrAtlasTextOp::name() const
+0.11%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  android::uirenderer::skiapipeline::RenderNodeDrawable::onDraw(SkCanvas*)
+0.11%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libc++_shared.so      operator new(unsigned long)
+0.11%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrTextureOp::Make(GrRecordingContext*, GrSurfaceProxyView, SkAlphaType, sk_sp<GrColorSpaceXform>, GrSamplerState::Filter, SkRGBA4f<(SkAlphaType)2> const&, GrTextureOp::Saturate, SkBlendMode, GrAAType, DrawQuad*, SkRect const*)
+0.11%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkCanvas::concat(SkMatrix const&)
+0.11%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         memset
+0.11%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrResourceCache::refAndMakeResourceMRU(GrGpuResource*)
+0.11%     RenderThread     16484  16854  /apex/com.android.runtime/lib64/bionic/libc.so                                                            void scudo::releaseFreeMemoryToOS<scudo::SizeClassAllocatorLocalCache<scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true> >::TransferBatch, scudo::ReleaseRecorder, scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true>::releaseToOSMaybe(scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true>::RegionInfo*, unsigned long, bool)::'lambda'(unsigned long)>(scudo::IntrusiveList<scudo::SizeClassAllocatorLocalCache<scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true> >::TransferBatch> const&, unsigned long, unsigned long, unsigned long, unsigned long, scudo::ReleaseRecorder*, scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true>::releaseToOSMaybe(scudo::SizeClassAllocator64<scudo::TableSizeClassMap<scudo::AndroidSizeClassConfig>, 28ul, 1000, 1000, true>::RegionInfo*, unsigned long, bool)::'lambda'(unsigned long))
+0.11%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!3b261bec43fb1dd3aed76083f4b7fe!781e7d0!
+0.11%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.views.scroll.ScrollEvent.getEventData
+0.11%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::initializeAttrs(GrQuadPerEdgeAA::VertexSpec const&)
+0.10%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         format_decode
+0.10%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!350a8ff9e5609d50e998989b63323a!781e7d0!
+0.10%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrQuadUtils::CropToRect(SkRect const&, GrAA, DrawQuad*, bool)
+0.10%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         binder_transaction
+0.10%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         rw_verify_area.cfi
+0.10%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art_quick_unlock_object
+0.10%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         binder_proc_transaction
+0.10%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrProcessorSet::GrProcessorSet(GrProcessorSet&&)
+0.10%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  android::uirenderer::$_2::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.10%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  GrProxyProvider::adoptUniqueKeyFromSurface(GrTextureProxy*, GrSurface const*)
+0.10%     RenderThread     16484  16854  /vendor/lib64/egl/libGLESv2_adreno.so                                                                     !!!0000!61bc7b0de892600069dcd23dd14db9!781e7d0!
+0.10%     com.zamface      16484  16484  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.lang.String.equals
+0.10%     com.zamface      16484  16484  /system/lib64/libbinder.so                                                                                android::Parcel::Parcel()
+0.10%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         unix_dgram_recvmsg.cfi
+0.09%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.modules.core.ChoreographerCompat$FrameCallback$1.doFrame
+0.09%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.modules.core.ReactChoreographer$ReactChoreographerDispatcher.doFrame
+0.09%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            pthread_getspecific
+0.09%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         __seccomp_filter
+0.09%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         binder_transaction
+0.09%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         hrtimer_start_range_ns.cfi
+0.08%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libart-compiler.so                                                            art::HInstructionBuilder::BuildInvoke(art::Instruction const&, unsigned int, unsigned int, art::InstructionOperands const&)
+0.08%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         ep_scan_ready_list
+0.08%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         arch_counter_get_cntvct.cfi
+0.08%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         __seccomp_filter
+0.07%     com.zamface      16484  16484  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.lang.ref.Reference.get
+0.07%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::gc::ReferenceProcessor::GetReferent(art::Thread*, art::ObjPtr<art::mirror::Reference>)
+0.07%     com.zamface      16484  16484  /system/framework/arm64/boot-framework.oat                                                                android.os.Message.obtain
+0.07%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         SyS_epoll_pwait
+0.07%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            scudo::Allocator<scudo::AndroidConfig, &(scudo_malloc_postinit)>::quarantineOrDeallocateChunk(void*, scudo::Chunk::UnpackedHeader*, unsigned long)
+0.07%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            @plt
+0.07%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfolly_json.so      libfolly_json.so[+188f4]
+0.07%     com.zamface      16484  16484  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             com.facebook.react.views.scroll.ReactHorizontalScrollView.updateStateOnScroll
+0.07%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.05%     mqt_native_modu  16484  16590  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           libfbjni.so[+12210]
+0.03%     mqt_native_modu  16484  16590  /apex/com.android.art/lib64/libart.so                                                                     artAllocArrayFromCodeResolvedRegionTLAB
+0.03%     mqt_native_modu  16484  16590  /apex/com.android.art/javalib/arm64/boot.oat                                                              java.util.ArrayList.add
+0.03%     FrameMetricsAgg  16484  16862  /apex/com.android.art/lib64/libart.so                                                                     art::CodeInfo::DecodeInlineInfoOnly(art::OatQuickMethodHeader const*)
+0.03%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         __seccomp_filter
+0.02%     OkHttp TaskRunn  16484  16896  [kernel.kallsyms]                                                                                         try_to_wake_up
+0.02%     pool-4-thread-2  16484  16863  unknown                                                                                                   unknown[+747219b330]
+0.02%     OkHttp TaskRunn  16484  16953  /apex/com.android.art/lib64/libart.so                                                                     art::Thread::DecodeJObject(_jobject*) const
+0.02%     alhost:3000/...  16484  16913  /apex/com.android.art/lib64/libart.so                                                                     art::jit::Jit::MethodEntered(art::Thread*, art::ArtMethod*)
+0.02%     mqt_js           16484  16588  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/lib/arm64/libfbjni.so           libfbjni.so[+12220]
+0.02%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         zap_pte_range
+0.02%     RenderThread     16484  16854  /system/lib64/libhwui.so                                                                                  SkClipStack::internalQuickContains(SkRect const&) const
+0.02%     mface.co.kr/...  16484  16995  /apex/com.android.art/lib64/libart.so                                                                     art::JNI<false>::ReleaseStringUTFChars(_JNIEnv*, _jstring*, char const*)
+0.02%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         __wake_up.cfi
+0.01%     HeapTaskDaemon   16484  16499  [kernel.kallsyms]                                                                                         el0_svc_naked
+0.01%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         sys_write
+0.01%     Measurement Wor  16484  16865  /apex/com.android.art/lib64/libart.so                                                                     MterpInvokeVirtualRange
+0.00%     Jit thread pool  16484  16498  /apex/com.android.art/lib64/libvixl.so                                                                    vixl::aarch64::MacroAssembler::MacroAssembler(vixl::aarch64::PositionIndependentCodeOption)
+0.00%     CookieMonsterCl  16484  16610  /product/app/webview/webview.apk                                                                          webview.apk[+250e828]
+0.00%     mqt_native_modu  16484  16590  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __epoll_pwait
+0.00%     com.zamface      16484  16484  /apex/com.android.art/lib64/libart.so                                                                     art::JNI<false>::CallVoidMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         SyS_epoll_pwait
+0.00%     FrameMetricsAgg  16484  16862  /system/lib64/libutils.so                                                                                 android::Looper::pollOnce(int, int*, int*, void**)
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         fsnotify.cfi
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         syscall_trace_enter.cfi
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     mqt_native_modu  16484  16590  /apex/com.android.runtime/lib64/bionic/libc.so                                                            pthread_mutex_lock
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     mqt_native_modu  16484  16590  /system/lib64/libutils.so                                                                                 android::Looper::pollInner(int)
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            pthread_mutex_unlock
+0.00%     queued-work-loo  16484  16563  /system/lib64/libutils.so                                                                                 android::Looper::pollInner(int)
+0.00%     OkHttp Dispatch  16484  16913  /apex/com.android.runtime/lib64/bionic/libc.so                                                            syscall
+0.00%     OkHttp TaskRunn  16484  16896  /apex/com.android.runtime/lib64/bionic/libc.so                                                            syscall
+0.00%     Okio Watchdog    16484  16892  /apex/com.android.runtime/lib64/bionic/libc.so                                                            syscall
+0.00%     HeapTaskDaemon   16484  16499  /apex/com.android.art/lib64/libart.so                                                                     art::ConditionVariable::TimedWait(art::Thread*, long, int)
+0.00%     OkHttp TaskRunn  16484  16953  /apex/com.android.art/lib64/libart.so                                                                     art::Thread::Park(bool, long)
+0.00%     RenderThread     16484  16854  /system/lib64/libbinder.so                                                                                android::IPCThreadState::talkWithDriver(bool)
+0.00%     mqt_js           16484  16588  /apex/com.android.runtime/lib64/bionic/libc.so                                                            pthread_mutex_lock
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     pool-4-thread-2  16484  16863  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         sys_read
+0.00%     mqt_native_modu  16484  16995  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __start_thread
+0.00%     DefaultExecutor  16484  16859  /data/app/~~AztZZrWOKDs-hJMDk1VF5w==/com.zamface-9UUsEtwao29iolTaNnnIew==/oat/arm64/base.odex             kotlinx.coroutines.DefaultExecutor.run
+0.00%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         __vunmap
+0.00%     Measurement Wor  16484  16865  /apex/com.android.art/lib64/libart.so                                                                     art::ConditionVariable::TimedWait(art::Thread*, long, int)
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         unix_dgram_poll
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         __run_timers
+0.00%     CookieMonsterCl  16484  16610  /apex/com.android.runtime/lib64/bionic/libc.so                                                            syscall
+0.00%     Jit thread pool  16484  16498  [kernel.kallsyms]                                                                                         update_blocked_averages
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi
+0.00%     mqt_js           16484  16588  /system/lib64/libutils.so                                                                                 android::Looper::pollInner(int)
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         __softirqentry_text_start
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         ret_to_user
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         sys_futex
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         sys_epoll_pwait
+0.00%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            pthread_mutex_lock
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         fput.cfi
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi
+0.00%     queued-work-loo  16484  16563  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __epoll_pwait
+0.00%     OkHttp TaskRunn  16484  16896  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     OkHttp TaskRunn  16484  16953  /apex/com.android.runtime/lib64/bionic/libc.so                                                            syscall
+0.00%     Okio Watchdog    16484  16892  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     HeapTaskDaemon   16484  16499  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     mqt_native_modu  16484  16995  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __bionic_clone
+0.00%     mqt_js           16484  16588  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __epoll_pwait
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         fpsimd_restore_current_state.cfi
+0.00%     DefaultExecutor  16484  16859  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         ret_to_user
+0.00%     pool-4-thread-2  16484  16863  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     Jit thread pool  16484  16498  [kernel.kallsyms]                                                                                         __run_timers
+0.00%     Jit thread pool  16484  16498  [kernel.kallsyms]                                                                                         __softirqentry_text_start
+0.00%     Jit thread pool  16484  16498  [kernel.kallsyms]                                                                                         run_timer_softirq.cfi
+0.00%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         vfree.cfi
+0.00%     Measurement Wor  16484  16865  /apex/com.android.runtime/lib64/bionic/libc.so                                                            syscall
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         sock_poll.cfi
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         test_and_clear_bit
+0.00%     CookieMonsterCl  16484  16610  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         ep_scan_ready_list
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         binder_thread_read
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         ep_scan_ready_list
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         binder_ioctl_write_read
+0.00%     com.zamface      16484  16484  /system/lib64/libutils.so                                                                                 android::Looper::pollInner(int)
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         file_has_perm
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         __sys_trace_return
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         ep_scan_ready_list
+0.00%     HeapTaskDaemon   16484  16499  [kernel.kallsyms]                                                                                         fpsimd_restore_current_state.cfi
+0.00%     OkHttp Dispatch  16484  16913  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     OkHttp TaskRunn  16484  16896  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     OkHttp TaskRunn  16484  16953  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         sys_epoll_pwait
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     pool-4-thread-2  16484  16863  [kernel.kallsyms]                                                                                         sys_futex
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     DefaultExecutor  16484  16859  [kernel.kallsyms]                                                                                         sys_futex
+0.00%     Okio Watchdog    16484  16892  [kernel.kallsyms]                                                                                         test_and_clear_bit
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         fput.cfi
+0.00%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         account_kernel_stack
+0.00%     Measurement Wor  16484  16865  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         sock_poll
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         __sys_trace_return
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         sys_epoll_wait
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         ep_scan_ready_list
+0.00%     Timer-0          16484  16877  [kernel.kallsyms]                                                                                         futex_wait_queue_me
+0.00%     DefaultExecutor  16484  16859  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         eventfd_poll
+0.00%     HeapTaskDaemon   16484  16499  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         binder_dec_node_tmpref
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         sys_epoll_wait
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         sys_epoll_wait
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         eventfd_poll.cfi
+0.00%     pool-4-thread-2  16484  16863  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         sys_epoll_wait
+0.00%     CookieMonsterCl  16484  16610  [kernel.kallsyms]                                                                                         __schedule
+0.00%     CookieMonsterCl  16484  16610  [kernel.kallsyms]                                                                                         __sys_trace_return
+0.00%     CookieMonsterCl  16484  16610  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     DefaultExecutor  16484  16859  [kernel.kallsyms]                                                                                         futex_wait_queue_me
+0.00%     FrameMetricsAgg  16484  16862  [kernel.kallsyms]                                                                                         eventfd_poll.cfi
+0.00%     HeapTaskDaemon   16484  16499  [kernel.kallsyms]                                                                                         __sys_trace_return
+0.00%     Measurement Wor  16484  16865  [kernel.kallsyms]                                                                                         __sys_trace_return
+0.00%     Measurement Wor  16484  16865  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     Measurement Wor  16484  16865  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     OkHttp Dispatch  16484  16913  [kernel.kallsyms]                                                                                         __sys_trace_return_skipped
+0.00%     OkHttp Dispatch  16484  16913  [kernel.kallsyms]                                                                                         futex_wait_queue_me
+0.00%     OkHttp Dispatch  16484  16913  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     OkHttp TaskRunn  16484  16896  [kernel.kallsyms]                                                                                         futex_wait_queue_me
+0.00%     OkHttp TaskRunn  16484  16896  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     OkHttp TaskRunn  16484  16896  [kernel.kallsyms]                                                                                         sys_futex
+0.00%     OkHttp TaskRunn  16484  16953  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     OkHttp TaskRunn  16484  16953  [kernel.kallsyms]                                                                                         futex_wait
+0.00%     OkHttp TaskRunn  16484  16953  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     Okio Watchdog    16484  16892  [kernel.kallsyms]                                                                                         futex_wait_queue_me
+0.00%     Okio Watchdog    16484  16892  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     Okio Watchdog    16484  16892  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         binder_thread_write
+0.00%     RenderThread     16484  16854  [kernel.kallsyms]                                                                                         eventfd_poll
+0.00%     com.zamface      16484  16484  /apex/com.android.runtime/lib64/bionic/libc.so                                                            __epoll_pwait
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         schedule_hrtimeout_range_clock.cfi
+0.00%     com.zamface      16484  16484  [kernel.kallsyms]                                                                                         unix_dgram_poll.cfi
+0.00%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         finish_task_switch
+0.00%     mface.co.kr/...  16484  16995  [kernel.kallsyms]                                                                                         mod_zone_state
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         $x.383
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         eventfd_poll.cfi
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         fput.cfi
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         sys_epoll_wait
+0.00%     mqt_js           16484  16588  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi
+0.00%     mqt_native_modu  16484  16590  [kernel.kallsyms]                                                                                         sys_epoll_wait
+0.00%     mqt_native_modu  16484  16995  [kernel.kallsyms]                                                                                         do_notify_resume.cfi
+0.00%     mqt_native_modu  16484  16995  [kernel.kallsyms]                                                                                         fpsimd_load_state
+0.00%     mqt_native_modu  16484  16995  [kernel.kallsyms]                                                                                         schedule_tail.cfi
+0.00%     pool-4-thread-2  16484  16863  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         ep_send_events_proc.cfi
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         hrtimer_try_to_cancel.cfi
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         schedule_hrtimeout_range_clock.cfi
+0.00%     queued-work-loo  16484  16563  [kernel.kallsyms]                                                                                         syscall_trace_exit.cfi

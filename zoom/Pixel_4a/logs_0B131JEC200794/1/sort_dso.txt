@@ -1,0 +1,62 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 180 --call-graph fp --app us.zoom.videomeetings
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 116832
+Event count: 158553375302
+
+Overhead  Shared Object
+81.93%    /data/app/us.zoom.videomeetings-dhP-oVPxNyHv9iLbYOK24w==/split_config.arm64_v8a.apk
+4.43%     [kernel.kallsyms]
+4.24%     /vendor/lib64/egl/libGLESv2_adreno.so
+3.97%     /apex/com.android.runtime/lib64/bionic/libc.so
+2.48%     /apex/com.android.runtime/lib64/libart.so
+1.19%     unknown
+0.31%     /apex/com.android.runtime/lib64/bionic/libm.so
+0.30%     /system/framework/arm64/boot.oat
+0.26%     /system/lib64/libhwui.so
+0.13%     /system/framework/arm64/boot-framework.oat
+0.11%     /system/lib64/libutils.so
+0.10%     /apex/com.android.runtime/lib64/libopenjdkjvm.so
+0.09%     /vendor/lib/modules/wlan.ko
+0.08%     /system/lib64/libbinder.so
+0.06%     /system/lib64/libcamera_client.so
+0.05%     /system/lib64/libgui.so
+0.05%     /system/lib64/libandroid_runtime.so
+0.03%     /system/lib64/libcamera_metadata.so
+0.03%     /system/lib64/libGLESv2.so
+0.02%     /vendor/lib64/libgsl.so
+0.02%     /system/lib64/libui.so
+0.01%     /system/lib64/libc++.so
+0.01%     /vendor/lib64/egl/eglSubDriverAndroid.so
+0.01%     /apex/com.android.runtime/lib64/libopenjdk.so
+0.01%     /system/lib64/libEGL.so
+0.01%     /vendor/lib64/egl/libEGL_adreno.so
+0.01%     /system/lib64/libaudioclient.so
+0.01%     /system/lib64/libmedia_jni.so
+0.01%     /system/framework/arm64/boot-core-libart.oat
+0.00%     /system/lib64/vndk-sp-29/libcutils.so
+0.00%     /system/lib64/libGLESv1_CM.so
+0.00%     /system/lib64/libcutils.so
+0.00%     /system/lib64/android.hardware.graphics.mapper@3.0.so
+0.00%     /vendor/lib64/libqdMetaData.so
+0.00%     /data/app/us.zoom.videomeetings-dhP-oVPxNyHv9iLbYOK24w==/oat/arm64/base.odex
+0.00%     /system/lib64/libbinderthreadstate.so
+0.00%     /system/lib64/libmedia_jni_utils.so
+0.00%     /apex/com.android.runtime/lib64/libart-compiler.so
+0.00%     /vendor/lib64/libgrallocutils.so
+0.00%     /vendor/lib64/libgralloccore.so
+0.00%     /system/lib64/libsync.so
+0.00%     /vendor/lib64/hw/gralloc.sm6150.so
+0.00%     /data/local/tmp/TemporaryFile-9XJOFd
+0.00%     /system/lib64/libhidlbase.so
+0.00%     /apex/com.android.runtime/bin/linker64
+0.00%     /apex/com.android.runtime/lib64/libartbase.so
+0.00%     /apex/com.android.runtime/lib64/libartpalette.so
+0.00%     /system/lib64/libsensor.so
+0.00%     /data/local/tmp/TemporaryFile-RnYznR
+0.00%     /vendor/lib64/libadreno_utils.so
+0.00%     /system/lib64/vndk-sp-29/libhidlbase.so
+0.00%     /system/lib64/libinput.so
+0.00%     /apex/com.android.runtime/lib64/libdexfile.so
+0.00%     /apex/com.android.runtime/lib64/libjavacore.so
+0.00%     /product/app/webview/webview.apk
