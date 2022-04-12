@@ -1,0 +1,401 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 100 --call-graph fp --app com.zamface
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 16894
+Event count: 32024044016
+
+Overhead  Symbol
+12.91%    bool art::gc::collector::ConcurrentCopying::TestAndSetMarkBitForRef<false>(art::mirror::Object*)
+12.15%    void art::gc::collector::ConcurrentCopying::MarkRoot<false>(art::Thread*, art::mirror::CompressedReference<art::mirror::Object>*)
+9.91%     void art::gc::collector::ConcurrentCopying::Process<true>(art::mirror::Object*, art::MemberOffset)
+8.55%     art::gc::collector::ConcurrentCopying::AddLiveBytesAndScanRef(art::mirror::Object*)
+5.00%     void art::mirror::Object::VisitReferences<true, (art::VerifyObjectFlags)0, (art::ReadBarrierOption)1, art::gc::collector::ConcurrentCopying::RefFieldsVisitor<true>, art::gc::collector::ConcurrentCopying::RefFieldsVisitor<true> >(art::gc::collector::ConcurrentCopying::RefFieldsVisitor<true> const&, art::gc::collector::ConcurrentCopying::RefFieldsVisitor<true> const&)
+4.17%     void art::gc::collector::ConcurrentCopying::Process<false>(art::mirror::Object*, art::MemberOffset)
+3.21%     art::gc::space::RegionSpace::PoisonDeadObjectsInUnevacuatedRegion(art::gc::space::RegionSpace::Region*)
+2.85%     void art::mirror::Object::VisitFieldsReferences<false, (art::VerifyObjectFlags)0, (art::ReadBarrierOption)1, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<true> >(unsigned int, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<true> const&)
+2.07%     void art::mirror::Object::VisitReferences<true, (art::VerifyObjectFlags)0, (art::ReadBarrierOption)1, art::gc::collector::ConcurrentCopying::RefFieldsVisitor<false>, art::gc::collector::ConcurrentCopying::RefFieldsVisitor<false> >(art::gc::collector::ConcurrentCopying::RefFieldsVisitor<false> const&, art::gc::collector::ConcurrentCopying::RefFieldsVisitor<false> const&)
+1.56%     art::gc::collector::ConcurrentCopying::ProcessMarkStackForMarkingAndComputeLiveBytes()
+1.51%     art::mirror::FindFieldByNameAndType(art::LengthPrefixedArray<art::ArtField>*, std::__1::basic_string_view<char, std::__1::char_traits<char> >, std::__1::basic_string_view<char, std::__1::char_traits<char> >) (.llvm.11471821965172152923)
+1.42%     art::InternTable::Table::VisitRoots(art::RootVisitor*)
+1.34%     art::gc::collector::ConcurrentCopying::Copy(art::Thread*, art::mirror::Object*, art::mirror::Object*, art::MemberOffset)
+1.29%     art::CodeInfo::Decode(unsigned char const*, art::CodeInfo::DecodeFlags)
+1.28%     art::gc::collector::ConcurrentCopying::IsMarked(art::mirror::Object*)
+1.25%     art::gc::collector::ConcurrentCopying::VisitRoots(art::mirror::CompressedReference<art::mirror::Object>**, unsigned long, art::RootInfo const&)
+1.25%     art::mirror::Object::CopyObject(art::ObjPtr<art::mirror::Object>, art::ObjPtr<art::mirror::Object>, unsigned long)
+1.18%     art::ReferenceMapVisitor<art::RootCallbackVisitor, false>::VisitFrame()
+1.17%     artInstanceOfFromCode
+1.10%     art::gc::collector::ConcurrentCopying::ProcessMarkStackRef(art::mirror::Object*)
+0.97%     art::JNI::DeleteLocalRef(_JNIEnv*, _jobject*)
+0.96%     art::JNI::GetFieldID(_JNIEnv*, _jclass*, char const*, char const*)
+0.79%     void art::mirror::Object::VisitReferences<true, (art::VerifyObjectFlags)0, (art::ReadBarrierOption)1, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<false>, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<false> >(art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<false> const&, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<false> const&)
+0.73%     art::Thread::DecodeJObject(_jobject*) const
+0.64%     art::gc::collector::ConcurrentCopying::ThreadFlipVisitor::VisitRoots(art::mirror::Object***, unsigned long, art::RootInfo const&)
+0.59%     art::ReadBarrier::Mark(art::mirror::Object*)
+0.58%     art::ClassLinker::VisitClassRoots(art::RootVisitor*, art::VisitRootFlags)
+0.56%     art::IndirectReferenceTable::GetChecked(void*) const
+0.51%     art::gc::collector::ConcurrentCopying::CopyingPhase()
+0.47%     art::JNI::SetFloatField(_JNIEnv*, _jobject*, _jfieldID*, float)
+0.45%     art::IndirectReferenceTable::Add(art::IRTSegmentState, art::ObjPtr<art::mirror::Object>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*)
+0.44%     art::gc::collector::ConcurrentCopying::ImmuneSpaceScanObjVisitor::Callback(art::mirror::Object*, void*)
+0.44%     art::Mutex::ExclusiveUnlock(art::Thread*)
+0.42%     art::FindFieldID(art::ScopedObjectAccess const&, _jclass*, char const*, char const*, bool)
+0.41%     void art::gc::accounting::SpaceBitmap<8ul>::VisitMarkedRange<art::gc::collector::ConcurrentCopying::ImmuneSpaceScanObjVisitor const&>(unsigned long, unsigned long, art::gc::collector::ConcurrentCopying::ImmuneSpaceScanObjVisitor const&&&) const
+0.40%     art::CodeInfo::BinarySearchNativePc(unsigned int) const
+0.39%     void art::gc::accounting::SpaceBitmap<8ul>::VisitMarkedRange<art::gc::collector::ConcurrentCopying::CopyingPhase()::$_8&>(unsigned long, unsigned long, art::gc::collector::ConcurrentCopying::CopyingPhase()::$_8&&&) const
+0.36%     art::ArtMethod::GetOatQuickMethodHeader(unsigned long)
+0.35%     art::JNI::GetObjectField(_JNIEnv*, _jobject*, _jfieldID*)
+0.35%     art::Mutex::ExclusiveLock(art::Thread*)
+0.29%     art::InvokeWithVarArgs(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, std::__va_list)
+0.28%     void art::mirror::ObjectArray<art::mirror::Object>::AssignableCheckingMemcpy<false>(int, art::ObjPtr<art::mirror::ObjectArray<art::mirror::Object> >, int, int, bool)
+0.27%     art::GoToRunnable(art::Thread*) (.llvm.3953742762497877575)
+0.27%     art_quick_imt_conflict_trampoline
+0.25%     art::JNI::NewLocalRef(_JNIEnv*, _jobject*)
+0.25%     art::JNI::NewObjectV(_JNIEnv*, _jclass*, _jmethodID*, std::__va_list)
+0.24%     art::JNI::GetIntField(_JNIEnv*, _jobject*, _jfieldID*)
+0.22%     art::InvokeVirtualOrInterfaceWithVarArgs(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, std::__va_list)
+0.22%     void art::Thread::VisitRoots<false>(art::RootVisitor*)
+0.22%     art::gc::collector::ConcurrentCopying::PushOntoMarkStack(art::Thread*, art::mirror::Object*)
+0.21%     art::Thread::ModifySuspendCountInternal(art::Thread*, int, art::Atomic<int>*, art::SuspendReason)
+0.21%     art::gc::collector::ConcurrentCopying::CaptureRootsForMarkingVisitor<false>::VisitRoots(art::mirror::CompressedReference<art::mirror::Object>**, unsigned long, art::RootInfo const&)
+0.21%     void art::StackVisitor::WalkStack<(art::StackVisitor::CountTransitions)1>(bool)
+0.20%     art::JNI::GetLongField(_JNIEnv*, _jobject*, _jfieldID*)
+0.19%     art::arm64::Arm64Context::FillCalleeSaves(unsigned char*, art::QuickMethodFrameInfo const&)
+0.19%     art::JniMethodStart(art::Thread*)
+0.19%     void art::gc::accounting::CardTable::ModifyCardsAtomic<art::gc::AgeCardVisitor, art::VoidFunctor>(unsigned char*, unsigned char*, art::gc::AgeCardVisitor const&, art::VoidFunctor const&)
+0.19%     art_quick_read_barrier_mark_introspection
+0.18%     art::JNI::GetObjectClass(_JNIEnv*, _jobject*)
+0.18%     art::IndirectReferenceTable::Remove(art::IRTSegmentState, void*)
+0.18%     art::OatQuickMethodHeader::GetFrameInfo() const
+0.17%     void art::ArtMethod::VisitRoots<(art::ReadBarrierOption)1, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<true> const>(art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<true> const&, art::PointerSize)
+0.17%     art::gc::collector::ConcurrentCopying::CopyingPhase()::$_7::operator()(art::mirror::Object*) const
+0.17%     art::System_arraycopy(_JNIEnv*, _jclass*, _jobject*, int, _jobject*, int, int)
+0.16%     art::mirror::Object::Clone(art::Thread*)
+0.16%     art::JNI::GetBooleanField(_JNIEnv*, _jobject*, _jfieldID*)
+0.15%     art::CodeInfo::GetStackMapForNativePcOffset(unsigned int, art::InstructionSet) const
+0.15%     art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)
+0.14%     art::gc::collector::ConcurrentCopying::MarkNonMoving(art::Thread*, art::mirror::Object*, art::mirror::Object*, art::MemberOffset)
+0.14%     art::JNI::GetObjectArrayElement(_JNIEnv*, _jobjectArray*, int)
+0.14%     art::mirror::Class::GetDescriptor(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*)
+0.13%     art::CodeInfo::GetRegisterMaskOf(art::StackMap const&) const
+0.13%     art::JNI::SetIntField(_JNIEnv*, _jobject*, _jfieldID*, int)
+0.13%     art::gc::collector::ConcurrentCopying::GrayImmuneObjectVisitor<true>::Callback(art::mirror::Object*, void*)
+0.13%     @plt
+0.12%     art::CodeInfo::CodeInfo(art::OatQuickMethodHeader const*, art::CodeInfo::DecodeFlags)
+0.11%     art::Monitor::TryLockLocked(art::Thread*)
+0.11%     _jcharArray* art::JNIEnvExt::AddLocalReference<_jcharArray*>(art::ObjPtr<art::mirror::Object>)
+0.11%     art::JNI::GetStringLength(_JNIEnv*, _jstring*)
+0.11%     art::OatQuickMethodHeader::ToDexPc(art::ArtMethod*, unsigned long, bool) const
+0.10%     art::JNI::SetObjectArrayElement(_JNIEnv*, _jobjectArray*, int, _jobject*)
+0.10%     void art::mirror::Object::VisitFieldsReferences<false, (art::VerifyObjectFlags)0, (art::ReadBarrierOption)1, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<false> >(unsigned int, art::gc::collector::ConcurrentCopying::ComputeLiveBytesAndMarkRefFieldsVisitor<false> const&)
+0.10%     void art::StackVisitor::WalkStack<(art::StackVisitor::CountTransitions)0>(bool)
+0.10%     art::ClassTable::Lookup(char const*, unsigned long)
+0.10%     art_quick_invoke_stub
+0.10%     art::ThreadList::FlipThreadRoots(art::Closure*, art::Closure*, art::gc::collector::GarbageCollector*, art::gc::GcPauseListener*)
+0.10%     bool art::gc::collector::ConcurrentCopying::TestAndSetMarkBitForRef<true>(art::mirror::Object*)
+0.09%     art::gc::collector::ConcurrentCopying::CaptureRootsForMarkingVisitor<true>::VisitRoots(art::mirror::Object***, unsigned long, art::RootInfo const&)
+0.09%     art::JNI::GetStringCritical(_JNIEnv*, _jstring*, unsigned char*)
+0.09%     art::JNI::CallBooleanMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)
+0.09%     art_quick_unlock_object
+0.09%     art::gc::accounting::ModUnionTableCardCache::VisitObjects(void (*)(art::mirror::Object*, void*), void*)::$_4::operator()(unsigned long) const
+0.09%     art::Thread::GetCurrentMethod(unsigned int*, bool, bool) const
+0.09%     void art::gc::accounting::SpaceBitmap<8ul>::VisitMarkedRange<art::gc::collector::ConcurrentCopying::ImmuneSpaceCaptureRefsVisitor const&>(unsigned long, unsigned long, art::gc::collector::ConcurrentCopying::ImmuneSpaceCaptureRefsVisitor const&&&) const
+0.09%     art::ClassLinker::LookupClass(art::Thread*, char const*, unsigned long, art::ObjPtr<art::mirror::ClassLoader>)
+0.09%     art::gc::Heap::IsMovableObject(art::ObjPtr<art::mirror::Object>) const
+0.08%     art::ClassLinker::LookupPrimitiveClass(char)
+0.08%     art::JNI::SetLongField(_JNIEnv*, _jobject*, _jfieldID*, long)
+0.08%     art_quick_lock_object
+0.08%     art::JNI::SetFloatArrayRegion(_JNIEnv*, _jfloatArray*, int, int, float const*)
+0.08%     art::JniMethodEndWithReferenceHandleResult(_jobject*, unsigned int, art::Thread*) (.llvm.3953742762497877575)
+0.08%     void art::gc::accounting::SpaceBitmap<8ul>::VisitMarkedRange<art::gc::collector::ConcurrentCopying::GrayImmuneObjectVisitor<true> const&>(unsigned long, unsigned long, art::gc::collector::ConcurrentCopying::GrayImmuneObjectVisitor<true> const&&&) const
+0.07%     art::mirror::Object* art::gc::Heap::AllocObjectWithAllocator<true, false, art::VoidFunctor>(art::Thread*, art::ObjPtr<art::mirror::Class>, unsigned long, art::gc::AllocatorType, art::VoidFunctor const&)
+0.07%     art::mirror::Object* art::gc::Heap::AllocObjectWithAllocator<true, true, art::mirror::CopyObjectVisitor>(art::Thread*, art::ObjPtr<art::mirror::Class>, unsigned long, art::gc::AllocatorType, art::mirror::CopyObjectVisitor const&)
+0.07%     art::gc::collector::ConcurrentCopying::IsNullOrMarkedHeapReference(art::mirror::HeapReference<art::mirror::Object>*, bool)
+0.07%     void art::gc::accounting::SpaceBitmap<8ul>::VisitMarkedRange<art::gc::collector::ConcurrentCopying::CopyingPhase()::$_7 const&>(unsigned long, unsigned long, art::gc::collector::ConcurrentCopying::CopyingPhase()::$_7 const&&&) const
+0.07%     art::JNI::CallNonvirtualVoidMethodV(_JNIEnv*, _jobject*, _jclass*, _jmethodID*, std::__va_list)
+0.07%     art::gc::collector::ConcurrentCopying::ReclaimPhase()
+0.07%     art::ReferenceMapVisitor<art::RootCallbackVisitor, true>::VisitShadowFrame(art::ShadowFrame*)
+0.07%     art::mirror::Class::FindVirtualMethodForVirtualOrInterface(art::ArtMethod*, art::PointerSize)
+0.07%     art::Thread::RequestCheckpoint(art::Closure*)
+0.07%     art::mirror::Class::FindInstanceField(std::__1::basic_string_view<char, std::__1::char_traits<char> >, std::__1::basic_string_view<char, std::__1::char_traits<char> >)
+0.07%     art::gc::collector::ConcurrentCopying::ThreadFlipVisitor::Run(art::Thread*)
+0.06%     art::mirror::Class::DescriptorEquals(char const*)
+0.06%     art::Primitive::Descriptor(art::Primitive::Type)
+0.06%     art::gc::ReferenceQueue::EnqueueReference(art::ObjPtr<art::mirror::Reference>)
+0.06%     art::Monitor::MonitorEnter(art::Thread*, art::ObjPtr<art::mirror::Object>, bool)
+0.06%     art_quick_alloc_object_initialized_region_tlab
+0.06%     art::(anonymous namespace)::ArgArray::BuildArgArrayFromVarArgs(art::ScopedObjectAccessAlreadyRunnable const&, art::ObjPtr<art::mirror::Object>, std::__va_list)
+0.06%     art::IndirectReferenceTable::VisitRoots(art::RootVisitor*, art::RootInfo const&)
+0.06%     art::gc::collector::ConcurrentCopying::RevokeThreadLocalMarkStackCheckpoint::Run(art::Thread*)
+0.06%     art::JNI::CallVoidMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)
+0.06%     bool art::hiddenapi::ShouldDenyAccessToMember<art::ArtField>(art::ArtField*, std::__1::function<art::hiddenapi::AccessContext ()> const&, art::hiddenapi::AccessMethod)
+0.06%     art::jit::JitCodeCache::SweepRootTables(art::IsMarkedVisitor*)
+0.05%     art::gc::ReferenceProcessor::DelayReferenceReferent(art::ObjPtr<art::mirror::Class>, art::ObjPtr<art::mirror::Reference>, art::gc::collector::GarbageCollector*)
+0.05%     art::gc::collector::ConcurrentCopying::ImmuneSpaceCaptureRefsVisitor::Callback(art::mirror::Object*, void*)
+0.05%     art::StackVisitor::GetCurrentQuickFrameInfo() const
+0.05%     art_quick_alloc_object_resolved_region_tlab
+0.05%     art::Monitor::MonitorExit(art::Thread*, art::ObjPtr<art::mirror::Object>)
+0.05%     art::ObjPtr<art::mirror::PrimitiveArray<float> > art::JNI::DecodeAndCheckArrayType<_jfloatArray*, float, art::mirror::PrimitiveArray<float> >(art::ScopedObjectAccess&, _jfloatArray*, char const*, char const*)
+0.05%     art::JNI::ReleaseStringCritical(_JNIEnv*, _jstring*, unsigned short const*)
+0.05%     art::mirror::Object* art::gc::Heap::AllocObjectWithAllocator<true, true, art::mirror::SetLengthVisitor>(art::Thread*, art::ObjPtr<art::mirror::Class>, unsigned long, art::gc::AllocatorType, art::mirror::SetLengthVisitor const&)
+0.05%     art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)
+0.05%     art::JNI::CallStaticObjectMethodV(_JNIEnv*, _jclass*, _jmethodID*, std::__va_list)
+0.05%     art::JNI::SetBooleanField(_JNIEnv*, _jobject*, _jfieldID*, unsigned char)
+0.05%     art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)
+0.04%     artAllocStringFromCharsFromCodeRegionTLAB
+0.04%     art::gc::collector::ConcurrentCopying::ReenableWeakRefAccess(art::Thread*)
+0.04%     bool art::mirror::ObjectArray<art::mirror::Object>::CheckAssignable<(art::VerifyObjectFlags)0>(art::ObjPtr<art::mirror::Object>)
+0.04%     art::InvokeMethod(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned long)
+0.04%     art::gc::ReferenceProcessor::GetReferent(art::Thread*, art::ObjPtr<art::mirror::Reference>)
+0.04%     art::JNI::NewStringUTF(_JNIEnv*, char const*)
+0.04%     art::Object_internalClone(_JNIEnv*, _jobject*)
+0.04%     art::gc::collector::ConcurrentCopying::DelayReferenceReferent(art::ObjPtr<art::mirror::Class>, art::ObjPtr<art::mirror::Reference>)
+0.04%     art::JNI::SetByteArrayRegion(_JNIEnv*, _jbyteArray*, int, int, signed char const*)
+0.04%     bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)
+0.04%     art::gc::ReferenceQueue::DequeuePendingReference()
+0.04%     art::JNI::NewObjectArray(_JNIEnv*, int, _jclass*, _jobject*)
+0.03%     art::gc::accounting::ModUnionTableReferenceCache::VisitObjects(void (*)(art::mirror::Object*, void*), void*)
+0.03%     art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)
+0.03%     art::ClassLinker::FindPrimitiveClass(char)
+0.03%     art::ConditionVariable::RequeueWaiters(int)
+0.03%     art::InternTable::SweepInternTableWeaks(art::IsMarkedVisitor*)
+0.03%     art::JNI::NewString(_JNIEnv*, unsigned short const*, int)
+0.03%     art::Thread::HandleScopeVisitRoots(art::RootVisitor*, int)
+0.03%     art::gc::Heap::AllocWithNewTLAB(art::Thread*, unsigned long, bool, unsigned long*, unsigned long*, unsigned long*)
+0.03%     art_quick_read_barrier_mark_introspection_arrays
+0.03%     art::gc::collector::ConcurrentCopying::ProcessMarkStackOnce()
+0.03%     MterpInvokeStatic
+0.03%     art::Thread::RequestEmptyCheckpoint()
+0.03%     art::mirror::String::AllocFromUtf16(art::Thread*, int, unsigned short const*)
+0.03%     art::gc::Heap::IsNonDiscontinuousSpaceHeapAddress(void const*) const
+0.03%     MterpInvokeVirtualQuick
+0.03%     void art::Monitor::Lock<(art::LockReason)1>(art::Thread*)
+0.03%     art::gc::Heap::TraceHeapSize(unsigned long)
+0.03%     art::(anonymous namespace)::ArgArray::BuildArgArrayFromObjectArray(art::ObjPtr<art::mirror::Object>, art::ObjPtr<art::mirror::ObjectArray<art::mirror::Object> >, art::ArtMethod*, art::Thread*)
+0.03%     art::interpreter::MterpHandleIntrinsic(art::ShadowFrame*, art::ArtMethod*, art::Instruction const*, unsigned short, art::JValue*)
+0.02%     art_quick_lock_object_no_inline
+0.02%     art::gc::collector::ConcurrentCopying::MarkingPhase()
+0.02%     art::ClassLinker::EnsureResolved(art::Thread*, char const*, art::ObjPtr<art::mirror::Class>)
+0.02%     art::Monitor::Unlock(art::Thread*)
+0.02%     art::gc::collector::ImmuneSpaces::CreateLargestImmuneRegion()
+0.02%     art::mirror::RecursiveCreateMultiArray(art::Thread*, art::Handle<art::mirror::Class>, int, art::Handle<art::mirror::PrimitiveArray<int> >)
+0.02%     art::JavaVMExt::DecodeGlobal(void*)
+0.02%     art::gc::collector::ConcurrentCopying::FinishPhase()
+0.02%     art::JNI::GetArrayLength(_JNIEnv*, _jarray*)
+0.02%     art::JNI::SetIntArrayRegion(_JNIEnv*, _jintArray*, int, int, int const*)
+0.02%     art::gc::ReferenceQueue::DisableReadBarrierForReference(art::ObjPtr<art::mirror::Reference>)
+0.02%     art::FetchStackTraceVisitor::VisitFrame()
+0.02%     art::Monitor::SignalContendersAndReleaseMonitorLock(art::Thread*)
+0.02%     art::ObjPtr<art::mirror::PrimitiveArray<int> > art::JNI::DecodeAndCheckArrayType<_jintArray*, int, art::mirror::PrimitiveArray<int> >(art::ScopedObjectAccess&, _jintArray*, char const*, char const*)
+0.02%     art::mirror::String::AllocFromModifiedUtf8(art::Thread*, char const*)
+0.02%     art_quick_invoke_static_stub
+0.02%     art::gc::Heap::IncrementDisableThreadFlip(art::Thread*)
+0.02%     _ZZN3art12StackVisitor9WalkStackILNS0_16CountTransitionsE0EZNKS_6Thread16GetCurrentMethodEPjbbE4$_76EEvRKT0_PS3_PNS_7ContextENS0_13StackWalkKindEbbEN18LambdaStackVisitor10VisitFrameEv$08fa14c93433ff77ec2a9d2c30e89af2
+0.02%     art::gc::space::ContinuousSpace::Contains(art::mirror::Object const*) const
+0.02%     art::mirror::Class::FindClassMethod(std::__1::basic_string_view<char, std::__1::char_traits<char> >, std::__1::basic_string_view<char, std::__1::char_traits<char> >, art::PointerSize)
+0.02%     MterpSetUpHotnessCountdown
+0.02%     art::gc::accounting::SpaceBitmap<4096ul>::CopyFrom(art::gc::accounting::SpaceBitmap<4096ul>*)
+0.02%     _ZNSt3__110__function6__funcIZN3artL24ShouldDenyAccessToMemberINS2_8ArtFieldEEEbPT_PNS2_6ThreadEEUlvE_NS_9allocatorIS9_EEFNS2_9hiddenapi13AccessContextEvEE7destroyEv$028cc27379dc909dbce06c0c3befc8e3
+0.02%     art::JNI::CallStaticIntMethodV(_JNIEnv*, _jclass*, _jmethodID*, std::__va_list)
+0.02%     art::JniMethodEnd(unsigned int, art::Thread*)
+0.02%     art::arm64::Arm64Context::GetGPRAddress(unsigned int)
+0.02%     art::JNI::ReleaseFloatArrayElements(_JNIEnv*, _jfloatArray*, float*, int)
+0.02%     art::gc::collector::ConcurrentCopying::GrayAllDirtyImmuneObjects()
+0.02%     art::Thread::SetIsGcMarkingAndUpdateEntrypoints(bool)
+0.02%     art::ClassLinker::FindArrayClass(art::Thread*, art::ObjPtr<art::mirror::Class>)
+0.01%     art::JniMethodEndWithReference(_jobject*, unsigned int, art::Thread*)
+0.01%     art::Thread::AssertNoPendingException() const
+0.01%     art::JNI::GetPrimitiveArrayCritical(_JNIEnv*, _jarray*, unsigned char*)
+0.01%     artQuickProxyInvokeHandler
+0.01%     art::ArtMethod::FindOverriddenMethod(art::PointerSize)
+0.01%     art::ObjPtr<art::mirror::PrimitiveArray<signed char> > art::JNI::DecodeAndCheckArrayType<_jbyteArray*, signed char, art::mirror::PrimitiveArray<signed char> >(art::ScopedObjectAccess&, _jbyteArray*, char const*, char const*)
+0.01%     art::gc::ReferenceQueue::ClearWhiteReferences(art::gc::ReferenceQueue*, art::gc::collector::GarbageCollector*)
+0.01%     art::ThreadList::SuspendThreadByThreadId(unsigned int, art::SuspendReason, bool*)
+0.01%     art::Reference_getReferent(_JNIEnv*, _jobject*)
+0.01%     art::GetResolvedMethod(art::ArtMethod*, art::CodeInfo const&, art::BitTableRange<art::InlineInfo> const&)
+0.01%     adler32_z
+0.01%     art::StackVisitor::GetMethod() const
+0.01%     art::ClassLinker::FindClass(art::Thread*, char const*, art::Handle<art::mirror::ClassLoader>)
+0.01%     art::mirror::Class::FindDeclaredVirtualMethodByName(std::__1::basic_string_view<char, std::__1::char_traits<char> >, art::PointerSize)
+0.01%     bool art::(anonymous namespace)::ProcessAnnotationValue<false>(art::(anonymous namespace)::ClassData const&, unsigned char const**, art::DexFile::AnnotationValue*, art::Handle<art::mirror::Class>, art::DexFile::AnnotationResultStyle)
+0.01%     art::StackVisitor::GetDexPc(bool) const
+0.01%     art::JNI::NewFloatArray(_JNIEnv*, int)
+0.01%     art::JNI::GetStaticObjectField(_JNIEnv*, _jclass*, _jfieldID*)
+0.01%     art::JNI::ReleasePrimitiveArrayCritical(_JNIEnv*, _jarray*, void*, int)
+0.01%     art::JNI::GetStringUTFChars(_JNIEnv*, _jstring*, unsigned char*)
+0.01%     art::JNI::GetIntArrayElements(_JNIEnv*, _jintArray*, unsigned char*)
+0.01%     art::(anonymous namespace)::ProcessEncodedAnnotation(art::(anonymous namespace)::ClassData const&, unsigned char const**) (.llvm.15404752105428799434)
+0.01%     std::__1::pair<std::__1::__tree_iterator<art::gc::space::AllocationInfo*, std::__1::__tree_node<art::gc::space::AllocationInfo*, void*>*, long>, bool> std::__1::__tree<art::gc::space::AllocationInfo*, art::gc::space::FreeListSpace::SortByPrevFree, std::__1::allocator<art::gc::space::AllocationInfo*> >::__emplace_unique_key_args<art::gc::space::AllocationInfo*, art::gc::space::AllocationInfo* const&>(art::gc::space::AllocationInfo* const&, art::gc::space::AllocationInfo* const&&&)
+0.01%     art::gc::space::ZeroAndProtectRegion(unsigned char*, unsigned char*) (.llvm.7094052394778463338)
+0.01%     art::gc::space::RegionSpace::ClearFromSpace(unsigned long*, unsigned long*, bool)
+0.01%     art::JniMethodFastEndWithReference(_jobject*, unsigned int, art::Thread*)
+0.01%     MterpInvokeVirtual
+0.01%     art::ReaderWriterMutex::ExclusiveUnlock(art::Thread*)
+0.01%     art::JNI::FindClass(_JNIEnv*, char const*)
+0.01%     art::Thread::SetFlipFunction(art::Closure*)
+0.01%     art::interpreter::EnterInterpreterFromEntryPoint(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame*)
+0.01%     art::gc::collector::ConcurrentCopying::SweepArray(art::gc::accounting::AtomicStack<art::mirror::Object>*, bool)
+0.01%     art::jit::Jit::MaybeCompileMethod(art::Thread*, art::ArtMethod*, unsigned int, unsigned int, bool)
+0.01%     art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobjectArray*)
+0.01%     art::gc::collector::ConcurrentCopying::GrayAllNewlyDirtyImmuneObjects()
+0.01%     art::JNI::SetObjectField(_JNIEnv*, _jobject*, _jfieldID*, _jobject*)
+0.01%     artAllocObjectFromCodeResolvedRegionTLAB
+0.01%     artQuickToInterpreterBridge
+0.01%     art::JNI::ReleaseBooleanArrayElements(_JNIEnv*, _jbooleanArray*, unsigned char*, int)
+0.01%     art::JniMethodFastEnd(unsigned int, art::Thread*)
+0.01%     art::gc::space::FreeListSpace::Alloc(art::Thread*, unsigned long, unsigned long*, unsigned long*, unsigned long*)
+0.01%     art::gc::space::RegionSpace::RevokeThreadLocalBuffers(art::Thread*)
+0.01%     art::gc::space::ContinuousMemMapAllocSpace::GetMarkBitmap() const
+0.01%     art::gc::Heap::MarkAllocStackAsLive(art::gc::accounting::AtomicStack<art::mirror::Object>*)
+0.01%     art::JavaVMExt::HandleGetEnv(void**, int)
+0.01%     art::gc::space::FreeListSpace::RemoveFreePrev(art::gc::space::AllocationInfo*)
+0.01%     art::Thread::CreatePeer(char const*, bool, _jobject*)
+0.01%     art::gc::collector::ConcurrentCopying::ProcessMarkStack()
+0.01%     art::String_fastSubstring(_JNIEnv*, _jobject*, int, int)
+0.01%     artLockObjectFromCode
+0.01%     art::InternTable::LookupStrong(art::Thread*, unsigned int, char const*)
+0.01%     art::gc::collector::ConcurrentCopying::CaptureThreadRootsForMarkingAndCheckpoint::Run(art::Thread*)
+0.01%     art_quick_indexof
+0.01%     MterpSGetObj
+0.01%     art::Runtime::IsActiveTransaction() const
+0.01%     artAllocObjectFromCodeInitializedRegionTLAB
+0.01%     art::InvokeProxyInvocationHandler(art::ScopedObjectAccessAlreadyRunnable&, char const*, _jobject*, _jobject*, std::__1::vector<jvalue, std::__1::allocator<jvalue> >&)
+0.01%     art::gc::accounting::ModUnionTableCardCache::VisitObjects(void (*)(art::mirror::Object*, void*), void*)
+0.01%     art::JNI::SetBooleanArrayRegion(_JNIEnv*, _jbooleanArray*, int, int, unsigned char const*)
+0.01%     art::CumulativeLogger::AddPair(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long)
+0.01%     art::annotations::GetInnerClassFlags(art::Handle<art::mirror::Class>, unsigned int*)
+0.01%     art::gc::space::RegionSpace::Contains(art::mirror::Object const*) const
+0.01%     art::(anonymous namespace)::ArgArray::BuildArgArrayFromJValues(art::ScopedObjectAccessAlreadyRunnable const&, art::ObjPtr<art::mirror::Object>, jvalue const*)
+0.01%     art::QuickArgumentVisitor::VisitArguments()
+0.01%     art::JNI::ExceptionCheck(_JNIEnv*)
+0.01%     art::UpdateReadBarrierEntrypoints(art::QuickEntryPoints*, bool)
+0.01%     art::gc::accounting::SpaceBitmap<8ul>::SweepWalk(art::gc::accounting::SpaceBitmap<8ul> const&, art::gc::accounting::SpaceBitmap<8ul> const&, unsigned long, unsigned long, void (*)(unsigned long, art::mirror::Object**, void*), void*)
+0.01%     art::gc::collector::ConcurrentCopying::MarkZygoteLargeObjects()
+0.01%     art::mirror::Object::IdentityHashCode()
+0.01%     art_quick_check_instance_of
+0.01%     mspace_malloc
+0.01%     art_quick_unlock_object_no_inline
+0.01%     art::gc::space::RegionSpace::SetFromSpace(art::gc::accounting::ReadBarrierTable*, art::gc::space::RegionSpace::EvacMode, bool)
+0.01%     art::ClassLinker::ShouldUseInterpreterEntrypoint(art::ArtMethod*, void const*)
+0.01%     art::(anonymous namespace)::SearchEncodedAnnotation(art::DexFile const&, unsigned char const*, char const*)
+0.01%     art::gc::ReferenceQueue::AtomicEnqueueIfNotEnqueued(art::Thread*, art::ObjPtr<art::mirror::Reference>)
+0.01%     artQuickResolutionTrampoline
+0.01%     art::BuildInternalStackTraceVisitor<false>::AddFrame(art::ArtMethod*, unsigned int)
+0.01%     art::IndirectReferenceTable::Trim()
+0.01%     art::jit::Jit::MethodEntered(art::Thread*, art::ArtMethod*)
+0.01%     art::gc::accounting::ModUnionTableReferenceCache::ProcessCards()
+0.01%     mterp_op_monitor_exit
+0.01%     artAllocArrayFromCodeResolvedRegionTLAB
+0.01%     art::JNI::GetByteArrayElements(_JNIEnv*, _jbyteArray*, unsigned char*)
+0.01%     art::JNI::GetFloatArrayElements(_JNIEnv*, _jfloatArray*, unsigned char*)
+0.01%     art::ArtMethod* art::ClassLinker::ResolveMethod<(art::ClassLinker::ResolveMode)0>(art::Thread*, unsigned int, art::ArtMethod*, art::InvokeType)
+0.01%     art_quick_to_interpreter_bridge
+0.01%     art_quick_alloc_array_resolved32_region_tlab
+0.01%     art::mirror::String::AllocFromModifiedUtf8(art::Thread*, int, char const*, int)
+0.01%     art::mirror::Class::FindStaticField(art::Thread*, art::ObjPtr<art::mirror::Class>, std::__1::basic_string_view<char, std::__1::char_traits<char> >, std::__1::basic_string_view<char, std::__1::char_traits<char> >)
+0.01%     art::ArtMethod* art::ClassLinker::ResolveMethod<(art::ClassLinker::ResolveMode)1>(art::Thread*, unsigned int, art::ArtMethod*, art::InvokeType)
+0.01%     art::Executable_getMethodNameInternal(_JNIEnv*, _jobject*)
+0.01%     art::JNIEnvExt::GetEnvHandler(art::JavaVMExt*, void**, int)
+0.01%     art::ReadBarrierJni(art::mirror::CompressedReference<art::mirror::Object>*, art::Thread*)
+0.00%     art::mirror::PrimitiveArray<float>::Alloc(art::Thread*, unsigned long)
+0.00%     art::JNI::CallObjectMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)
+0.00%     MterpCommonTakenBranchNoFlags
+0.00%     art::JNI::GetMethodID(_JNIEnv*, _jclass*, char const*, char const*)
+0.00%     _jobject* art::Thread::CreateInternalStackTrace<false>(art::ScopedObjectAccessAlreadyRunnable const&) const
+0.00%     art::Constructor_newInstance0(_JNIEnv*, _jobject*, _jobjectArray*)
+0.00%     art::GetCalleeSaveMethodCaller(art::ArtMethod**, art::CalleeSaveType, bool)
+0.00%     art::FindMethodID(art::ScopedObjectAccess&, _jclass*, char const*, char const*, bool)
+0.00%     art::Executable_getMethodReturnTypeInternal(_JNIEnv*, _jobject*)
+0.00%     art::Runtime::VisitImageRoots(art::RootVisitor*)
+0.00%     art::mirror::Array::CreateMultiArray(art::Thread*, art::Handle<art::mirror::Class>, art::Handle<art::mirror::PrimitiveArray<int> >)
+0.00%     art::JNI::GetBooleanArrayElements(_JNIEnv*, _jbooleanArray*, unsigned char*)
+0.00%     art::RuntimeCallbacks::MonitorContendedLocked(art::Monitor*)
+0.00%     art::ClassLinker::ResolveString(art::dex::StringIndex, art::ArtMethod*)
+0.00%     art::mirror::Object* art::gc::Heap::AllocLargeObject<false, art::mirror::SetLengthVisitor>(art::Thread*, art::ObjPtr<art::mirror::Class>*, unsigned long, art::mirror::SetLengthVisitor const&)
+0.00%     art::JNI::GetStaticFieldID(_JNIEnv*, _jclass*, char const*, char const*)
+0.00%     art::JNI::ReleasePrimitiveArray(art::ScopedObjectAccess&, art::ObjPtr<art::mirror::Array>, unsigned long, void*, int)
+0.00%     art::Thread::PopStackedShadowFrame(art::StackedShadowFrameType, bool)
+0.00%     art::JNI::ReleaseIntArrayElements(_JNIEnv*, _jintArray*, int*, int)
+0.00%     art::mirror::Object* art::gc::Heap::AllocObjectWithAllocator<true, true, art::mirror::SetStringCountAndValueVisitorFromString>(art::Thread*, art::ObjPtr<art::mirror::Class>, unsigned long, art::gc::AllocatorType, art::mirror::SetStringCountAndValueVisitorFromString const&)
+0.00%     art::ObjPtr<art::mirror::Constructor> art::mirror::Class::GetDeclaredConstructorInternal<(art::PointerSize)8, false>(art::Thread*, art::ObjPtr<art::mirror::Class>, art::ObjPtr<art::mirror::ObjectArray<art::mirror::Class> >)
+0.00%     art::ConditionVariable::Broadcast(art::Thread*)
+0.00%     art::InvokeConstructor(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ObjPtr<art::mirror::Object>, _jobject*)
+0.00%     art::gc::collector::ConcurrentCopying::VisitRoots(art::mirror::Object***, unsigned long, art::RootInfo const&)
+0.00%     art::gc::collector::ConcurrentCopying::CheckEmptyMarkStack()
+0.00%     art::VMRuntime_newUnpaddedArray(_JNIEnv*, _jobject*, _jclass*, int)
+0.00%     void std::__1::__tree_remove<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+0.00%     art::OatFile::GetBssGcRoots() const
+0.00%     art::Thread::QuickDeliverException()
+0.00%     art::gc::Heap::AddFinalizerReference(art::Thread*, art::ObjPtr<art::mirror::Object>*)
+0.00%     art::jit::JitCodeCache::ContainsPc(void const*) const
+0.00%     art::ResetQuickAllocEntryPoints(art::QuickEntryPoints*, bool)
+0.00%     void std::__1::vector<art::Thread*, std::__1::allocator<art::Thread*> >::__push_back_slow_path<art::Thread* const&>(art::Thread* const&&&)
+0.00%     art::JNI::GetFloatArrayRegion(_JNIEnv*, _jfloatArray*, int, int, float*)
+0.00%     art::interpreter::UseFastInterpreterToInterpreterInvoke(art::ArtMethod*)
+0.00%     art::StringFactory_newStringFromString(_JNIEnv*, _jclass*, _jstring*)
+0.00%     art::JniMethodFastStart(art::Thread*)
+0.00%     art::interpreter::MoveToExceptionHandler(art::Thread*, art::ShadowFrame&, art::instrumentation::Instrumentation const*)
+0.00%     art::JNI::GetByteArrayRegion(_JNIEnv*, _jbyteArray*, int, int, signed char*)
+0.00%     art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool) (.llvm.13319403877762172464)
+0.00%     art::annotations::GetAnnotationForClass(art::Handle<art::mirror::Class>, art::Handle<art::mirror::Class>)
+0.00%     art::UnboxPrimitive(art::ObjPtr<art::mirror::Object>, art::ObjPtr<art::mirror::Class>, art::ArtField*, art::JValue*) (.llvm.6289242522233504701)
+0.00%     art::CodeInfo::GetInlineInfosOf(art::StackMap) const
+0.00%     art::mirror::String::GetUtfLength()
+0.00%     mterp_op_invoke_static
+0.00%     art::(anonymous namespace)::GetAnnotationItemFromAnnotationSet(art::(anonymous namespace)::ClassData const&, art::dex::AnnotationSetItem const*, unsigned int, art::Handle<art::mirror::Class>) (.llvm.15404752105428799434)
+0.00%     art::CharsetUtils_toUtf8Bytes(_JNIEnv*, _jclass*, _jstring*, int, int)
+0.00%     art::gc::space::FreeListSpace::Free(art::Thread*, art::mirror::Object*)
+0.00%     art::Executable_getParameterTypesInternal(_JNIEnv*, _jobject*)
+0.00%     art::CodeInfo::GetCatchStackMapForDexPc(unsigned int) const
+0.00%     art::ResolveVerifyAndClinit(art::dex::TypeIndex, art::ArtMethod*, art::Thread*, bool, bool)
+0.00%     MterpAddHotnessBatch
+0.00%     art::ArtMethod::EqualParameters(art::Handle<art::mirror::ObjectArray<art::mirror::Class> >)
+0.00%     art::Histogram<unsigned long>::BucketiseValue(unsigned long)
+0.00%     MterpIPutObj
+0.00%     MterpInvokeInterface
+0.00%     art::ObjPtr<art::mirror::Constructor> art::mirror::Constructor::CreateFromArtMethod<(art::PointerSize)8, false>(art::Thread*, art::ArtMethod*)
+0.00%     mterp_op_check_cast
+0.00%     art::WellKnownClasses::ToClass(_jclass*)
+0.00%     art::JNI::IsInstanceOf(_JNIEnv*, _jobject*, _jclass*)
+0.00%     art::Class_getInnerClassFlags(_JNIEnv*, _jobject*, int)
+0.00%     art::mirror::Class::GetInnerClassFlags(art::Handle<art::mirror::Class>, int)
+0.00%     art::BuildQuickShadowFrameVisitor::Visit()
+0.00%     art::Monitor::GetHashCode()
+0.00%     art::CodeInfo::DecodeDexRegisterMap(unsigned int, unsigned int, art::DexRegisterMap*) const
+0.00%     art::ClassLinker::EnsureInitialized(art::Thread*, art::Handle<art::mirror::Class>, bool, bool)
+0.00%     art::ObjPtr<art::mirror::PrimitiveArray<long> > art::JNI::DecodeAndCheckArrayType<_jlongArray*, long, art::mirror::PrimitiveArray<long> >(art::ScopedObjectAccess&, _jlongArray*, char const*, char const*)
+0.00%     art::InvokeWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)
+0.00%     art::Monitor::Wait(art::Thread*, long, int, bool, art::ThreadState)
+0.00%     art::Array_createObjectArray(_JNIEnv*, _jclass*, _jclass*, int)
+0.00%     art::DoGetCalleeSaveMethodCaller(art::ArtMethod*, unsigned long, bool) (.llvm.7100672234758666098)
+0.00%     art_quick_alloc_array_resolved64_region_tlab
+0.00%     art::jit::Jit::CanInvokeCompiledCode(art::ArtMethod*)
+0.00%     art::ConditionVariable::Signal(art::Thread*)
+0.00%     art::mirror::Class::FindClassMethod(art::ObjPtr<art::mirror::DexCache>, unsigned int, art::PointerSize)
+0.00%     art::mirror::Object* art::gc::Heap::AllocObjectWithAllocator<true, true, art::mirror::SetLengthToUsableSizeVisitor>(art::Thread*, art::ObjPtr<art::mirror::Class>, unsigned long, art::gc::AllocatorType, art::mirror::SetLengthToUsableSizeVisitor const&)
+0.00%     mterp_op_invoke_virtual
+0.00%     art::BuildQuickArgumentVisitor::Visit()
+0.00%     art::ConditionVariable::Wait(art::Thread*)
+0.00%     art::ArtMethod* art::ClassLinker::ResolveMethod<(art::ClassLinker::ResolveMode)0>(unsigned int, art::Handle<art::mirror::DexCache>, art::Handle<art::mirror::ClassLoader>, art::ArtMethod*, art::InvokeType)
+0.00%     art_quick_alloc_string_from_chars_region_tlab
+0.00%     void art::CheckedCall<int (void*, unsigned long, int), unsigned char*, unsigned long, int>(int  const(&)(void*, unsigned long, int), char const*, unsigned char*, unsigned long, int) (.llvm.7094052394778463338)
+0.00%     bool art::ClassLinker::CheckInvokeClassMismatch<true, bool art::ClassLinker::CheckInvokeClassMismatch<true>(art::ObjPtr<art::mirror::DexCache>, art::InvokeType, unsigned int, art::ObjPtr<art::mirror::ClassLoader>)::'lambda'()>(art::ObjPtr<art::mirror::DexCache>, art::InvokeType, bool art::ClassLinker::CheckInvokeClassMismatch<true>(art::ObjPtr<art::mirror::DexCache>, art::InvokeType, unsigned int, art::ObjPtr<art::mirror::ClassLoader>)::'lambda'())
+0.00%     MterpReturn
+0.00%     art::BuildInternalStackTraceVisitor<false>::Init(int)
+0.00%     art::gc::Heap::DecrementDisableThreadFlip(art::Thread*)
+0.00%     art::GetClassesVisitor::operator()(art::ObjPtr<art::mirror::Class>)
+0.00%     MterpInvokeDirect
+0.00%     art::JNI::GetStringChars(_JNIEnv*, _jstring*, unsigned char*)
+0.00%     art::JNI::SetLongArrayRegion(_JNIEnv*, _jlongArray*, int, int, long const*)
+0.00%     art::Thread::Unpark()
+0.00%     MterpCheckCast
+0.00%     art::Thread::Park(bool, long)
+0.00%     art::ProfileSaver::FetchAndCacheResolvedClassesAndMethods(bool)
+0.00%     art::ThreadList::Register(art::Thread*)
+0.00%     art::RuntimeCallbacks::ThreadParkFinished(bool)
+0.00%     ExecuteMterpImpl
+0.00%     art::VdexFile::GetQuickenedInfoOf(art::DexFile const&, unsigned int) const
+0.00%     art::gc::space::RegionSpace::AllocNewTlab(art::Thread*, unsigned long)
+0.00%     art::ConditionVariable::WaitHoldingLocks(art::Thread*)
+0.00%     art::Monitor::Wait(art::Thread*, art::ObjPtr<art::mirror::Object>, long, int, bool, art::ThreadState)
+0.00%     void art::Monitor::Lock<(art::LockReason)0>(art::Thread*)
+0.00%     art::Unsafe_park(_JNIEnv*, _jobject*, unsigned char, long)

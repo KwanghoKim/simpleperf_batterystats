@@ -1,0 +1,316 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 100 --call-graph fp --app com.zamface
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 91720
+Event count: 135865288130
+
+Overhead  Tid    Command
+27.32%    23790  FrameProcessing
+14.69%    18657  glide-animation
+14.65%    18658  glide-animation
+13.71%    15211  HeapTaskDaemon
+9.71%     15311  mqt_js
+4.54%     15278  RenderThread
+4.02%     23778  GLThread 2003
+3.40%     15215  Binder:15197_1
+3.15%     15312  mqt_native_modu
+2.18%     15197  com.zamface
+0.71%     18029  Binder:15197_5
+0.32%     15370  glide-disk-cach
+0.18%     15382  glide-source-th
+0.17%     15305  HybridData Dest
+0.15%     15437  CountlyConnecti
+0.12%     15313  hades
+0.11%     15384  glide-source-th
+0.09%     15391  glide-source-th
+0.07%     23789  CameraHandlerTh
+0.05%     15434  Countly_cmd
+0.05%     15229  pool-12-thread-
+0.03%     15289  FrameMetricsAgg
+0.03%     25973  Measurement Wor
+0.03%     15213  FinalizerDaemon
+0.02%     23791  MakeupCamIntern
+0.02%     15418  RxSchedulerPurg
+0.02%     15212  ReferenceQueueD
+0.01%     23551  alhost:3000/...
+0.01%     15210  Jit thread pool
+0.01%     15219  Profile Saver
+0.01%     15335  logThread
+0.01%     15291  pool-4-thread-1
+0.01%     15383  glide-source-th
+0.01%     23776  PfRxCachedThrea
+0.01%     15252  AsyncTask #1
+0.01%     15512  PfRxCachedThrea
+0.01%     23757  PfRxCachedThrea
+0.01%     20737  PfRxCachedThrea
+0.01%     23551  mface.co.kr/...
+0.01%     20731  PfRxCachedThrea
+0.01%     23692  PfRxCachedThrea
+0.01%     23697  PfRxCachedThrea
+0.01%     23765  PfRxCachedThrea
+0.01%     15657  PfRxCachedThrea
+0.01%     23761  PfRxCachedThrea
+0.01%     15336  httpThread
+0.01%     23758  PfRxCachedThrea
+0.01%     23694  PfRxCachedThrea
+0.01%     25089  mface.co.kr/...
+0.01%     20734  PfRxCachedThrea
+0.01%     24784  mface.co.kr/...
+0.01%     26475  mface.co.kr/...
+0.01%     24477  mface.co.kr/...
+0.01%     26014  mface.co.kr/...
+0.01%     23770  PfRxCachedThrea
+0.01%     23773  PfRxCachedThrea
+0.00%     25704  mface.co.kr/...
+0.00%     24170  mface.co.kr/...
+0.00%     26812  mface.co.kr/...
+0.00%     25396  mface.co.kr/...
+0.00%     15218  Binder:15197_4
+0.00%     23726  PfRxCachedThrea
+0.00%     23682  PfRxCachedThrea
+0.00%     23688  PfRxCachedThrea
+0.00%     20805  PfRxCachedThrea
+0.00%     26783  mface.co.kr/...
+0.00%     23701  PfRxCachedThrea
+0.00%     15658  PfRxCachedThrea
+0.00%     23792  MakeupCamIntern
+0.00%     23672  PfRxCachedThrea
+0.00%     23749  PfRxCachedThrea
+0.00%     15435  CLFlurryAgentHe
+0.00%     15656  PfRxCachedThrea
+0.00%     23746  PfRxCachedThrea
+0.00%     15652  PfRxCachedThrea
+0.00%     23669  PfRxCachedThrea
+0.00%     23736  PfRxCachedThrea
+0.00%     20775  PfRxCachedThrea
+0.00%     23709  PfRxCachedThrea
+0.00%     23687  PfRxCachedThrea
+0.00%     20742  PfRxCachedThrea
+0.00%     23760  PfRxCachedThrea
+0.00%     20808  PfRxCachedThrea
+0.00%     15588  PfRxCachedThrea
+0.00%     15590  PfRxCachedThrea
+0.00%     20724  PfRxCachedThrea
+0.00%     23700  PfRxCachedThrea
+0.00%     20738  PfRxCachedThrea
+0.00%     23738  PfRxCachedThrea
+0.00%     23754  PfRxCachedThrea
+0.00%     23686  PfRxCachedThrea
+0.00%     23739  PfRxCachedThrea
+0.00%     23722  PfRxCachedThrea
+0.00%     20809  PfRxCachedThrea
+0.00%     23663  PfRxCachedThrea
+0.00%     23670  PfRxCachedThrea
+0.00%     20725  PfRxCachedThrea
+0.00%     20803  PfRxCachedThrea
+0.00%     20733  PfRxCachedThrea
+0.00%     23704  PfRxCachedThrea
+0.00%     23703  PfRxCachedThrea
+0.00%     23766  PfRxCachedThrea
+0.00%     23730  PfRxCachedThrea
+0.00%     23707  PfRxCachedThrea
+0.00%     23676  PfRxCachedThrea
+0.00%     23708  PfRxCachedThrea
+0.00%     15272  queued-work-loo
+0.00%     23768  PfRxCachedThrea
+0.00%     23698  PfRxCachedThrea
+0.00%     23745  PfRxCachedThrea
+0.00%     23771  PfRxCachedThrea
+0.00%     23596  OkHttp Connecti
+0.00%     20801  PfRxCachedThrea
+0.00%     20806  PfRxCachedThrea
+0.00%     20726  PfRxCachedThrea
+0.00%     15659  PfRxCachedThrea
+0.00%     23767  PfRxCachedThrea
+0.00%     23695  PfRxCachedThrea
+0.00%     23690  PfRxCachedThrea
+0.00%     23683  PfRxCachedThrea
+0.00%     23774  PfRxCachedThrea
+0.00%     15348  .cloudfront.net
+0.00%     20722  PfRxCachedThrea
+0.00%     23755  PfRxCachedThrea
+0.00%     23775  PfRxCachedThrea
+0.00%     15661  PfRxCachedThrea
+0.00%     20810  PfRxCachedThrea
+0.00%     15655  PfRxCachedThrea
+0.00%     23671  PfRxCachedThrea
+0.00%     23719  PfRxCachedThrea
+0.00%     23751  PfRxCachedThrea
+0.00%     15496  PfRxCachedThrea
+0.00%     23748  PfRxCachedThrea
+0.00%     15561  PfRxCachedThrea
+0.00%     20739  PfRxCachedThrea
+0.00%     23666  PfRxCachedThrea
+0.00%     26789  OkHttp Dispatch
+0.00%     23551  udfront.net/...
+0.00%     23737  PfRxCachedThrea
+0.00%     20730  PfRxCachedThrea
+0.00%     15513  PfRxCachedThrea
+0.00%     23728  PfRxCachedThrea
+0.00%     26768  udfront.net/...
+0.00%     20735  PfRxCachedThrea
+0.00%     23693  PfRxCachedThrea
+0.00%     23551  OkHttp Dispatch
+0.00%     26812  OkHttp Dispatch
+0.00%     20804  PfRxCachedThrea
+0.00%     25974  firebase-instal
+0.00%     23763  PfRxCachedThrea
+0.00%     20727  PfRxCachedThrea
+0.00%     23733  PfRxCachedThrea
+0.00%     20723  PfRxCachedThrea
+0.00%     15340  OkHttp TaskRunn
+0.00%     15263  OkHttp Connecti
+0.00%     15345  OkHttp Connecti
+0.00%     23721  PfRxCachedThrea
+0.00%     20732  PfRxCachedThrea
+0.00%     23667  PfRxCachedThrea
+0.00%     23779  PfRxCachedThrea
+0.00%     20800  PfRxCachedThrea
+0.00%     23715  PfRxCachedThrea
+0.00%     23677  PfRxCachedThrea
+0.00%     23713  PfRxCachedThrea
+0.00%     23753  PfRxCachedThrea
+0.00%     15340  OkHttp Connecti
+0.00%     23424  OkHttp TaskRunn
+0.00%     23684  PfRxCachedThrea
+0.00%     15227  Crashlytics Exc
+0.00%     23706  PfRxCachedThrea
+0.00%     15331  p yt3.ggpht.com
+0.00%     15654  PfRxCachedThrea
+0.00%     23424  i.zamface.co.kr
+0.00%     23731  PfRxCachedThrea
+0.00%     15345  OkHttp TaskRunn
+0.00%     23769  PfRxCachedThrea
+0.00%     23724  PfRxCachedThrea
+0.00%     23743  PfRxCachedThrea
+0.00%     20729  PfRxCachedThrea
+0.00%     23777  PfRxCachedThrea
+0.00%     23725  PfRxCachedThrea
+0.00%     15660  PfRxCachedThrea
+0.00%     25975  firebase-instal
+0.00%     23712  PfRxCachedThrea
+0.00%     20741  PfRxCachedThrea
+0.00%     15419  PfRxCachedWorke
+0.00%     26789  udfront.net/...
+0.00%     23664  PfRxCachedThrea
+0.00%     23596  i.zamface.co.kr
+0.00%     23696  PfRxCachedThrea
+0.00%     26788  udfront.net/...
+0.00%     23772  PfRxCachedThrea
+0.00%     23632  Measurement Wor
+0.00%     20736  PfRxCachedThrea
+0.00%     20721  PfRxCachedThrea
+0.00%     23705  PfRxCachedThrea
+0.00%     15662  PfRxCachedThrea
+0.00%     23742  PfRxCachedThrea
+0.00%     20799  PfRxCachedThrea
+0.00%     23717  PfRxCachedThrea
+0.00%     23720  PfRxCachedThrea
+0.00%     15685  hwuiTask0
+0.00%     23747  PfRxCachedThrea
+0.00%     15686  hwuiTask1
+0.00%     20807  PfRxCachedThrea
+0.00%     15345  .ggpht.com ping
+0.00%     23711  PfRxCachedThrea
+0.00%     15499  PfRxCachedThrea
+0.00%     23691  PfRxCachedThrea
+0.00%     15340  .ggpht.com ping
+0.00%     15326  CookieMonsterCl
+0.00%     20728  PfRxCachedThrea
+0.00%     15303  Timer-0
+0.00%     23710  PfRxCachedThrea
+0.00%     20776  PfRxCachedThrea
+0.00%     23716  PfRxCachedThrea
+0.00%     23685  PfRxCachedThrea
+0.00%     23596  OkHttp TaskRunn
+0.00%     23678  PfRxCachedThrea
+0.00%     23752  PfRxCachedThrea
+0.00%     23689  PfRxCachedThrea
+0.00%     23750  PfRxCachedThrea
+0.00%     15493  PfRxCachedThrea
+0.00%     23762  PfRxCachedThrea
+0.00%     23718  PfRxCachedThrea
+0.00%     23759  PfRxCachedThrea
+0.00%     23699  PfRxCachedThrea
+0.00%     23646  RequestFactoryE
+0.00%     23756  PfRxCachedThrea
+0.00%     15214  FinalizerWatchd
+0.00%     20778  PfRxCachedThrea
+0.00%     23764  PfRxCachedThrea
+0.00%     15332  Okio Watchdog
+0.00%     15589  PfRxCachedThrea
+0.00%     15366  glide-active-re
+0.00%     23651  RequestFactoryE
+0.00%     23714  PfRxCachedThrea
+0.00%     23681  PfRxCachedThrea
+0.00%     23788  PfRxCachedThrea
+0.00%     23645  RequestFactoryE
+0.00%     23729  PfRxCachedThrea
+0.00%     20777  PfRxCachedThrea
+0.00%     15574  PfRxCachedThrea
+0.00%     20811  PfRxCachedThrea
+0.00%     23637  firebase-instal
+0.00%     23642  RequestFactoryE
+0.00%     23648  RequestFactoryE
+0.00%     23673  PfRxCachedThrea
+0.00%     23735  PfRxCachedThrea
+0.00%     23787  PfRxCachedThrea
+0.00%     20740  PfRxCachedThrea
+0.00%     15319  Okio Watchdog
+0.00%     23424  2.amplitude.com
+0.00%     23665  PfRxCachedThrea
+0.00%     26768  OkHttp Dispatch
+0.00%     23780  PfRxCachedThrea
+0.00%     23785  PfRxCachedThrea
+0.00%     20802  PfRxCachedThrea
+0.00%     23647  RequestFactoryE
+0.00%     23744  PfRxCachedThrea
+0.00%     23727  PfRxCachedThrea
+0.00%     23680  PfRxCachedThrea
+0.00%     23650  RequestFactoryE
+0.00%     23781  PfRxCachedThrea
+0.00%     23784  PfRxCachedThrea
+0.00%     26768  glide-source-th
+0.00%     15274  DefaultDispatch
+0.00%     23675  PfRxCachedThrea
+0.00%     23786  PfRxCachedThrea
+0.00%     23741  PfRxCachedThrea
+0.00%     23640  RequestFactoryE
+0.00%     20743  PfRxCachedThrea
+0.00%     23723  PfRxCachedThrea
+0.00%     23649  RequestFactoryE
+0.00%     20720  PfRxCachedThrea
+0.00%     15368  DefaultDispatch
+0.00%     23702  PfRxCachedThrea
+0.00%     23674  PfRxCachedThrea
+0.00%     23641  RequestFactoryE
+0.00%     26768  3.ggpht.com/...
+0.00%     23679  PfRxCachedThrea
+0.00%     23668  PfRxCachedThrea
+0.00%     23734  PfRxCachedThrea
+0.00%     15575  PfRxCachedThrea
+0.00%     20812  PfRxCachedThrea
+0.00%     20798  PfRxCachedThrea
+0.00%     15663  PfRxCachedThrea
+0.00%     23644  RequestFactoryE
+0.00%     23652  RequestFactoryE
+0.00%     26789  glide-source-th
+0.00%     23653  RequestFactoryE
+0.00%     15653  PfRxCachedThrea
+0.00%     23636  firebase-instal
+0.00%     20744  PfRxCachedThrea
+0.00%     23732  PfRxCachedThrea
+0.00%     23631  ScionFrontendAp
+0.00%     15343  OkHttp TaskRunn
+0.00%     23633  RequestFactoryE
+0.00%     23740  PfRxCachedThrea
+0.00%     23783  PfRxCachedThrea
+0.00%     15286  DefaultDispatch
+0.00%     15341  OkHttp TaskRunn
+0.00%     23782  PfRxCachedThrea
+0.00%     23643  RequestFactoryE
+0.00%     15285  DefaultDispatch
+0.00%     15367  DefaultDispatch
+0.00%     15273  DefaultDispatch
+0.00%     15275  DefaultDispatch
+0.00%     15606  PfRxCachedThrea

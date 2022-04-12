@@ -1,0 +1,243 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 100 --call-graph fp --app com.zamface
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 89198
+Event count: 116657455960
+
+Overhead  Tid    Command
+29.00%    13331  FrameProcessing
+12.54%    12483  mqt_js
+12.18%    32045  glide-animation
+11.97%    32066  glide-animation
+7.49%     12154  HeapTaskDaemon
+5.29%     12496  mqt_native_modu
+4.47%     12365  RenderThread
+4.46%     13131  GLThread 747915
+3.05%     12133  com.zamface
+1.77%     15011  Binder:12133_6
+1.19%     12530  Binder:12133_4
+1.07%     13161  PfRxCachedThrea
+0.92%     17408  RenderThread
+0.79%     12861  Binder:12133_5
+0.60%     12153  Jit thread pool
+0.29%     17411  glide-source-th
+0.27%     17406  RenderThread
+0.24%     12447  HybridData Dest
+0.22%     6017   CountlyConnecti
+0.18%     17409  glide-source-th
+0.16%     17413  glide-source-th
+0.15%     17392  glide-disk-cach
+0.14%     12175  Profile Saver
+0.14%     15646  pool-6-thread-1
+0.13%     12232  pool-13-thread-
+0.13%     12497  hades
+0.08%     13330  CameraHandlerTh
+0.07%     5996   Countly_cmd
+0.06%     12407  FrameMetricsAgg
+0.05%     17412  glide-source-th
+0.05%     12408  pool-4-thread-1
+0.03%     8333   Measurement Wor
+0.03%     13334  MakeupCamIntern
+0.03%     12155  ReferenceQueueD
+0.02%     12778  alhost:3000/...
+0.02%     12778  mface.co.kr/...
+0.02%     11725  PfRxCachedThrea
+0.02%     12752  logThread
+0.02%     2831   RenderThread
+0.02%     13260  RenderThread
+0.02%     32022  RenderThread
+0.01%     5317   RxSchedulerPurg
+0.01%     11676  PfRxCachedThrea
+0.01%     17577  AsyncTask #8
+0.01%     32513  mface.co.kr/...
+0.01%     13335  MakeupCamIntern
+0.01%     11762  PfRxCachedThrea
+0.01%     15647  pool-7-thread-1
+0.01%     14359  mface.co.kr/...
+0.01%     7766   mface.co.kr/...
+0.01%     12789  OkHttp Connecti
+0.01%     11969  mface.co.kr/...
+0.01%     5662   mface.co.kr/...
+0.01%     27813  mface.co.kr/...
+0.01%     11600  PfRxCachedThrea
+0.01%     11801  PfRxCachedThrea
+0.01%     30221  mface.co.kr/...
+0.01%     11660  PfRxCachedThrea
+0.01%     11499  PfRxCachedThrea
+0.01%     3520   mface.co.kr/...
+0.01%     11520  PfRxCachedThrea
+0.01%     5997   CLFlurryAgentHe
+0.01%     11767  PfRxCachedThrea
+0.01%     11661  PfRxCachedThrea
+0.01%     25389  mface.co.kr/...
+0.01%     11567  PfRxCachedThrea
+0.01%     11768  PfRxCachedThrea
+0.01%     11177  PfRxCachedThrea
+0.01%     11753  PfRxCachedThrea
+0.01%     11669  PfRxCachedThrea
+0.01%     9731   mface.co.kr/...
+0.01%     11758  PfRxCachedThrea
+0.01%     6015   PfRxCachedThrea
+0.01%     11582  PfRxCachedThrea
+0.01%     11578  PfRxCachedThrea
+0.01%     11546  PfRxCachedThrea
+0.01%     11577  PfRxCachedThrea
+0.01%     11726  PfRxCachedThrea
+0.01%     12778  udfront.net/...
+0.01%     6018   PfRxCachedThrea
+0.01%     11528  PfRxCachedThrea
+0.01%     11688  PfRxCachedThrea
+0.01%     11519  PfRxCachedThrea
+0.01%     11525  PfRxCachedThrea
+0.01%     11570  PfRxCachedThrea
+0.01%     11763  PfRxCachedThrea
+0.01%     11562  PfRxCachedThrea
+0.01%     11530  PfRxCachedThrea
+0.01%     11693  PfRxCachedThrea
+0.01%     11588  PfRxCachedThrea
+0.01%     11683  PfRxCachedThrea
+0.01%     11694  PfRxCachedThrea
+0.01%     6038   PfRxCachedThrea
+0.00%     11689  PfRxCachedThrea
+0.00%     11573  PfRxCachedThrea
+0.00%     11765  PfRxCachedThrea
+0.00%     11750  PfRxCachedThrea
+0.00%     11586  PfRxCachedThrea
+0.00%     11529  PfRxCachedThrea
+0.00%     12156  FinalizerDaemon
+0.00%     11496  PfRxCachedThrea
+0.00%     11536  PfRxCachedThrea
+0.00%     11522  PfRxCachedThrea
+0.00%     11180  PfRxCachedThrea
+0.00%     11695  PfRxCachedThrea
+0.00%     11178  PfRxCachedThrea
+0.00%     11584  PfRxCachedThrea
+0.00%     11569  PfRxCachedThrea
+0.00%     11535  PfRxCachedThrea
+0.00%     12978  .cloudfront.net
+0.00%     11718  PfRxCachedThrea
+0.00%     11799  PfRxCachedThrea
+0.00%     11572  PfRxCachedThrea
+0.00%     5322   PfRxCachedThrea
+0.00%     12274  queued-work-loo
+0.00%     11509  PfRxCachedThrea
+0.00%     11564  PfRxCachedThrea
+0.00%     11760  PfRxCachedThrea
+0.00%     11533  PfRxCachedThrea
+0.00%     11793  PfRxCachedThrea
+0.00%     11759  PfRxCachedThrea
+0.00%     11552  PfRxCachedThrea
+0.00%     5988   PfRxCachedThrea
+0.00%     11563  PfRxCachedThrea
+0.00%     11787  PfRxCachedThrea
+0.00%     6016   PfRxCachedThrea
+0.00%     11181  PfRxCachedThrea
+0.00%     11796  PfRxCachedThrea
+0.00%     11692  PfRxCachedThrea
+0.00%     11724  PfRxCachedThrea
+0.00%     11524  PfRxCachedThrea
+0.00%     11575  PfRxCachedThrea
+0.00%     11755  PfRxCachedThrea
+0.00%     26693  RenderThread
+0.00%     32023  RenderThread
+0.00%     6024   PfRxCachedThrea
+0.00%     13485  udfront.net/...
+0.00%     2840   RenderThread
+0.00%     11674  PfRxCachedThrea
+0.00%     11677  PfRxCachedThrea
+0.00%     11527  PfRxCachedThrea
+0.00%     11521  PfRxCachedThrea
+0.00%     11517  PfRxCachedThrea
+0.00%     11549  PfRxCachedThrea
+0.00%     11756  PfRxCachedThrea
+0.00%     11780  PfRxCachedThrea
+0.00%     13261  RenderThread
+0.00%     11786  PfRxCachedThrea
+0.00%     11507  PfRxCachedThrea
+0.00%     11795  PfRxCachedThrea
+0.00%     11558  PfRxCachedThrea
+0.00%     11491  PfRxCachedThrea
+0.00%     11679  PfRxCachedThrea
+0.00%     11659  PfRxCachedThrea
+0.00%     11503  PfRxCachedThrea
+0.00%     12778  OkHttp Dispatch
+0.00%     13313  udfront.net/...
+0.00%     11722  PfRxCachedThrea
+0.00%     12754  httpThread
+0.00%     11776  PfRxCachedThrea
+0.00%     15648  pool-5-thread-1
+0.00%     11568  PfRxCachedThrea
+0.00%     11769  PfRxCachedThrea
+0.00%     13487  udfront.net/...
+0.00%     11721  PfRxCachedThrea
+0.00%     11580  PfRxCachedThrea
+0.00%     13486  udfront.net/...
+0.00%     11581  PfRxCachedThrea
+0.00%     11179  PfRxCachedThrea
+0.00%     11513  PfRxCachedThrea
+0.00%     11766  PfRxCachedThrea
+0.00%     11531  PfRxCachedThrea
+0.00%     11662  PfRxCachedThrea
+0.00%     11523  PfRxCachedThrea
+0.00%     11518  PfRxCachedThrea
+0.00%     11686  PfRxCachedThrea
+0.00%     11565  PfRxCachedThrea
+0.00%     12814  i.zamface.co.kr
+0.00%     11579  PfRxCachedThrea
+0.00%     6020   PfRxCachedThrea
+0.00%     11761  PfRxCachedThrea
+0.00%     17789  p yt3.ggpht.com
+0.00%     11685  PfRxCachedThrea
+0.00%     11798  PfRxCachedThrea
+0.00%     11687  PfRxCachedThrea
+0.00%     12267  Crashlytics Exc
+0.00%     11534  PfRxCachedThrea
+0.00%     11532  PfRxCachedThrea
+0.00%     13084  Timer-10
+0.00%     12279  OkHttp Connecti
+0.00%     13313  3.ggpht.com/...
+0.00%     11510  PfRxCachedThrea
+0.00%     11526  PfRxCachedThrea
+0.00%     12668  CookieMonsterCl
+0.00%     13329  hwuiTask1
+0.00%     11690  PfRxCachedThrea
+0.00%     11764  PfRxCachedThrea
+0.00%     11576  PfRxCachedThrea
+0.00%     11729  PfRxCachedThrea
+0.00%     11728  PfRxCachedThrea
+0.00%     11731  PfRxCachedThrea
+0.00%     12814  OkHttp TaskRunn
+0.00%     12814  OkHttp Connecti
+0.00%     11566  PfRxCachedThrea
+0.00%     11571  PfRxCachedThrea
+0.00%     12157  FinalizerWatchd
+0.00%     11182  PfRxCachedThrea
+0.00%     12789  i.zamface.co.kr
+0.00%     12787  2.amplitude.com
+0.00%     11541  PfRxCachedThrea
+0.00%     12713  Okio Watchdog
+0.00%     11717  PfRxCachedThrea
+0.00%     11515  PfRxCachedThrea
+0.00%     17840  OkHttp TaskRunn
+0.00%     12230  ScionFrontendAp
+0.00%     12789  OkHttp TaskRunn
+0.00%     13328  hwuiTask0
+0.00%     11727  PfRxCachedThrea
+0.00%     24650  OkHttp TaskRunn
+0.00%     13485  glide-source-th
+0.00%     11730  PfRxCachedThrea
+0.00%     11583  PfRxCachedThrea
+0.00%     6878   IdSystemDataHel
+0.00%     15373  DefaultDispatch
+0.00%     17383  glide-active-re
+0.00%     15374  DefaultDispatch
+0.00%     12361  DefaultDispatch
+0.00%     12369  Okio Watchdog
+0.00%     15375  DefaultDispatch
+0.00%     12363  DefaultDispatch
+0.00%     12359  DefaultDispatch
+0.00%     12372  pool-28-thread-
+0.00%     13313  glide-source-th
+0.00%     12360  DefaultDispatch
+0.00%     15376  DefaultDispatch
+0.00%     5318   PfRxCachedWorke

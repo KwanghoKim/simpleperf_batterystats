@@ -1,0 +1,603 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 100 --call-graph fp --app com.zamface
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 14334
+Event count: 33423889911
+
+Overhead  Symbol
+58.25%    neon::S32_alpha_D32_filter_DX(SkBitmapProcState const&, unsigned int const*, int, unsigned int*)
+26.20%    void filter_scale<&(clamp(int, int)), &(clamp(int, int)), &(extract_low_bits_clamp_clamp(int, int)), true>(SkBitmapProcState const&, unsigned int*, int, int, int)
+3.33%     neon::blit_row_s32a_opaque(unsigned int*, unsigned int const*, int, unsigned int)
+2.16%     neon::RGBA_to_bgrA(unsigned int*, unsigned int const*, int)
+1.40%     android::uirenderer::RenderNode::prepareTreeImpl(android::uirenderer::TreeObserver&, android::uirenderer::TreeInfo&, bool)
+1.15%     android::uirenderer::skiapipeline::SkiaDisplayList::prepareListAndChildren(android::uirenderer::TreeObserver&, android::uirenderer::TreeInfo&, bool, std::__1::function<void (android::uirenderer::RenderNode*, android::uirenderer::TreeObserver&, android::uirenderer::TreeInfo&, bool)>)
+0.69%     BitmapProcShaderContext::shadeSpan(int, int, unsigned int*, int)
+0.52%     android::uirenderer::skiapipeline::RenderNodeDrawable::drawContent(SkCanvas*) const
+0.36%     SkCanvas::onDrawTextBlob(SkTextBlob const*, float, float, SkPaint const&)
+0.27%     neon::rect_memset32(unsigned int*, unsigned int, int, unsigned long, int)
+0.24%     android::uirenderer::skiapipeline::StartReorderBarrierDrawable::onDraw(SkCanvas*)
+0.23%     SkCanvas::restoreToCount(int)
+0.19%     android::uirenderer::skiapipeline::EndReorderBarrierDrawable::onDraw(SkCanvas*)
+0.18%     SkCanvas::translate(float, float)
+0.16%     android::uirenderer::skiapipeline::RenderNodeDrawable::onDraw(SkCanvas*)
+0.15%     SkMatrix::Scale_xy(SkMatrix const&, float, float, SkPoint*)
+0.13%     GrTextBlob::mustRegenerate(SkPaint const&, bool, SkMaskFilterBase::BlurRec const&, SkMatrix const&, SkPoint)
+0.12%     android::uirenderer::$_24::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.12%     @plt
+0.12%     android::uirenderer::DamageAccumulator::popTransform()
+0.09%     SkBitmapProcState::maxCountForBufferSize(unsigned long) const
+0.08%     GrBitmapTextureMaker::GrBitmapTextureMaker(GrRecordingContext*, SkBitmap const&, GrBitmapTextureMaker::Cached, SkBackingFit, bool)
+0.08%     _ZN12_GLOBAL__N_114AAConvexPathOp14onPrepareDrawsEPN12GrMeshDrawOp6TargetE$13aac768fe222e8b89565d2273dcad6d
+0.08%     SkCanvas::clipRect(SkRect const&, SkClipOp, bool)
+0.08%     GrTextContext::drawGlyphRunList(GrRecordingContext*, GrTextTarget*, GrClip const&, SkMatrix const&, SkSurfaceProps const&, SkGlyphRunList const&)
+0.07%     SkARGB32_Shader_Blitter::blitRect(int, int, int, int)
+0.07%     GrTextBlob::flush(GrTextTarget*, SkSurfaceProps const&, GrDistanceFieldAdjustTable const*, SkPaint const&, SkRGBA4f<(SkAlphaType)2> const&, GrClip const&, SkMatrix const&, SkPoint)
+0.07%     android::uirenderer::$_1::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.06%     void std::__1::__stable_sort<android::uirenderer::skiapipeline::StartReorderBarrierDrawable::onDraw(SkCanvas*)::$_0&, std::__1::__wrap_iter<android::uirenderer::skiapipeline::RenderNodeDrawable**> >(std::__1::__wrap_iter<android::uirenderer::skiapipeline::RenderNodeDrawable**>, std::__1::__wrap_iter<android::uirenderer::skiapipeline::RenderNodeDrawable**>, android::uirenderer::skiapipeline::StartReorderBarrierDrawable::onDraw(SkCanvas*)::$_0&, std::__1::iterator_traits<std::__1::__wrap_iter<android::uirenderer::skiapipeline::RenderNodeDrawable**> >::difference_type, std::__1::iterator_traits<std::__1::__wrap_iter<android::uirenderer::skiapipeline::RenderNodeDrawable**> >::value_type*, long)
+0.06%     SkCanvas::drawTextBlob(SkTextBlob const*, float, float, SkPaint const&)
+0.05%     GrAtlasTextOp::onPrepareDraws(GrMeshDrawOp::Target*)
+0.05%     SkCanvas::onDrawPath(SkPath const&, SkPaint const&)
+0.04%     SkClipStack::isRRect(SkRect const&, SkRRect*, bool*) const
+0.04%     GrProgramDesc::Build(GrProgramDesc*, GrRenderTarget const*, GrProgramInfo const&, GrCaps const&)
+0.04%     GrTextureProxy::~GrTextureProxy()
+0.04%     CircularRRectOp::onPrepareDraws(GrMeshDrawOp::Target*)
+0.04%     GrResourceCache::notifyRefCntReachedZero(GrGpuResource*)
+0.04%     SkMatrix::mapRect(SkRect*, SkRect const&, SkApplyPerspectiveClip) const
+0.04%     GrGLGpu::ProgramCache::findOrCreateProgram(GrRenderTarget*, GrProgramDesc const&, GrProgramInfo const&)
+0.04%     GrRenderTargetContext::addDrawOp(GrClip const&, std::__1::unique_ptr<GrDrawOp, std::__1::default_delete<GrDrawOp> >, std::__1::function<void (GrOp*, unsigned int)> const&)
+0.03%     GrOpsTask::recordOp(std::__1::unique_ptr<GrOp, std::__1::default_delete<GrOp> >, GrProcessorSet::Analysis, GrAppliedClip*, GrXferProcessor::DstProxyView const*, GrCaps const&)
+0.03%     GrTextureOp::Make(GrRecordingContext*, GrSurfaceProxyView, SkAlphaType, sk_sp<GrColorSpaceXform>, GrSamplerState::Filter, SkRGBA4f<(SkAlphaType)2> const&, GrTextureOp::Saturate, SkBlendMode, GrAAType, DrawQuad*, SkRect const*)
+0.03%     GrBitmapTextureMaker::~GrBitmapTextureMaker()
+0.03%     SkClipStack::pushElement(SkClipStack::Element const&)
+0.03%     GrResourceCache::refAndMakeResourceMRU(GrGpuResource*)
+0.03%     GrGLAttribArrayState::set(GrGLGpu*, int, GrBuffer const*, GrVertexAttribType, GrSLType, int, unsigned long, int)
+0.03%     GrTextBlob::VertexRegenerator::regenerate(int, int)
+0.03%     SkScalerCache::prepareForMaskDrawing(SkDrawableGlyphBuffer*, SkSourceGlyphBuffer*)
+0.03%     SkCanvas::onClipRect(SkRect const&, SkClipOp, SkCanvas::ClipEdgeStyle)
+0.03%     GrOpsTask::onExecute(GrOpFlushState*)
+0.03%     SkClipStack::Element::initRect(int, SkRect const&, SkMatrix const&, SkClipOp, bool)
+0.02%     SkMatrix::preTranslate(float, float)
+0.02%     android::uirenderer::skiapipeline::SkiaPipeline::pinImages(std::__1::vector<SkImage*, std::__1::allocator<SkImage*> >&)
+0.02%     SkConvertPixels(SkImageInfo const&, void*, unsigned long, SkImageInfo const&, void const*, unsigned long)
+0.02%     SkCanvas::restore()
+0.02%     android::uirenderer::$_11::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.02%     GrTextBlob::makeSubRun(GrTextBlob::SubRunType, SkZip<SkGlyphVariant, SkPoint> const&, SkStrikeSpec const&, GrMaskFormat)
+0.02%     android::uirenderer::$_17::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.02%     GrProxyProvider::findOrCreateProxyByUniqueKey(GrUniqueKey const&, GrColorType, GrSurfaceProxy::UseAllocator)
+0.02%     SkTArray<sk_sp<GrRefCntedCallback>, false>::checkRealloc(int)
+0.02%     GrOpFlushState::executeDrawsAndUploadsForMeshDrawOp(GrOp const*, SkRect const&, GrPipeline const*)
+0.02%     SkScalerCache::glyph(SkPackedGlyphID)
+0.02%     SkGpuDevice::drawGlyphRunList(SkGlyphRunList const&)
+0.02%     SkImage_Raster::onUnpinAsTexture(GrContext*) const
+0.02%     SkCanvas::concat(SkMatrix const&)
+0.02%     android::uirenderer::AnimatorManager::pushStaging()
+0.02%     SkClipStack::restore()
+0.02%     GrTextBlob::SubRun::translateVerticesIfNeeded(SkMatrix const&, SkPoint)
+0.02%     SkPathRef::getRRect() const
+0.02%     SkStrikeCache::findOrCreateStrike(SkDescriptor const&, SkScalerContextEffects const&, SkTypeface const&)
+0.02%     android::uirenderer::$_28::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.02%     SkScalerContext_FreeType_Base::generateGlyphImage(FT_FaceRec_*, SkGlyph const&, SkMatrix const&)
+0.02%     SkGlyphRunBuilder::simplifyTextBlobIgnoringRSXForm(SkTextBlobRunIterator const&, SkPoint*)
+0.02%     GrAtlasTextOp::~GrAtlasTextOp()
+0.02%     AutoLayerForImageFilter::AutoLayerForImageFilter(SkCanvas*, SkPaint const&, bool, SkRect const*)
+0.02%     GrGLGpu::bindTexture(int, GrSamplerState, GrSwizzle const&, GrGLTexture*)
+0.02%     android::android_view_RenderNode_hasIdentityMatrix(long)
+0.02%     SkPaintToGrPaint(GrRecordingContext*, GrColorInfo const&, SkPaint const&, SkMatrix const&, GrPaint*)
+0.02%     SkConservativeClip::opRRect(SkRRect const&, SkMatrix const&, SkIRect const&, SkRegion::Op, bool)
+0.02%     android::uirenderer::$_16::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.02%     android::Bitmap::computePalette(SkImageInfo const&, void const*, unsigned long)
+0.02%     GrReducedClip::GrReducedClip(SkClipStack const&, SkRect const&, GrCaps const*, int, int, int)
+0.02%     GrFillRRectOp::createProgramInfo(GrCaps const*, SkArenaAlloc*, GrSurfaceProxyView const*, GrAppliedClip&&, GrXferProcessor::DstProxyView const&)
+0.01%     (anonymous namespace)::filter_has_effect(GrQuad const&, GrQuad const&)
+0.01%     SkClipStack::clipRect(SkRect const&, SkMatrix const&, SkClipOp, bool)
+0.01%     android::android_view_RenderNode_getTransformMatrix(long, long)
+0.01%     SkRRect::transform(SkMatrix const&, SkRRect*) const
+0.01%     SkArenaAlloc::NextBlock(char*)
+0.01%     GrGLGpu::flushGLState(GrRenderTarget*, GrProgramInfo const&)
+0.01%     GrTextBlob::computeSubRunBounds(SkRect*, GrTextBlob::SubRun const&, SkMatrix const&, SkPoint, bool)
+0.01%     GrPipeline::GrPipeline(GrPipeline::InitArgs const&, GrProcessorSet&&, GrAppliedClip&&)
+0.01%     SkPath::internalGetConvexity() const
+0.01%     SkGlyphRunListPainter::processGlyphRunList(SkGlyphRunList const&, SkMatrix const&, SkSurfaceProps const&, bool, GrTextContext::Options const&, SkGlyphRunPainterInterface*)
+0.01%     swizzle_index_to_n32(void*, unsigned char const*, int, int, int, int, unsigned int const*)
+0.01%     SkClipStack::internalQuickContains(SkRect const&) const
+0.01%     GrSwizzle::GrSwizzle(char const*)
+0.01%     (anonymous namespace)::convert_noninflect_cubic_to_quads_with_constraint(SkPoint const*, float, SkPathPriv::FirstDirection, SkTArray<SkPoint, true>*, int)
+0.01%     GrGLOpsRenderPass::end()
+0.01%     GrAtlasManager::addGlyphToBulkAndSetUseToken(GrDrawOpAtlas::BulkUseTokenUpdater*, GrGlyph*, GrDeferredUploadToken)
+0.01%     SkGpuDevice::drawPath(SkPath const&, SkPaint const&, bool)
+0.01%     GrBitmapTextGeoProc::onTextureSampler(int) const
+0.01%     GrPrimitiveProcessor::AttributeSet::init(GrPrimitiveProcessor::Attribute const*, int)
+0.01%     SkGlyphRunBuilder::drawTextBlob(SkPaint const&, SkTextBlob const&, SkPoint, SkBaseDevice*)
+0.01%     GrPathUtils::QuadUVMatrix::set(SkPoint const*)
+0.01%     void GrVertexWriter::write<SkPoint, SkPoint>(GrVertexColor const&, SkPoint const&, SkPoint const&)
+0.01%     android::uirenderer::JankTracker::finishFrame(android::uirenderer::FrameInfo const&)
+0.01%     CircularRRectOp::onCombineIfPossible(GrOp*, GrRecordingContext::Arenas*, GrCaps const&)
+0.01%     GrGLGpu::bindBuffer(GrGpuBufferType, GrBuffer const*)
+0.01%     SkPath::Iter::next(SkPoint*)
+0.01%     SkPaintFilterCanvas::onDrawTextBlob(SkTextBlob const*, float, float, SkPaint const&)
+0.01%     _ZN12_GLOBAL__N_110FillRectOp9onExecuteEP14GrOpFlushStateRK6SkRect$d19cfa9c8930929443c54f678259c78c
+0.01%     GrGLGpu::setupGeometry(GrBuffer const*, GrBuffer const*, int, GrBuffer const*, int, GrPrimitiveRestart)
+0.01%     GrGLGpu::submit(GrOpsRenderPass*)
+0.01%     SkImage_Raster::onPinAsTexture(GrContext*) const
+0.01%     GrRenderTargetContext::drawTexturedQuad(GrClip const&, GrSurfaceProxyView, SkAlphaType, sk_sp<GrColorSpaceXform>, GrSamplerState::Filter, SkRGBA4f<(SkAlphaType)2> const&, SkBlendMode, GrAA, DrawQuad*, SkRect const*)
+0.01%     GrGLGpu::getOpsRenderPass(GrRenderTarget*, GrSurfaceOrigin, SkIRect const&, GrOpsRenderPass::LoadAndStoreInfo const&, GrOpsRenderPass::StencilLoadAndStoreInfo const&, SkTArray<GrSurfaceProxy*, true> const&)
+0.01%     android::uirenderer::Matrix4::mapRect(android::uirenderer::Rect&) const
+0.01%     android::uirenderer::renderthread::RenderProxy::prepareToDraw(android::Bitmap&)
+0.01%     _ZN12_GLOBAL__N_110FillRectOp14onPrepareDrawsEPN12GrMeshDrawOp6TargetE$d19cfa9c8930929443c54f678259c78c
+0.01%     GrBitmapTextGeoProc::getGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.01%     SkMatrix::invertNonIdentity(SkMatrix*) const
+0.01%     GrOpFlushState::recordDraw(GrGeometryProcessor const*, GrMesh const*, int, GrPipeline::FixedDynamicState const*, GrPipeline::DynamicStateArrays const*, GrPrimitiveType)
+0.01%     void GrVertexWriter::write<GrVertexWriter::Skip<SkPoint>, float, float>(GrVertexColor const&, GrVertexWriter::Skip<SkPoint> const&, float const&, float const&)
+0.01%     SkBaseDevice::setGlobalCTM(SkCanvasMatrix const&)
+0.01%     GrRenderTargetContext::drawGlyphRunList(GrClip const&, SkMatrix const&, SkGlyphRunList const&)
+0.01%     (anonymous namespace)::write_2d_uv(GrVertexWriter*, GrQuadPerEdgeAA::VertexSpec const&, GrQuad const*, GrQuad const*, float const*, SkRGBA4f<(SkAlphaType)2> const&, SkRect const&, SkRect const&) (.llvm.4581757150767725190)
+0.01%     GrResourceAllocator::addInterval(GrSurfaceProxy*, unsigned int, unsigned int, GrResourceAllocator::ActualUse)
+0.01%     GrGLCaps::makeDesc(GrRenderTarget const*, GrProgramInfo const&) const
+0.01%     SkCanvas::drawPath(SkPath const&, SkPaint const&)
+0.01%     SkRRect::scaleRadii(SkRect const&)
+0.01%     CircularRRectOp::onExecute(GrOpFlushState*, SkRect const&)
+0.01%     GrOvalOpFactory::MakeCircularRRectOp(GrRecordingContext*, GrPaint&&, SkMatrix const&, SkRRect const&, SkStrokeRec const&, GrShaderCaps const*)
+0.01%     SkMatrix::Trans_pts(SkMatrix const&, SkPoint*, SkPoint const*, int)
+0.01%     SkMatrix::setConcat(SkMatrix const&, SkMatrix const&)
+0.01%     android::uirenderer::WorkQueue::process()
+0.01%     SkPath::transform(SkMatrix const&, SkPath*, SkApplyPerspectiveClip) const
+0.01%     GrProxyProvider::processInvalidUniqueKey(GrUniqueKey const&, GrTextureProxy*, GrProxyProvider::InvalidateGPUResource)
+0.01%     GrGLCaps::onGetDefaultBackendFormat(GrColorType, GrRenderable) const
+0.01%     GrFillRRectOp::Make(GrRecordingContext*, GrAAType, SkMatrix const&, SkRRect const&, GrCaps const&, GrPaint&&)
+0.01%     SkClipStackDevice::onClipRect(SkRect const&, SkClipOp, bool)
+0.01%     crc32::hash_fn(void const*, unsigned long, unsigned int)
+0.01%     android::uirenderer::RootRenderNode::runVectorDrawableAnimators(android::uirenderer::AnimationContext*, android::uirenderer::TreeInfo&)
+0.01%     GrResourceAllocator::assign(int*, int*, GrResourceAllocator::AssignError*)
+0.01%     GrDrawingManager::flush(GrSurfaceProxy**, int, SkSurface::BackendSurfaceAccess, GrFlushInfo const&, GrPrepareForExternalIORequests const&)
+0.01%     GrGLFunction<void (unsigned int, unsigned int)>::GrGLFunction(void (*)(unsigned int, unsigned int))::'lambda'(void const*, unsigned int, unsigned int)::__invoke(void const*, unsigned int, unsigned int)
+0.01%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::initializeAttrs(GrQuadPerEdgeAA::VertexSpec const&)
+0.01%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::getGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.01%     android::uirenderer::AnimationContextBridge::runRemainingAnimations(android::uirenderer::TreeInfo&)
+0.01%     _ZN12_GLOBAL__N_110FillRectOpD2Ev$d19cfa9c8930929443c54f678259c78c
+0.01%     CircularRRectOp::~CircularRRectOp()
+0.01%     GrGLFunction<void (unsigned int)>::GrGLFunction(void (*)(unsigned int))::'lambda'(void const*, unsigned int)::__invoke(void const*, unsigned int)
+0.01%     SkTArray<GrSurfaceProxy*, true>::checkRealloc(int)
+0.01%     GrGLAttribArrayState::enableVertexArrays(GrGLGpu const*, int, GrPrimitiveRestart)
+0.01%     android::uirenderer::renderthread::CanvasContext::draw()
+0.01%     android::uirenderer::skiapipeline::AlphaFilterCanvas::onFilter(SkPaint&) const
+0.01%     GrProcessorSet::operator==(GrProcessorSet const&) const
+0.01%     android::uirenderer::ThreadBase::waitForWork()
+0.01%     SkCanvas::~SkCanvas()
+0.01%     GrCpuBuffer::size() const
+0.01%     GrLinearGradientLayout::onGetGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.01%     CircleGeometryProcessor::getGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.01%     GrRenderTargetContext::drawRRect(GrClip const&, GrPaint&&, GrAA, SkMatrix const&, SkRRect const&, GrStyle const&)
+0.01%     SkPixelRef::callGenIDChangeListeners()
+0.01%     GrRenderTargetContext::attemptQuadOptimization(GrClip const&, SkRGBA4f<(SkAlphaType)2> const*, GrUserStencilSettings const*, GrAA*, DrawQuad*)
+0.01%     GrAAConvexPathRenderer::onDrawPath(GrPathRenderer::DrawPathArgs const&)
+0.01%     GrOpsTask::deleteOps()
+0.01%     GrOpsTask::onMakeClosed(GrCaps const&, SkIRect*)
+0.01%     _ZN12_GLOBAL__N_114AAConvexPathOp19onCombineIfPossibleEP4GrOpPN18GrRecordingContext6ArenasERK6GrCaps$13aac768fe222e8b89565d2273dcad6d
+0.01%     GrSimpleMeshDrawOpHelper::CreatePipeline(GrOpFlushState*, GrProcessorSet&&, GrPipeline::InputFlags, GrUserStencilSettings const*)
+0.01%     GrProcessorSet::visitProxies(std::__1::function<void (GrSurfaceProxy*, GrMipMapped)> const&) const
+0.01%     GrGLOpsRenderPass::onDrawMeshes(GrProgramInfo const&, GrMesh const*, int)
+0.01%     neon::RGBA_to_rgbA(unsigned int*, unsigned int const*, int)
+0.01%     GrTextureProxy::GrTextureProxy(sk_sp<GrSurface>, GrSwizzle const&, GrSurfaceProxy::UseAllocator)
+0.01%     SkPixelRef::addGenIDChangeListener(SkPixelRef::GenIDChangeListener*)
+0.01%     SkPathRef::Editor::Editor(sk_sp<SkPathRef>*, int, int)
+0.01%     GrSurfaceProxy::~GrSurfaceProxy()
+0.01%     SkGpuDevice::drawRect(SkRect const&, SkPaint const&)
+0.01%     GrTextBlobCache::makeCachedBlob(SkGlyphRunList const&, GrStrikeCache*, GrTextBlob::Key const&, SkMaskFilterBase::BlurRec const&, SkMatrix const&, unsigned int, bool)
+0.01%     SkClipStack::Element::~Element()
+0.01%     GrClipStackClip::isRRect(SkRect const&, SkRRect*, GrAA*) const
+0.01%     android::uirenderer::$_30::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.01%     android::SkMatrixGlue::isIdentity(long)
+0.01%     _ZNK12_GLOBAL__N_110FillRectOp18fixedFunctionFlagsEv$d19cfa9c8930929443c54f678259c78c
+0.01%     GrAtlasTextOp::onCombineIfPossible(GrOp*, GrRecordingContext::Arenas*, GrCaps const&)
+0.01%     GrTextStrike::getGlyph(SkGlyph const&)
+0.01%     GrVertexBufferAllocPool::GrVertexBufferAllocPool(GrGpu*, sk_sp<GrBufferAllocPool::CpuBufferCache>)
+0.01%     GrClipStackClip::apply(GrRecordingContext*, GrRenderTargetContext*, bool, bool, GrAppliedClip*, SkRect*) const
+0.01%     SkArenaAllocList<GrOpFlushState::Draw>::Node* SkArenaAlloc::make<SkArenaAllocList<GrOpFlushState::Draw>::Node>()::'lambda'(char*)::__invoke(char*)
+0.01%     GrOpFlushState::detachAppliedClip()
+0.01%     GrGLSLFragmentProcessor::Iter::Iter(std::__1::unique_ptr<GrGLSLFragmentProcessor, std::__1::default_delete<GrGLSLFragmentProcessor> >*, int)
+0.01%     SkContourMeasure::getPosTan(float, SkPoint*, SkPoint*) const
+0.01%     GrProcessorSet::GrProcessorSet(GrProcessorSet&&)
+0.01%     GrMemoryPool::allocate(unsigned long)
+0.01%     _ZNK12_GLOBAL__N_19TextureOp18fixedFunctionFlagsEv$00c83770fd5e789ee7ea4f4fe408be8d
+0.01%     virtual thunk to GrTexture::willRemoveLastRef()
+0.01%     (anonymous namespace)::write_2d_color_uv(GrVertexWriter*, GrQuadPerEdgeAA::VertexSpec const&, GrQuad const*, GrQuad const*, float const*, SkRGBA4f<(SkAlphaType)2> const&, SkRect const&, SkRect const&) (.llvm.4581757150767725190)
+0.01%     CircleOp::onPrepareDraws(GrMeshDrawOp::Target*)
+0.01%     GrProcessorSet::finalize(GrProcessorAnalysisColor const&, GrProcessorAnalysisCoverage, GrAppliedClip const*, GrUserStencilSettings const*, bool, GrCaps const&, GrClampType, SkRGBA4f<(SkAlphaType)2>*)
+0.01%     GrMesh::sendToGpu(GrPrimitiveType, GrMesh::SendToGpuImpl*) const
+0.01%     GrRectanizerSkyline::addRect(int, int, SkIPoint16*)
+0.01%     GrAtlasTextOp::name() const
+0.01%     _ZNK12_GLOBAL__N_110FillRectOp4nameEv$d19cfa9c8930929443c54f678259c78c
+0.01%     android::uirenderer::$_6::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.01%     android::android_view_RenderNode_setCameraDistance(long, float)
+0.01%     GrProcessorSet::~GrProcessorSet()
+0.00%     GrRenderTargetContext::drawTexture(GrClip const&, GrSurfaceProxyView, SkAlphaType, GrSamplerState::Filter, SkBlendMode, SkRGBA4f<(SkAlphaType)2> const&, SkRect const&, SkRect const&, GrAA, GrQuadAAFlags, SkCanvas::SrcRectConstraint, SkMatrix const&, sk_sp<GrColorSpaceXform>)
+0.00%     GrResourceProvider::findOrMakeStaticBuffer(GrGpuBufferType, unsigned long, void const*, GrUniqueKey const&)
+0.00%     _ZNK12_GLOBAL__N_19TextureOp12visitProxiesERKNSt3__18functionIFvP14GrSurfaceProxy11GrMipMappedEEE$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     SkClipStackDevice::onRestore()
+0.00%     GrOverrideInputFragmentProcessor::onGetGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.00%     GrTextBlob::GrTextBlob(unsigned long, GrStrikeCache*, SkMatrix const&, SkPoint, unsigned int, unsigned int, bool)
+0.00%     GrAtlasTextOp::createDrawForGeneratedGlyphs(GrMeshDrawOp::Target*, GrAtlasTextOp::FlushInfo*) const
+0.00%     GrContext::asDirectContext()
+0.00%     _ZN12_GLOBAL__N_19TextureOp19onCombineIfPossibleEP4GrOpPN18GrRecordingContext6ArenasERK6GrCaps$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     android::uirenderer::skiapipeline::SkiaPipeline::renderFrame(android::uirenderer::LayerUpdateQueue const&, SkRect const&, std::__1::vector<android::sp<android::uirenderer::RenderNode>, std::__1::allocator<android::sp<android::uirenderer::RenderNode> > > const&, bool, android::uirenderer::Rect const&, sk_sp<SkSurface>, SkMatrix const&)
+0.00%     _ZN12_GLOBAL__N_19TextureOp14onPrepareDrawsEPN12GrMeshDrawOp6TargetE$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     SkPaint::doComputeFastBounds(SkRect const&, SkRect*, SkPaint::Style) const
+0.00%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::createGLSLInstance(GrShaderCaps const&) const::GLSLProcessor::setData(GrGLSLProgramDataManager const&, GrPrimitiveProcessor const&, GrFragmentProcessor::FPItemRange<GrPipeline const, GrFragmentProcessor::FPItemIter<GrCoordTransform const, &(GrFragmentProcessor::numCoordTransforms() const), &(GrFragmentProcessor::coordTransform(int) const)> > const&)
+0.00%     GrBackendFormat::asGLFormat() const
+0.00%     android::uirenderer::renderthread::ReliableSurface::hook_query(ANativeWindow const*, int (*)(ANativeWindow const*, int, int*), void*, int, int*)
+0.00%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::onTextureSampler(int) const
+0.00%     GrOpsTask::OpChain::visitProxies(std::__1::function<void (GrSurfaceProxy*, GrMipMapped)> const&) const
+0.00%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::QuadPerEdgeAAGeometryProcessor(GrQuadPerEdgeAA::VertexSpec const&, GrShaderCaps const&, GrBackendFormat const&, GrSamplerState, GrSwizzle const&, sk_sp<GrColorSpaceXform>, GrTextureOp::Saturate)
+0.00%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor::~QuadPerEdgeAAGeometryProcessor()
+0.00%     SkRegion::op(SkRegion const&, SkIRect const&, SkRegion::Op)
+0.00%     GrGLCaps::getOutputSwizzle(GrBackendFormat const&, GrColorType) const
+0.00%     SkPaint::~SkPaint()
+0.00%     GrResourceCache::removeResource(GrGpuResource*)
+0.00%     SkCanvas::getDeviceClipBounds() const
+0.00%     SkTArray<unsigned int, true>::checkRealloc(int)
+0.00%     _ZNK12_GLOBAL__N_19TextureOp4nameEv$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     SkGpuDevice::Make(GrContext*, std::__1::unique_ptr<GrRenderTargetContext, std::__1::default_delete<GrRenderTargetContext> >, SkGpuDevice::InitContents)
+0.00%     SkCanvas::androidFramework_setDeviceClipRestriction(SkIRect const&)
+0.00%     GrGLProgram::updateUniforms(GrRenderTarget const*, GrProgramInfo const&)
+0.00%     update_degenerate_test(DegenerateTestData*, SkPoint const&)
+0.00%     SkRegion::Oper(SkRegion const&, SkRegion const&, SkRegion::Op, SkRegion*)
+0.00%     GrFragmentProcessor::IterBase<GrFragmentProcessor const>::increment()
+0.00%     GrRenderTargetContext::Make(GrRecordingContext*, GrColorType, sk_sp<SkColorSpace>, sk_sp<GrSurfaceProxy>, GrSurfaceOrigin, SkSurfaceProps const*, bool)
+0.00%     android::uirenderer::skiapipeline::SkiaPipeline::unpinImages()
+0.00%     SkPaint::SkPaint(SkPaint const&)
+0.00%     android::SkPathGlue::reset(long)
+0.00%     (anonymous namespace)::TextureOp::appendQuad(DrawQuad*, SkRGBA4f<(SkAlphaType)2> const&, SkRect const&)
+0.00%     GrQuadBuffer<(anonymous namespace)::TextureOp::ColorDomainAndAA>::append(GrQuad const&, (anonymous namespace)::TextureOp::ColorDomainAndAA&&, GrQuad const*)
+0.00%     android::uirenderer::RenderProperties::operator=(android::uirenderer::RenderProperties const&)
+0.00%     SkGpuDevice::drawPaint(SkPaint const&)
+0.00%     GrBitmapTextureMaker::refOriginalTextureProxyView(bool, GrTextureMaker::AllowedTexGenType)
+0.00%     (anonymous namespace)::TextureOp::FillInData(GrCaps const&, (anonymous namespace)::TextureOp*, (anonymous namespace)::TextureOp::PrePreparedDesc*, char*, GrMesh*, int, sk_sp<GrBuffer const>, sk_sp<GrBuffer const>)
+0.00%     _ZN12_GLOBAL__N_110FillRectOp8finalizeERK6GrCapsPK13GrAppliedClipb11GrClampType$d19cfa9c8930929443c54f678259c78c
+0.00%     GrClearOp::onCombineIfPossible(GrOp*, GrRecordingContext::Arenas*, GrCaps const&)
+0.00%     GrProxyProvider::adoptUniqueKeyFromSurface(GrTextureProxy*, GrSurface const*)
+0.00%     GrQuad::MakeFromRect(SkRect const&, SkMatrix const&)
+0.00%     android::uirenderer::RenderProperties::updateMatrix()
+0.00%     GrBufferAllocPool::~GrBufferAllocPool()
+0.00%     SkCanvas::SkCanvas(SkIRect const&)
+0.00%     GrOpsTask::OpChain::OpChain(std::__1::unique_ptr<GrOp, std::__1::default_delete<GrOp> >, GrProcessorSet::Analysis, GrAppliedClip*, GrXferProcessor::DstProxyView const*)
+0.00%     SkCanvas::drawImageRect(SkImage const*, SkRect const&, SkRect const&, SkPaint const*, SkCanvas::SrcRectConstraint)
+0.00%     GrOpsTask::onPrepare(GrOpFlushState*)
+0.00%     _ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread11RenderProxy13prepareToDrawERNS2_6BitmapEE4$_42NS_9allocatorIS8_EEFvvEE7destroyEv$81825b4554ba48924a771fcb836d7698
+0.00%     GrTextureProxy::setUniqueKey(GrProxyProvider*, GrUniqueKey const&)
+0.00%     std::__1::__function::__func<android::uirenderer::ThreadBase::ThreadBase()::'lambda'(), std::__1::allocator<android::uirenderer::ThreadBase::ThreadBase()::'lambda'()>, void ()>::operator()()
+0.00%     android::uirenderer::renderthread::ReliableSurface::hook_dequeueBuffer(ANativeWindow*, int (*)(ANativeWindow*, ANativeWindowBuffer**, int*), void*, ANativeWindowBuffer**, int*)
+0.00%     GrAtlasTextOp::onExecute(GrOpFlushState*, SkRect const&)
+0.00%     Convexicator::addVec(SkPoint const&)
+0.00%     GrResourceCache::insertResource(GrGpuResource*)
+0.00%     _ZZN7androidL46android_view_RenderNode_requestPositionUpdatesEP7_JNIEnvP8_jobjectlS3_EN26PositionListenerTrampoline17onPositionUpdatedERNS_10uirenderer10RenderNodeERKNS5_8TreeInfoE$4d48234762405266a7f22f0edf10efb5
+0.00%     SkClipStack::Element::updateBoundAndGenID(SkClipStack::Element const*)
+0.00%     SkCanvas::onDrawRect(SkRect const&, SkPaint const&)
+0.00%     virtual thunk to GrTextureProxy::~GrTextureProxy()
+0.00%     SkGpuDevice::drawImageQuad(SkImage const*, SkRect const*, SkRect const*, SkPoint const*, GrAA, GrQuadAAFlags, SkMatrix const*, SkPaint const&, SkCanvas::SrcRectConstraint)
+0.00%     GrTextureMaker::onRefTextureProxyViewForParams(GrSamplerState, bool, float*)
+0.00%     GrQuadBuffer<(anonymous namespace)::FillRectOp::ColorAndAA>::append(GrQuad const&, (anonymous namespace)::FillRectOp::ColorAndAA&&, GrQuad const*)
+0.00%     GrGLFunction<void (unsigned int, int, int)>::GrGLFunction(void (*)(unsigned int, int, int))::'lambda'(void const*, unsigned int, int, int)::__invoke(void const*, unsigned int, int, int)
+0.00%     GrQuadUtils::TessellationHelper::inset(skvx::Vec<4, float> const&, GrQuad*, GrQuad*)
+0.00%     SkTArray<Segment, true>::checkRealloc(int)
+0.00%     GrGLBitmapTextGeoProc::setData(GrGLSLProgramDataManager const&, GrPrimitiveProcessor const&, GrFragmentProcessor::FPItemRange<GrPipeline const, GrFragmentProcessor::FPItemIter<GrCoordTransform const, &(GrFragmentProcessor::numCoordTransforms() const), &(GrFragmentProcessor::coordTransform(int) const)> > const&)
+0.00%     GrQuadUtils::CropToRect(SkRect const&, GrAA, DrawQuad*, bool)
+0.00%     android::uirenderer::skiapipeline::SkiaDisplayList::reset()
+0.00%     GrGLGpu::HWVertexArrayState::bindInternalVertexArray(GrGLGpu*, GrBuffer const*)
+0.00%     non-virtual thunk to GrGpuBuffer::ref() const
+0.00%     SkGraphics::GetFontCachePointSizeLimit()
+0.00%     android::android_view_RenderNode_setRotation(long, float)
+0.00%     GrLegacyDirectContext::onGetAtlasManager()
+0.00%     SkCanvas::onDrawImageRect(SkImage const*, SkRect const*, SkRect const&, SkPaint const*, SkCanvas::SrcRectConstraint)
+0.00%     SkSL::SPIRVtoHLSL(SkSL::String const&, SkSL::String*)
+0.00%     CircleGeometryProcessor::GLSLProcessor::setData(GrGLSLProgramDataManager const&, GrPrimitiveProcessor const&, GrFragmentProcessor::FPItemRange<GrPipeline const, GrFragmentProcessor::FPItemIter<GrCoordTransform const, &(GrFragmentProcessor::numCoordTransforms() const), &(GrFragmentProcessor::coordTransform(int) const)> > const&)
+0.00%     GrClearOp::~GrClearOp()
+0.00%     SkCanvas::drawRect(SkRect const&, SkPaint const&)
+0.00%     _ZN12_GLOBAL__N_19TextureOpD2Ev$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     GrRenderTargetContext::drawPath(GrClip const&, GrPaint&&, GrAA, SkMatrix const&, SkPath const&, GrStyle const&)
+0.00%     GrDrawOpAtlas::Plot::addSubImage(int, int, void const*, SkIPoint16*)
+0.00%     SkPath::isRect(SkRect*, bool*, SkPathDirection*) const
+0.00%     android::SkMatrixGlue::reset(long)
+0.00%     android::android_view_RenderNode_getElevation(long)
+0.00%     GrBufferAllocPool::deleteBlocks()
+0.00%     GrOverrideInputFragmentProcessor::~GrOverrideInputFragmentProcessor()
+0.00%     SkBulkGlyphMetricsAndImages::SkBulkGlyphMetricsAndImages(SkStrikeSpec const&)
+0.00%     GrTextBlobCache::remove(GrTextBlob*)
+0.00%     GrGLProgramDataManager::set3fv(GrResourceHandle<GrGLSLProgramDataManager::UniformHandleKind>, int, float const*) const
+0.00%     GrSingleIntervalGradientColorizer::~GrSingleIntervalGradientColorizer()
+0.00%     SkBitmap::setInfo(SkImageInfo const&, unsigned long)
+0.00%     GrClearOp::GrClearOp(GrFixedClip const&, SkRGBA4f<(SkAlphaType)2> const&, GrSurfaceProxy*)
+0.00%     virtual thunk to GrTextureProxy::asTextureProxy()
+0.00%     std::__1::vector<android::uirenderer::WorkQueue::WorkItem, std::__1::allocator<android::uirenderer::WorkQueue::WorkItem> >::reserve(unsigned long)
+0.00%     SkPath::Iter::Iter(SkPath const&, bool)
+0.00%     SkBitmapDevice::~SkBitmapDevice()
+0.00%     SkCanvas::init(sk_sp<SkBaseDevice>)
+0.00%     GrOpsTask::endFlush()
+0.00%     android::uirenderer::renderthread::CanvasContext::prepareTree(android::uirenderer::TreeInfo&, long*, long, android::uirenderer::RenderNode*)
+0.00%     SkMakeImageFromRasterBitmap(SkBitmap const&, SkCopyPixelsMode)
+0.00%     SkTArray<float, true>::checkRealloc(int)
+0.00%     GrGLGpu::flushBlendAndColorWrite(GrXferProcessor::BlendInfo const&, GrSwizzle const&)
+0.00%     SkPath::addRect(SkRect const&, SkPathDirection, unsigned int)
+0.00%     android::uirenderer::renderthread::RenderProxy::notifyFramePending()
+0.00%     char* SkArenaAlloc::commonArrayAlloc<GrMesh>(unsigned int)::'lambda'(char*)::__invoke(char*)
+0.00%     crop_rect_edge(SkRect const&, int, int, int, int, float*, float*, float*, float*, float*)
+0.00%     GrGLGpu::checkFinishProcs()
+0.00%     SkPath::addRRect(SkRRect const&, SkPathDirection, unsigned int)
+0.00%     GrFillRRectOp::onExecute(GrOpFlushState*, SkRect const&)
+0.00%     SkClipStack::Element::initAsPath(int, SkPath const&, SkMatrix const&, SkClipOp, bool)
+0.00%     android::uirenderer::$_2::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.00%     (anonymous namespace)::optimize_sample_area(SkISize const&, SkRect const*, SkRect const*, SkPoint const*, SkRect*, SkRect*, SkMatrix*)
+0.00%     AutoJavaFloatArray::AutoJavaFloatArray(_JNIEnv*, _jfloatArray*, int, JNIAccess)
+0.00%     _ZN12_GLOBAL__N_121ShadowCircularRRectOp9onExecuteEP14GrOpFlushStateRK6SkRect$5ba60f3d72455cb6405d8b0b50600277
+0.00%     android::uirenderer::LayerUpdateQueue::enqueueLayerWithDamage(android::uirenderer::RenderNode*, android::uirenderer::Rect)
+0.00%     GrRenderTargetContext::clear(SkIRect const*, SkRGBA4f<(SkAlphaType)2> const&, GrRenderTargetContext::CanClearFullscreen)
+0.00%     CircularRRectOp::fixedFunctionFlags() const
+0.00%     GrRenderTargetContext::drawShape(GrClip const&, GrPaint&&, GrAA, SkMatrix const&, GrShape const&)
+0.00%     android::uirenderer::GLUtils::dumpGLErrors()
+0.00%     SkSurface_Gpu::onNewCanvas()
+0.00%     GrClearOp::Make(GrRecordingContext*, GrFixedClip const&, SkRGBA4f<(SkAlphaType)2> const&, GrSurfaceProxy*)
+0.00%     GrGLGpu::sendIndexedMeshToGpu(GrPrimitiveType, GrMesh const&, int, int, unsigned short, unsigned short, int)
+0.00%     android::uirenderer::skiapipeline::SkiaOpenGLPipeline::makeCurrent()
+0.00%     SkPointPriv::DistanceToLineSegmentBetweenSqd(SkPoint const&, SkPoint const&, SkPoint const&)
+0.00%     android::uirenderer::skiapipeline::SkiaPipeline::tryCapture(SkSurface*, android::uirenderer::RenderNode*, android::uirenderer::LayerUpdateQueue const&)
+0.00%     (anonymous namespace)::AAConvexPathOp::AAConvexPathOp(GrSimpleMeshDrawOpHelper::MakeArgs const&, SkRGBA4f<(SkAlphaType)2> const&, SkMatrix const&, SkPath const&, GrUserStencilSettings const*)
+0.00%     SkCodec::onRewind()
+0.00%     _ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread13DrawFrameTask11postAndWaitEvE3$_0NS_9allocatorIS6_EEFvvEEclEv$c303f2d2360db58ed70a2d0ac7ed911b
+0.00%     android::android_view_RenderNode_setAlpha(long, float)
+0.00%     CircularRRectOp::name() const
+0.00%     GrAtlasTextOp::finalize(GrCaps const&, GrAppliedClip const*, bool, GrClampType)
+0.00%     GrBufferAllocPool::unmap()
+0.00%     GrGLCaps::getReadSwizzle(GrBackendFormat const&, GrColorType) const
+0.00%     GrClearOp::name() const
+0.00%     end_chain(char*) (.llvm.14909130750993458450)
+0.00%     android::uirenderer::skiapipeline::SkiaOpenGLPipeline::draw(android::uirenderer::renderthread::Frame const&, SkRect const&, SkRect const&, android::uirenderer::LightGeometry const&, android::uirenderer::LayerUpdateQueue*, android::uirenderer::Rect const&, bool, android::uirenderer::LightInfo const&, std::__1::vector<android::sp<android::uirenderer::RenderNode>, std::__1::allocator<android::sp<android::uirenderer::RenderNode> > > const&, android::uirenderer::FrameInfoVisualizer*)
+0.00%     GrGLSLOverrideInputFragmentProcessor::onSetData(GrGLSLProgramDataManager const&, GrFragmentProcessor const&)
+0.00%     virtual thunk to GrGLRenderTarget::onRelease()
+0.00%     GrShape::GrShape(SkPath const&, GrStyle const&)
+0.00%     GrFragmentProcessor::RunInSeries(std::__1::unique_ptr<GrFragmentProcessor, std::__1::default_delete<GrFragmentProcessor> >*, int)
+0.00%     SkMatrix::postConcat(SkMatrix const&)
+0.00%     _ZNSt3__110__function6__funcIZN7android10uirenderer10RenderNode15prepareTreeImplERNS3_12TreeObserverERNS3_8TreeInfoEbE3$_0NS_9allocatorIS9_EEFvPS4_S6_S8_bEEclEOSC_S6_S8_Ob$921c98526d87a1c25b1dbe0df5a49b02
+0.00%     GrConvexPolyEffect::Make(GrClipEdgeType, SkPath const&)
+0.00%     (anonymous namespace)::FillRectOp::FillRectOp(GrSimpleMeshDrawOpHelper::MakeArgs, SkRGBA4f<(SkAlphaType)2>, GrAAType, DrawQuad*, GrUserStencilSettings const*, GrSimpleMeshDrawOpHelper::InputFlags) (.llvm.11696957567759856270)
+0.00%     GrPipeline::GrPipeline(GrPipeline::InitArgs const&, sk_sp<GrXferProcessor const>, GrAppliedHardClip const&)
+0.00%     GrFillRRectOp::fixedFunctionFlags() const
+0.00%     std::__1::__tree<GrSurfaceProxy*, std::__1::less<GrSurfaceProxy*>, std::__1::allocator<GrSurfaceProxy*> >::destroy(std::__1::__tree_node<GrSurfaceProxy*, void*>*)
+0.00%     GrClipStackClip::getConservativeBounds(int, int, SkIRect*, bool*) const
+0.00%     GrCaps::getDefaultBackendFormat(GrColorType, GrRenderable) const
+0.00%     SkClipStackDevice::onSave()
+0.00%     SkCanvas::onFlush()
+0.00%     android::uirenderer::Matrix4::isIdentity() const
+0.00%     GrReducedClip::finishAndDetachAnalyticFPs(GrCoverageCountingPathRenderer*, unsigned int)
+0.00%     GrDrawOpAtlas::compact(GrDeferredUploadToken)
+0.00%     GrMeshDrawOp::onPrepare(GrOpFlushState*)
+0.00%     GrGLFunction<void (unsigned int, int, unsigned int, void const*, int)>::GrGLFunction(void (*)(unsigned int, int, unsigned int, void const*, int))::'lambda'(void const*, unsigned int, int, unsigned int, void const*, int)::__invoke(void const*, unsigned int, int, unsigned int, void const*, int)
+0.00%     GrGLOpsRenderPass::gpu()
+0.00%     (anonymous namespace)::draw_texture(GrRenderTargetContext*, GrClip const&, SkMatrix const&, SkPaint const&, SkRect const&, SkRect const&, SkPoint const*, GrAA, GrQuadAAFlags, SkCanvas::SrcRectConstraint, GrSurfaceProxyView, GrColorInfo const&)
+0.00%     android::SkPathGlue::init(_JNIEnv*, _jclass*)
+0.00%     android::uirenderer::renderthread::RenderThread::threadLoop()
+0.00%     GrQuadPerEdgeAA::MakeProcessor(SkArenaAlloc*, GrQuadPerEdgeAA::VertexSpec const&)
+0.00%     virtual thunk to GrRenderTarget::asRenderTarget()
+0.00%     SkNWayCanvas::onDrawTextBlob(SkTextBlob const*, float, float, SkPaint const&)
+0.00%     GrAtlasTextOp::init()
+0.00%     GrResourceAllocator::expire(unsigned int)
+0.00%     SkNoPixelsDevice::onSave()
+0.00%     sk_free(void*)
+0.00%     SkCanvas::willSave()
+0.00%     android::uirenderer::AnimationContextBridge::startFrame(android::uirenderer::TreeInfo::TraversalMode)
+0.00%     android::uirenderer::skiapipeline::SkiaRecordingCanvas::filterBitmap(android::SkiaCanvas::PaintCoW&&)
+0.00%     SkTHashTable<SkTHashMap<unsigned int, GrTextBlobCache::BlobIDCacheEntry, SkGoodHash>::Pair, unsigned int, SkTHashMap<unsigned int, GrTextBlobCache::BlobIDCacheEntry, SkGoodHash>::Pair>::uncheckedSet(SkTHashMap<unsigned int, GrTextBlobCache::BlobIDCacheEntry, SkGoodHash>::Pair&&)
+0.00%     SkTArray<unsigned int, false>::checkRealloc(int)
+0.00%     (anonymous namespace)::FillRectOp::tessellate(GrQuadPerEdgeAA::VertexSpec const&, char*) const
+0.00%     GrIndexBufferAllocPool::GrIndexBufferAllocPool(GrGpu*, sk_sp<GrBufferAllocPool::CpuBufferCache>)
+0.00%     android::uirenderer::skiapipeline::SkiaRecordingCanvas::drawBitmap(android::Bitmap&, float, float, float, float, float, float, float, float, android::Paint const*)
+0.00%     android::uirenderer::renderthread::ReliableSurface::hook_perform(ANativeWindow*, int (*)(ANativeWindow*, int, std::__va_list), void*, int, std::__va_list)
+0.00%     SkTHashTable<SkTHashMap<unsigned int, GrTextBlobCache::BlobIDCacheEntry, SkGoodHash>::Pair, unsigned int, SkTHashMap<unsigned int, GrTextBlobCache::BlobIDCacheEntry, SkGoodHash>::Pair>::removeSlot(int)
+0.00%     SkPathRef::~SkPathRef()
+0.00%     GrRenderTargetContext::TextTarget::addDrawOp(GrClip const&, std::__1::unique_ptr<GrAtlasTextOp, std::__1::default_delete<GrAtlasTextOp> >)
+0.00%     GrFillRRectOp::name() const
+0.00%     android::uirenderer::Matrix4::getType() const
+0.00%     GrGLGpu::flushRenderTargetNoColorWrites(GrGLRenderTarget*)
+0.00%     GrCpuBuffer::ref() const
+0.00%     GrGpuResource::willRemoveLastRef()
+0.00%     SkLinearGradient::asFragmentProcessor(GrFPArgs const&) const
+0.00%     PorterDuffXferProcessor::onGetGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.00%     GrRecordingContext::OwnedArenas::get()
+0.00%     _ZNK12_GLOBAL__N_121ShadowCircularRRectOp12visitProxiesERKNSt3__18functionIFvP14GrSurfaceProxy11GrMipMappedEEE$5ba60f3d72455cb6405d8b0b50600277
+0.00%     SkCanvas::getTotalMatrix() const
+0.00%     GrTextBlob::SubRun::updateVerticesColorIfNeeded(unsigned int)
+0.00%     GrUniqueKey::GrUniqueKey(GrUniqueKey const&)
+0.00%     _ZN12_GLOBAL__N_121ShadowCircularRRectOp14onPrepareDrawsEPN12GrMeshDrawOp6TargetE$5ba60f3d72455cb6405d8b0b50600277
+0.00%     SkCanvas::isClipEmpty() const
+0.00%     SkTDArray<char>::adjustCount(int)
+0.00%     GrGLGpu::onWrapBackendRenderTarget(GrBackendRenderTarget const&, GrColorType)
+0.00%     SkMatrix::Scale_pts(SkMatrix const&, SkPoint*, SkPoint const*, int)
+0.00%     GrQuadUtils::TessellationHelper::Vertices::moveAlong(GrQuadUtils::TessellationHelper::EdgeVectors const&, skvx::Vec<4, float> const&)
+0.00%     GrFixedClip::apply(int, int, GrAppliedHardClip*, SkRect*) const
+0.00%     SkPixmap::getColor(int, int) const
+0.00%     GrGpuResource::computeScratchKey(GrScratchKey*) const
+0.00%     GrGLGpu::onFinishFlush(GrSurfaceProxy**, int, SkSurface::BackendSurfaceAccess, GrFlushInfo const&, GrPrepareForExternalIORequests const&)
+0.00%     android::uirenderer::skiapipeline::SkiaRecordingCanvas::resetRecording(int, int, android::uirenderer::RenderNode*)
+0.00%     non-virtual thunk to GrOpFlushState::makeVertexSpace(unsigned long, int, sk_sp<GrBuffer const>*, int*)
+0.00%     GrRenderTargetContext::drawRect(GrClip const&, GrPaint&&, GrAA, SkMatrix const&, SkRect const&, GrStyle const*)
+0.00%     GrFillRRectOp::Processor::getGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.00%     GrOpFlushState::preExecuteDraws()
+0.00%     GrGLGpu::sendArrayMeshToGpu(GrPrimitiveType, GrMesh const&, int, int)
+0.00%     android::SkiaCanvas::translate(float, float)
+0.00%     android::android_view_RenderNode_setClipToBounds(long, unsigned char)
+0.00%     GrRenderTargetContext::~GrRenderTargetContext()
+0.00%     GrGLStencilAttachment::~GrGLStencilAttachment()
+0.00%     SkTArray<GrOpsTask::OpChain, true>::checkRealloc(int)
+0.00%     android::SkiaCanvas::getSaveCount() const
+0.00%     non-virtual thunk to GrOpFlushState::recordDraw(GrGeometryProcessor const*, GrMesh const*, int, GrPipeline::FixedDynamicState const*, GrPipeline::DynamicStateArrays const*, GrPrimitiveType)
+0.00%     SkRegion::operator==(SkRegion const&) const
+0.00%     GrShape::~GrShape()
+0.00%     SkRect::join(SkRect const&)
+0.00%     GrFillRRectOp::Processor::CoverageImpl::setData(GrGLSLProgramDataManager const&, GrPrimitiveProcessor const&, GrFragmentProcessor::FPItemRange<GrPipeline const, GrFragmentProcessor::FPItemIter<GrCoordTransform const, &(GrFragmentProcessor::numCoordTransforms() const), &(GrFragmentProcessor::coordTransform(int) const)> > const&)
+0.00%     GrGLProgram::bindTextures(GrPrimitiveProcessor const&, GrPipeline const&, GrSurfaceProxy const* const*)
+0.00%     android::SkMatrixGlue::preTranslate(long, float, float)
+0.00%     SkNWayCanvas::onClipRect(SkRect const&, SkClipOp, SkCanvas::ClipEdgeStyle)
+0.00%     SkMatrix::preservesRightAngles(float) const
+0.00%     SkCanvas::didRestore()
+0.00%     GrOpFlushState::~GrOpFlushState()
+0.00%     GrQuadUtils::TessellationHelper::EdgeVectors::reset(skvx::Vec<4, float> const&, skvx::Vec<4, float> const&, skvx::Vec<4, float> const&, GrQuad::Type)
+0.00%     SkCanvas::scale(float, float)
+0.00%     android::SkPathMeasureGlue::getPosTan(_JNIEnv*, _jobject*, long, float, _jfloatArray*, _jfloatArray*)
+0.00%     std::__1::__function::__func<GrOpsTask::addOp(std::__1::unique_ptr<GrOp, std::__1::default_delete<GrOp> >, GrTextureResolveManager, GrCaps const&)::'lambda'(GrSurfaceProxy*, GrMipMapped), std::__1::allocator<GrOpsTask::addOp(std::__1::unique_ptr<GrOp, std::__1::default_delete<GrOp> >, GrTextureResolveManager, GrCaps const&)::'lambda'(GrSurfaceProxy*, GrMipMapped)>, void (GrSurfaceProxy*, GrMipMapped)>::destroy()
+0.00%     GrGLCaps::isFormatSRGB(GrBackendFormat const&) const
+0.00%     GrResourceCache::purgeAsNeeded()
+0.00%     android::SkMatrixGlue::mapPoints(_JNIEnv*, _jobject*, long, _jfloatArray*, int, _jfloatArray*, int, int, unsigned char)
+0.00%     GrPorterDuffXPFactory::MakeSrcOverXferProcessor(GrProcessorAnalysisColor const&, GrProcessorAnalysisCoverage, bool, GrCaps const&)
+0.00%     SkCanvas::SkCanvas(sk_sp<SkBaseDevice>)
+0.00%     GrPathUtils::convertCubicToQuadsConstrainToTangents(SkPoint const*, float, SkPathPriv::FirstDirection, SkTArray<SkPoint, true>*)
+0.00%     GrSimpleMeshDrawOpHelperWithStencil::finalizeProcessors(GrCaps const&, GrAppliedClip const*, bool, GrClampType, GrProcessorAnalysisCoverage, SkRGBA4f<(SkAlphaType)2>*, bool*)
+0.00%     Bitmap_isImmutable(long)
+0.00%     GrAtlasTextOp::visitProxies(std::__1::function<void (GrSurfaceProxy*, GrMipMapped)> const&) const
+0.00%     _ZN12_GLOBAL__N_19TextureOp8finalizeERK6GrCapsPK13GrAppliedClipb11GrClampType$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     GrColorFragmentProcessorAnalysis::GrColorFragmentProcessorAnalysis(GrProcessorAnalysisColor const&, std::__1::unique_ptr<GrFragmentProcessor, std::__1::default_delete<GrFragmentProcessor> > const*, int)
+0.00%     SkRegion::op(SkIRect const&, SkRegion::Op)
+0.00%     SkMatrix::setRectToRect(SkRect const&, SkRect const&, SkMatrix::ScaleToFit)
+0.00%     android::uirenderer::skiapipeline::EndReorderBarrierDrawable* android::uirenderer::LinearAllocator::create<android::uirenderer::skiapipeline::EndReorderBarrierDrawable, android::uirenderer::skiapipeline::StartReorderBarrierDrawable*&>(android::uirenderer::skiapipeline::StartReorderBarrierDrawable*&&&)::'lambda'(void*)::__invoke(void*)
+0.00%     SkGpuDevice::drawImageRect(SkImage const*, SkRect const*, SkRect const&, SkPaint const&, SkCanvas::SrcRectConstraint)
+0.00%     _ZN12_GLOBAL__N_110FillRectOp19onCombineIfPossibleEP4GrOpPN18GrRecordingContext6ArenasERK6GrCaps$d19cfa9c8930929443c54f678259c78c
+0.00%     GrFillRRectOp::onPrepare(GrOpFlushState*)
+0.00%     SkRRect::setRectRadii(SkRect const&, SkPoint const*)
+0.00%     SkPathPriv::PerspectiveClip(SkPath const&, SkMatrix const&, SkPath*)
+0.00%     _ZN12_GLOBAL__N_114AAConvexPathOpD2Ev$13aac768fe222e8b89565d2273dcad6d
+0.00%     _ZNK12_GLOBAL__N_114AAConvexPathOp18fixedFunctionFlagsEv$13aac768fe222e8b89565d2273dcad6d
+0.00%     GrCpuBuffer::unref() const
+0.00%     GrXferProcessor::getGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*, GrSurfaceOrigin const*) const
+0.00%     non-virtual thunk to GrOpFlushState::allocator()
+0.00%     CircularRRectEffect::onGetGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.00%     (anonymous namespace)::FillRectOp::Make(GrRecordingContext*, GrPaint&&, GrAAType, DrawQuad*, GrUserStencilSettings const*, GrSimpleMeshDrawOpHelper::InputFlags) (.llvm.11696957567759856270)
+0.00%     GrBufferAllocPool::makeSpace(unsigned long, unsigned long, sk_sp<GrBuffer const>*, unsigned long*)
+0.00%     void GrVertexWriter::write<float, float, GrVertexWriter::Conditional<float>, GrVertexWriter::Conditional<float> >(float const&, float const&, GrVertexWriter::Conditional<float> const&, GrVertexWriter::Conditional<float> const&)
+0.00%     GrTextBlobCache::BlobIDCacheEntry::removeBlob(GrTextBlob*)
+0.00%     GrGLCaps::isFormatAsColorTypeRenderable(GrColorType, GrBackendFormat const&, int) const
+0.00%     GrMesh* SkArenaAlloc::make<GrMesh>()::'lambda'(char*)::__invoke(char*)
+0.00%     SkMatrix::mapVectors(SkPoint*, SkPoint const*, int) const
+0.00%     SkTArray<GrPrimitiveProcessor::Attribute, false>::checkRealloc(int)
+0.00%     GrBitmapTextGeoProc::GrBitmapTextGeoProc(GrShaderCaps const&, SkRGBA4f<(SkAlphaType)2> const&, bool, GrSurfaceProxyView const*, int, GrSamplerState, GrMaskFormat, SkMatrix const&, bool)
+0.00%     SkArenaAlloc::ensureSpace(unsigned int, unsigned int)
+0.00%     SkCanvas::onClipRRect(SkRRect const&, SkClipOp, SkCanvas::ClipEdgeStyle)
+0.00%     SkStrikeCache::findOrCreateScopedStrike(SkDescriptor const&, SkScalerContextEffects const&, SkTypeface const&)
+0.00%     SkCanvas::didTranslate(float, float)
+0.00%     std::__1::__function::__func<GrOpsTask::addDrawOp(std::__1::unique_ptr<GrDrawOp, std::__1::default_delete<GrDrawOp> >, GrProcessorSet::Analysis const&, GrAppliedClip&&, GrXferProcessor::DstProxyView const&, GrTextureResolveManager, GrCaps const&)::'lambda'(GrSurfaceProxy*, GrMipMapped), std::__1::allocator<GrOpsTask::addDrawOp(std::__1::unique_ptr<GrDrawOp, std::__1::default_delete<GrDrawOp> >, GrProcessorSet::Analysis const&, GrAppliedClip&&, GrXferProcessor::DstProxyView const&, GrTextureResolveManager, GrCaps const&)::'lambda'(GrSurfaceProxy*, GrMipMapped)>, void (GrSurfaceProxy*, GrMipMapped)>::destroy()
+0.00%     SkTArray<(anonymous namespace)::AAConvexPathOp::PathData, true>::checkRealloc(int)
+0.00%     SkPathRef::growForVerb(int, float)
+0.00%     GrSurface::asRenderTarget() const
+0.00%     GrRenderTargetContext::GrRenderTargetContext(GrRecordingContext*, GrSurfaceProxyView, GrSurfaceProxyView, GrColorType, sk_sp<SkColorSpace>, SkSurfaceProps const*, bool)
+0.00%     GrGLFunction<void (float, float, float, float)>::GrGLFunction(void (*)(float, float, float, float))::'lambda'(void const*, float, float, float, float)::__invoke(void const*, float, float, float, float)
+0.00%     CircularRRectOp::visitProxies(std::__1::function<void (GrSurfaceProxy*, GrMipMapped)> const&) const
+0.00%     CircleOp::finalize(GrCaps const&, GrAppliedClip const*, bool, GrClampType)
+0.00%     GrQuadUtils::TessellationHelper::OutsetRequest::reset(GrQuadUtils::TessellationHelper::EdgeVectors const&, GrQuad::Type, skvx::Vec<4, float> const&)
+0.00%     GrAtlasManager::postFlush(GrDeferredUploadToken, unsigned int const*, int)
+0.00%     SkTArray<GrCoordTransform*, true>::checkRealloc(int)
+0.00%     SkPaintFilterCanvas::AutoPaintFilter::AutoPaintFilter(SkPaintFilterCanvas const*, SkPaint const*)
+0.00%     SkRefCntBase::~SkRefCntBase()
+0.00%     CircularRRectEffect::~CircularRRectEffect()
+0.00%     android::MinikinUtils::measureText(android::Paint const*, minikin::Bidi, android::Typeface const*, unsigned short const*, unsigned long, unsigned long, unsigned long, float*)
+0.00%     GrQuadPerEdgeAA::Tessellator::append(GrQuad*, GrQuad*, SkRGBA4f<(SkAlphaType)2> const&, SkRect const&, GrQuadAAFlags)
+0.00%     SkCanvas::willRestore()
+0.00%     GrGLOpsRenderPass::begin()
+0.00%     GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor* SkArenaAlloc::make<GrQuadPerEdgeAA::QuadPerEdgeAAGeometryProcessor, GrQuadPerEdgeAA::VertexSpec const&, GrShaderCaps const&, GrBackendFormat const&, GrSamplerState&, GrSwizzle const&, sk_sp<GrColorSpaceXform>, GrTextureOp::Saturate&>(GrQuadPerEdgeAA::VertexSpec const&&&, GrShaderCaps const&&&, GrBackendFormat const&&&, GrSamplerState&&&, GrSwizzle const&&&, sk_sp<GrColorSpaceXform>&&, GrTextureOp::Saturate&&&)
+0.00%     SkTArray<sk_sp<GrTextBlob>, false>::checkRealloc(int)
+0.00%     non-virtual thunk to GrGLGpu::sendIndexedInstancedMeshToGpu(GrPrimitiveType, GrMesh const&, int, int, int, int, int)
+0.00%     GrGpu::finishFlush(GrSurfaceProxy**, int, SkSurface::BackendSurfaceAccess, GrFlushInfo const&, GrPrepareForExternalIORequests const&)
+0.00%     GrBitmapTextGeoProc* SkArenaAlloc::make<GrBitmapTextGeoProc, GrShaderCaps const&, SkRGBA4f<(SkAlphaType)2> const&, bool&, GrSurfaceProxyView const*&, int&, GrSamplerState&, GrMaskFormat&, SkMatrix const&, bool&>(GrShaderCaps const&&&, SkRGBA4f<(SkAlphaType)2> const&&&, bool&&&, GrSurfaceProxyView const*&&&, int&&&, GrSamplerState&&&, GrMaskFormat&&&, SkMatrix const&&&, bool&&&)::'lambda'(char*)::__invoke(char*)
+0.00%     GrDrawingManager::getTextContext()
+0.00%     GrProcessor::~GrProcessor()
+0.00%     SkImage_GpuBase::SkImage_GpuBase(sk_sp<GrContext>, SkISize, unsigned int, SkColorType, SkAlphaType, sk_sp<SkColorSpace>)
+0.00%     GrBackendFormat::operator==(GrBackendFormat const&) const
+0.00%     GrSurfaceProxy::asTextureProxy()
+0.00%     GrMakeKeyFromImageID(GrUniqueKey*, unsigned int, SkIRect const&)
+0.00%     SkTArray<GrTextureProxy*, true>::checkRealloc(int)
+0.00%     GrFragmentProcessor::isEqual(GrFragmentProcessor const&) const
+0.00%     GrGLCaps::isFormatTexturableAndUploadable(GrColorType, GrBackendFormat const&) const
+0.00%     SkGpuDevice::SkGpuDevice(GrContext*, std::__1::unique_ptr<GrRenderTargetContext, std::__1::default_delete<GrRenderTargetContext> >, unsigned int)
+0.00%     GrBufferAllocPool::createBlock(unsigned long)
+0.00%     _ZN12_GLOBAL__N_121ShadowCircularRRectOp19onCombineIfPossibleEP4GrOpPN18GrRecordingContext6ArenasERK6GrCaps$5ba60f3d72455cb6405d8b0b50600277
+0.00%     SkImage_Base::SkImage_Base(SkImageInfo const&, unsigned int)
+0.00%     SkCanvas::legacy_drawImageRect(SkImage const*, SkRect const*, SkRect const&, SkPaint const*, SkCanvas::SrcRectConstraint)
+0.00%     CircleOp::onCombineIfPossible(GrOp*, GrRecordingContext::Arenas*, GrCaps const&)
+0.00%     CircularRRectEffect::onIsEqual(GrFragmentProcessor const&) const
+0.00%     SkScalerCache::prepareImages(SkSpan<SkPackedGlyphID const>, SkGlyph const**)
+0.00%     _ZN12_GLOBAL__N_19TextureOp9onExecuteEP14GrOpFlushStateRK6SkRect$00c83770fd5e789ee7ea4f4fe408be8d
+0.00%     GrGLOpsRenderPass::onClear(GrFixedClip const&, SkRGBA4f<(SkAlphaType)2> const&)
+0.00%     SkTArray<(anonymous namespace)::ShadowCircularRRectOp::Geometry, true>::checkRealloc(int)
+0.00%     unsigned long std::__1::__tree<android::uirenderer::renderthread::IFrameCallback*, std::__1::less<android::uirenderer::renderthread::IFrameCallback*>, std::__1::allocator<android::uirenderer::renderthread::IFrameCallback*> >::__erase_unique<android::uirenderer::renderthread::IFrameCallback*>(android::uirenderer::renderthread::IFrameCallback* const&)
+0.00%     GrQuadUtils::TessellationHelper::Vertices::reset(GrQuad const&, GrQuad const*)
+0.00%     android::uirenderer::skiapipeline::SkiaPipeline::renderLayersImpl(android::uirenderer::LayerUpdateQueue const&, bool)
+0.00%     GrRenderTargetContext::drawFilledQuad(GrClip const&, GrPaint&&, GrAA, DrawQuad*, GrUserStencilSettings const*)
+0.00%     GrGLSLPrimitiveProcessor::GetTransformMatrix(GrCoordTransform const&, SkMatrix const&)
+0.00%     GrGLProgramDataManager::set4f(GrResourceHandle<GrGLSLProgramDataManager::UniformHandleKind>, float, float, float, float) const
+0.00%     SkTArray<sk_sp<GrRenderTask>, false>::checkRealloc(int)
+0.00%     SkDrawableGlyphBuffer::ensureSize(unsigned long)
+0.00%     android::uirenderer::RenderNode::prepareTree(android::uirenderer::TreeInfo&)
+0.00%     SkArenaAlloc::reset()
+0.00%     non-virtual thunk to GrOpFlushState::appliedClip() const
+0.00%     GrFillRRectOp::~GrFillRRectOp()
+0.00%     GrFragmentProcessor::visitProxies(std::__1::function<void (GrSurfaceProxy*, GrMipMapped)> const&)
+0.00%     SkGlyphRunListPainter::SkGlyphRunListPainter(GrRenderTargetContext const&)
+0.00%     android::HardwareRendererObserver::notify(long const*)
+0.00%     CircularRRectOp::finalize(GrCaps const&, GrAppliedClip const*, bool, GrClampType)
+0.00%     GrOpsTask::OpChain::DoConcat(GrOpsTask::OpChain::List, GrOpsTask::OpChain::List, GrCaps const&, GrRecordingContext::Arenas*, GrAuditTrail*)
+0.00%     SkTArray<GrVkRenderPass const*, false>::checkRealloc(int)
+0.00%     non-virtual thunk to GrGLGpu::sendIndexedMeshToGpu(GrPrimitiveType, GrMesh const&, int, int, unsigned short, unsigned short, int)
+0.00%     SkImage_Raster::refPinnedView(GrRecordingContext*, unsigned int*) const
+0.00%     GrResourceAllocator::Interval* SkArenaAlloc::make<GrResourceAllocator::Interval, GrSurfaceProxy*&, unsigned int&, unsigned int&>(GrSurfaceProxy*&&&, unsigned int&&&, unsigned int&&&)::'lambda'(char*)::__invoke(char*)
+0.00%     GrOpsTask::gatherProxyIntervals(GrResourceAllocator*) const
+0.00%     android::uirenderer::renderthread::ReliableSurface::clearReservedBuffer()
+0.00%     android::uirenderer::skiapipeline::SkiaPipeline::renderFrameImpl(SkRect const&, std::__1::vector<android::sp<android::uirenderer::RenderNode>, std::__1::allocator<android::sp<android::uirenderer::RenderNode> > > const&, bool, android::uirenderer::Rect const&, SkCanvas*, SkMatrix const&)
+0.00%     GrGLGpu::flushScissor(GrScissorState const&, int, int, GrSurfaceOrigin)
+0.00%     android::uirenderer::computeTransformImpl(android::uirenderer::DirtyStack const*, android::uirenderer::Matrix4*) (.llvm.16054807555368042196)
+0.00%     SkGpuDevice::context() const
+0.00%     SkPathPriv::CheapComputeFirstDirection(SkPath const&, SkPathPriv::FirstDirection*)
+0.00%     non-virtual thunk to GrOpFlushState::resourceProvider() const
+0.00%     GrOpFlushState::GrOpFlushState(GrGpu*, GrResourceProvider*, GrTokenTracker*, sk_sp<GrBufferAllocPool::CpuBufferCache>)
+0.00%     android::uirenderer::$_9::__invoke(void const*, SkCanvas*, SkMatrix const&)
+0.00%     non-virtual thunk to GrGpuBuffer::size() const
+0.00%     non-virtual thunk to GrOpFlushState::makeIndexSpace(int, sk_sp<GrBuffer const>*, int*)
+0.00%     GrGLGpu::flushWindowRectangles(GrWindowRectsState const&, GrGLRenderTarget const*, GrSurfaceOrigin)
+0.00%     GrTextBlob::Make(SkGlyphRunList const&, GrStrikeCache*, SkMatrix const&, unsigned int, bool)
+0.00%     GrGLFunction<void (unsigned int, int, unsigned int, int, void const*)>::GrGLFunction(void (*)(unsigned int, int, unsigned int, int, void const*))::'lambda'(void const*, unsigned int, int, unsigned int, int, void const*)::__invoke(void const*, unsigned int, int, unsigned int, int, void const*)
+0.00%     GrOpsTask::addOp(std::__1::unique_ptr<GrOp, std::__1::default_delete<GrOp> >, GrTextureResolveManager, GrCaps const&)
+0.00%     GrAAConvexPathRenderer::onCanDrawPath(GrPathRenderer::CanDrawPathArgs const&) const
+0.00%     SkColorSpaceXformSteps::SkColorSpaceXformSteps(SkColorSpace*, SkAlphaType, SkColorSpace*, SkAlphaType)
+0.00%     SkScalerContext::getMetrics(SkGlyph*)
+0.00%     _ZNSt3__110__function6__funcIZNK9GrOpsTask20gatherProxyIntervalsEP19GrResourceAllocatorE3$_2NS_9allocatorIS5_EEFvP14GrSurfaceProxy11GrMipMappedEE7destroyEv$ec595088ddd0662fe1afd49cb81e5f96
+0.00%     GLPorterDuffXferProcessor::onSetData(GrGLSLProgramDataManager const&, GrXferProcessor const&)
+0.00%     GrOpFlushState::addASAPUpload(std::__1::function<void (std::__1::function<bool (GrTextureProxy*, int, int, int, int, GrColorType, void const*, unsigned long)>&)>&&)
+0.00%     SkClipStackDevice::onSetDeviceClipRestriction(SkIRect*)
+0.00%     GrOp::visitProxies(std::__1::function<void (GrSurfaceProxy*, GrMipMapped)> const&) const
+0.00%     GrGLRenderTarget::onRelease()
+0.00%     GrPipeline::xferBarrierType(GrTexture*, GrCaps const&) const
+0.00%     virtual thunk to GrRenderTargetProxy::asRenderTargetProxy()
+0.00%     android::uirenderer::skiapipeline::SkiaPipeline::createOrUpdateLayer(android::uirenderer::RenderNode*, android::uirenderer::DamageAccumulator const&, android::uirenderer::ErrorHandler*)
+0.00%     SkChopCubicAtHalf(SkPoint const*, SkPoint*)
+0.00%     GrRRectShadowGeoProc::getGLSLProcessorKey(GrShaderCaps const&, GrProcessorKeyBuilder*) const
+0.00%     GrRenderTargetContext::TextTarget::glyphPainter()
+0.00%     GrReducedClip::addAnalyticFP(SkRRect const&, GrReducedClip::Invert, GrAA)
+0.00%     SkCanvas::getGrContext()
+0.00%     GrFragmentProcessor::FPItemIter<GrCoordTransform const, &(GrFragmentProcessor::numCoordTransforms() const), &(GrFragmentProcessor::coordTransform(int) const)>::operator++()
+0.00%     GrAtlasTextOp::GrAtlasTextOp(GrPaint&&)
+0.00%     _ZNSt3__110__function6__funcIZN7android10uirenderer12renderthread13DrawFrameTask11postAndWaitEvE3$_0NS_9allocatorIS6_EEFvvEE7destroyEv$c303f2d2360db58ed70a2d0ac7ed911b
+0.00%     SkPaintFilterCanvas::SkPaintFilterCanvas(SkCanvas*)
+0.00%     SkNWayCanvas::SkNWayCanvas(int, int)
+0.00%     GrRenderTargetContext::drawFastShadow(GrClip const&, SkMatrix const&, SkPath const&, SkDrawShadowRec const&)
+0.00%     GrClipStackClip::quickContains(SkRect const&) const
+0.00%     (anonymous namespace)::write_2d_color(GrVertexWriter*, GrQuadPerEdgeAA::VertexSpec const&, GrQuad const*, GrQuad const*, float const*, SkRGBA4f<(SkAlphaType)2> const&, SkRect const&, SkRect const&) (.llvm.4581757150767725190)
+0.00%     SkTArray<sk_sp<GrRenderTask>, false>::swap(SkTArray<sk_sp<GrRenderTask>, false>&)
+0.00%     android::uirenderer::renderthread::EglManager::beginFrame(void*)
+0.00%     GrShape::attemptToSimplifyPath()
+0.00%     GrTextBlob::SubRun* SkArenaAlloc::make<GrTextBlob::SubRun, GrTextBlob::SubRunType&, GrTextBlob*, SkStrikeSpec const&, GrMaskFormat&, SkSpan<GrGlyph*>&, SkSpan<char>&, sk_sp<GrTextStrike> >(GrTextBlob::SubRunType&&&, GrTextBlob*&&, SkStrikeSpec const&&&, GrMaskFormat&&&, SkSpan<GrGlyph*>&&&, SkSpan<char>&&&, sk_sp<GrTextStrike>&&)::'lambda'(char*)::__invoke(char*)
+0.00%     SkArenaAlloc::SkipPod(char*)
+0.00%     SkTArray<CircleOp::Circle, true>::checkRealloc(int)
+0.00%     GrFillRRectOp::onCombineIfPossible(GrOp*, GrRecordingContext::Arenas*, GrCaps const&)
+0.00%     SkTArray<sk_sp<GrTextBlob>, false>::operator=(SkTArray<sk_sp<GrTextBlob>, false>&&)
+0.00%     SkClipStack::clipRRect(SkRRect const&, SkMatrix const&, SkClipOp, bool)
+0.00%     android::PaintGlue::setColor(long, int)
+0.00%     GrSurfaceProxy::GrSurfaceProxy(sk_sp<GrSurface>, GrSwizzle const&, SkBackingFit, GrSurfaceProxy::UseAllocator)
+0.00%     _ZZN7androidL46android_view_RenderNode_requestPositionUpdatesEP7_JNIEnvP8_jobjectlS3_EN26PositionListenerTrampoline21doUpdatePositionAsyncEliiii$4d48234762405266a7f22f0edf10efb5
+0.00%     android::uirenderer::ArrayQueue<std::__1::function<void ()>, 128>::pop()
+0.00%     std::__1::__function::__func<std::__1::future<decltype(fp())> android::uirenderer::CommonPool::async<std::__1::function<void ()> >(std::__1::function<void ()>&&)::'lambda'(), std::__1::allocator<std::__1::future<decltype(fp())> android::uirenderer::CommonPool::async<std::__1::function<void ()> >(std::__1::function<void ()>&&)::'lambda'()>, void ()>::operator()()
+0.00%     Bitmap_getNativeFinalizer(_JNIEnv*, _jobject*)
+0.00%     android::uirenderer::CommonPool::workerLoop()

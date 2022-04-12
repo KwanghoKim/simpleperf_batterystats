@@ -1,0 +1,343 @@
+Cmdline: /data/local/tmp/simpleperf record -o /data/local/tmp/perf.data -e instructions -f 1000 --duration 100 --call-graph fp --app com.zamface
+Arch: arm64
+Event: instructions (type 0, config 1)
+Samples: 76082
+Event count: 174885787046
+
+Overhead  Tid   Command
+21.80%    9152  FrameProcessing
+19.37%    8665  HeapTaskDaemon
+16.78%    9310  glide-animation
+16.56%    9311  glide-animation
+7.58%     8766  mqt_js
+4.54%     8731  RenderThread
+3.29%     9130  GLThread 879
+2.44%     8768  mqt_native_modu
+1.74%     8652  com.zamface
+1.01%     8670  Binder:8652_2
+0.90%     8669  Binder:8652_1
+0.90%     8825  RenderThread
+0.87%     8767  Binder:8652_4
+0.63%     8824  RenderThread
+0.25%     8756  HybridData Dest
+0.24%     8820  glide-disk-cach
+0.15%     8841  glide-source-th
+0.12%     8900  CountlyConnecti
+0.11%     8681  pool-10-thread-
+0.11%     8837  glide-source-th
+0.10%     8842  glide-source-th
+0.09%     9151  CameraHandlerTh
+0.08%     8769  hades
+0.03%     8897  Countly_cmd
+0.03%     8658  Jit thread pool
+0.03%     8840  glide-source-th
+0.02%     8672  Profile Saver
+0.02%     8746  FrameMetricsAgg
+0.02%     9331  Measurement Wor
+0.01%     8666  ReferenceQueueD
+0.01%     8748  pool-3-thread-1
+0.01%     9153  MakeupCamIntern
+0.01%     8811  mface.co.kr/...
+0.01%     8791  httpThread
+0.01%     8881  RxSchedulerPurg
+0.01%     9055  PfRxCachedThrea
+0.01%     8811  alhost:3000/...
+0.01%     9024  PfRxCachedThrea
+0.01%     9042  PfRxCachedThrea
+0.01%     9041  PfRxCachedThrea
+0.01%     8790  logThread
+0.01%     9027  PfRxCachedThrea
+0.01%     9323  mface.co.kr/...
+0.01%     8833  pool-14-thread-
+0.00%     9314  mface.co.kr/...
+0.00%     9336  mface.co.kr/...
+0.00%     9327  mface.co.kr/...
+0.00%     9303  mface.co.kr/...
+0.00%     9028  PfRxCachedThrea
+0.00%     9307  mface.co.kr/...
+0.00%     9318  mface.co.kr/...
+0.00%     8667  FinalizerDaemon
+0.00%     9358  mface.co.kr/...
+0.00%     8988  PfRxCachedThrea
+0.00%     9114  PfRxCachedThrea
+0.00%     9109  PfRxCachedThrea
+0.00%     8883  PfRxCachedThrea
+0.00%     9011  PfRxCachedThrea
+0.00%     9012  PfRxCachedThrea
+0.00%     8985  PfRxCachedThrea
+0.00%     9342  mface.co.kr/...
+0.00%     9263  mface.co.kr/...
+0.00%     9060  PfRxCachedThrea
+0.00%     9029  PfRxCachedThrea
+0.00%     8961  PfRxCachedThrea
+0.00%     9043  PfRxCachedThrea
+0.00%     9108  PfRxCachedThrea
+0.00%     8782  CookieMonsterBa
+0.00%     9345  OkHttp Connecti
+0.00%     9259  OkHttp Connecti
+0.00%     9061  PfRxCachedThrea
+0.00%     8964  PfRxCachedThrea
+0.00%     8799  .cloudfront.net
+0.00%     8795  sh.appcenter.ms
+0.00%     9001  PfRxCachedThrea
+0.00%     8737  OkHttp Connecti
+0.00%     9017  PfRxCachedThrea
+0.00%     8704  AsyncTask #1
+0.00%     9110  PfRxCachedThrea
+0.00%     9088  PfRxCachedThrea
+0.00%     9034  PfRxCachedThrea
+0.00%     9150  hwuiTask1
+0.00%     8713  Measurement Wor
+0.00%     9022  PfRxCachedThrea
+0.00%     8898  CLFlurryAgentHe
+0.00%     9106  PfRxCachedThrea
+0.00%     9105  PfRxCachedThrea
+0.00%     8971  PfRxCachedThrea
+0.00%     8722  queued-work-loo
+0.00%     8994  PfRxCachedThrea
+0.00%     8755  Timer-0
+0.00%     8958  PfRxCachedThrea
+0.00%     9348  udfront.net/...
+0.00%     9118  PfRxCachedThrea
+0.00%     9021  PfRxCachedThrea
+0.00%     9125  PfRxCachedThrea
+0.00%     9032  PfRxCachedThrea
+0.00%     9115  PfRxCachedThrea
+0.00%     8966  PfRxCachedThrea
+0.00%     9149  hwuiTask0
+0.00%     9259  OkHttp TaskRunn
+0.00%     8951  PfRxCachedThrea
+0.00%     9036  PfRxCachedThrea
+0.00%     9097  PfRxCachedThrea
+0.00%     8972  PfRxCachedThrea
+0.00%     9076  PfRxCachedThrea
+0.00%     9112  PfRxCachedThrea
+0.00%     9059  PfRxCachedThrea
+0.00%     9050  PfRxCachedThrea
+0.00%     9111  PfRxCachedThrea
+0.00%     8950  PfRxCachedThrea
+0.00%     8959  PfRxCachedThrea
+0.00%     9002  PfRxCachedThrea
+0.00%     9084  PfRxCachedThrea
+0.00%     9154  MakeupCamIntern
+0.00%     9101  PfRxCachedThrea
+0.00%     8997  PfRxCachedThrea
+0.00%     9113  PfRxCachedThrea
+0.00%     9019  PfRxCachedThrea
+0.00%     9023  PfRxCachedThrea
+0.00%     8975  PfRxCachedThrea
+0.00%     8999  PfRxCachedThrea
+0.00%     9081  PfRxCachedThrea
+0.00%     9122  PfRxCachedThrea
+0.00%     9015  PfRxCachedThrea
+0.00%     8995  PfRxCachedThrea
+0.00%     9127  PfRxCachedThrea
+0.00%     9121  PfRxCachedThrea
+0.00%     9054  PfRxCachedThrea
+0.00%     9038  PfRxCachedThrea
+0.00%     9039  PfRxCachedThrea
+0.00%     8952  PfRxCachedThrea
+0.00%     9120  PfRxCachedThrea
+0.00%     8781  CookieMonsterCl
+0.00%     8989  PfRxCachedThrea
+0.00%     9071  PfRxCachedThrea
+0.00%     8687  firebase-instal
+0.00%     9073  PfRxCachedThrea
+0.00%     8953  PfRxCachedThrea
+0.00%     9044  PfRxCachedThrea
+0.00%     9006  PfRxCachedThrea
+0.00%     9003  PfRxCachedThrea
+0.00%     9033  PfRxCachedThrea
+0.00%     9031  PfRxCachedThrea
+0.00%     8679  Crashlytics Exc
+0.00%     9004  PfRxCachedThrea
+0.00%     9026  PfRxCachedThrea
+0.00%     9103  PfRxCachedThrea
+0.00%     8686  firebase-instal
+0.00%     9086  PfRxCachedThrea
+0.00%     9030  PfRxCachedThrea
+0.00%     9116  PfRxCachedThrea
+0.00%     8996  PfRxCachedThrea
+0.00%     9010  PfRxCachedThrea
+0.00%     9082  PfRxCachedThrea
+0.00%     8981  PfRxCachedThrea
+0.00%     9078  PfRxCachedThrea
+0.00%     8968  PfRxCachedThrea
+0.00%     8973  PfRxCachedThrea
+0.00%     9035  PfRxCachedThrea
+0.00%     8983  PfRxCachedThrea
+0.00%     8978  PfRxCachedThrea
+0.00%     9072  PfRxCachedThrea
+0.00%     9066  PfRxCachedThrea
+0.00%     9046  PfRxCachedThrea
+0.00%     8984  PfRxCachedThrea
+0.00%     8960  PfRxCachedThrea
+0.00%     8965  PfRxCachedThrea
+0.00%     9077  PfRxCachedThrea
+0.00%     8970  PfRxCachedThrea
+0.00%     9062  PfRxCachedThrea
+0.00%     9047  PfRxCachedThrea
+0.00%     9009  PfRxCachedThrea
+0.00%     9020  PfRxCachedThrea
+0.00%     8974  PfRxCachedThrea
+0.00%     9107  PfRxCachedThrea
+0.00%     9045  PfRxCachedThrea
+0.00%     9013  PfRxCachedThrea
+0.00%     9261  pool-1-thread-1
+0.00%     9102  PfRxCachedThrea
+0.00%     8998  PfRxCachedThrea
+0.00%     8956  PfRxCachedThrea
+0.00%     9007  PfRxCachedThrea
+0.00%     8955  PfRxCachedThrea
+0.00%     9079  PfRxCachedThrea
+0.00%     9065  PfRxCachedThrea
+0.00%     9037  PfRxCachedThrea
+0.00%     9069  PfRxCachedThrea
+0.00%     9083  PfRxCachedThrea
+0.00%     8979  PfRxCachedThrea
+0.00%     8957  PfRxCachedThrea
+0.00%     9053  PfRxCachedThrea
+0.00%     9058  PfRxCachedThrea
+0.00%     8954  PfRxCachedThrea
+0.00%     9008  PfRxCachedThrea
+0.00%     9067  PfRxCachedThrea
+0.00%     9091  PfRxCachedThrea
+0.00%     9016  PfRxCachedThrea
+0.00%     9080  PfRxCachedThrea
+0.00%     9098  PfRxCachedThrea
+0.00%     9117  PfRxCachedThrea
+0.00%     8830  pool-14-thread-
+0.00%     9093  PfRxCachedThrea
+0.00%     9095  PfRxCachedThrea
+0.00%     9000  PfRxCachedThrea
+0.00%     8990  PfRxCachedThrea
+0.00%     9100  PfRxCachedThrea
+0.00%     8728  DefaultDispatch
+0.00%     9128  PfRxCachedThrea
+0.00%     9139  PfRxCachedThrea
+0.00%     8991  PfRxCachedThrea
+0.00%     8982  PfRxCachedThrea
+0.00%     9052  PfRxCachedThrea
+0.00%     9063  PfRxCachedThrea
+0.00%     8993  PfRxCachedThrea
+0.00%     9090  PfRxCachedThrea
+0.00%     8977  PfRxCachedThrea
+0.00%     8786  i.zamface.co.kr
+0.00%     9089  PfRxCachedThrea
+0.00%     8678  ScionFrontendAp
+0.00%     8980  PfRxCachedThrea
+0.00%     8986  PfRxCachedThrea
+0.00%     9085  PfRxCachedThrea
+0.00%     9124  PfRxCachedThrea
+0.00%     9064  PfRxCachedThrea
+0.00%     9126  PfRxCachedThrea
+0.00%     8963  PfRxCachedThrea
+0.00%     8902  PfRxCachedThrea
+0.00%     8798  OkHttp Connecti
+0.00%     8987  PfRxCachedThrea
+0.00%     8757  pool-27-thread-
+0.00%     9087  PfRxCachedThrea
+0.00%     8969  PfRxCachedThrea
+0.00%     9123  PfRxCachedThrea
+0.00%     9014  PfRxCachedThrea
+0.00%     9018  PfRxCachedThrea
+0.00%     9092  PfRxCachedThrea
+0.00%     8967  PfRxCachedThrea
+0.00%     8962  PfRxCachedThrea
+0.00%     9025  PfRxCachedThrea
+0.00%     9074  PfRxCachedThrea
+0.00%     8788  OkHttp Dispatch
+0.00%     8949  PfRxCachedThrea
+0.00%     9348  3.ggpht.com/...
+0.00%     9005  PfRxCachedThrea
+0.00%     9056  PfRxCachedThrea
+0.00%     9119  PfRxCachedThrea
+0.00%     9051  PfRxCachedThrea
+0.00%     9040  PfRxCachedThrea
+0.00%     9070  PfRxCachedThrea
+0.00%     8976  PfRxCachedThrea
+0.00%     9096  PfRxCachedThrea
+0.00%     8786  OkHttp TaskRunn
+0.00%     8813  pool-14-thread-
+0.00%     9049  PfRxCachedThrea
+0.00%     8893  PfRxCachedThrea
+0.00%     8792  OkHttp Dispatch
+0.00%     8857  OkHttp Dispatch
+0.00%     8878  OkHttp Dispatch
+0.00%     9099  PfRxCachedThrea
+0.00%     8844  OkHttp Dispatch
+0.00%     8778  CrAsyncTask #1
+0.00%     8828  OkHttp Dispatch
+0.00%     8992  PfRxCachedThrea
+0.00%     9075  PfRxCachedThrea
+0.00%     8905  RequestFactoryE
+0.00%     8907  RequestFactoryE
+0.00%     8668  FinalizerWatchd
+0.00%     9068  PfRxCachedThrea
+0.00%     8796  OkHttp TaskRunn
+0.00%     9104  PfRxCachedThrea
+0.00%     8798  yAndAckSettings
+0.00%     8855  OkHttp Dispatch
+0.00%     8915  RequestFactoryE
+0.00%     9048  PfRxCachedThrea
+0.00%     9094  PfRxCachedThrea
+0.00%     8798  .ggpht.com ping
+0.00%     8854  p yt3.ggpht.com
+0.00%     9345  OkHttp TaskRunn
+0.00%     9352  udfront.net/...
+0.00%     9327  mqt_native_modu
+0.00%     8815  pool-14-thread-
+0.00%     8877  2.amplitude.com
+0.00%     8795  OkHttp TaskRunn
+0.00%     8787  Okio Watchdog
+0.00%     8814  pool-14-thread-
+0.00%     8832  pool-14-thread-
+0.00%     8876  OkHttp TaskRunn
+0.00%     9057  PfRxCachedThrea
+0.00%     8798  OkHttp TaskRunn
+0.00%     8740  DefaultDispatch
+0.00%     8684  pool-13-thread-
+0.00%     8812  pool-14-thread-
+0.00%     8831  pool-14-thread-
+0.00%     8774  Okio Watchdog
+0.00%     8818  glide-active-re
+0.00%     8691  pool-14-thread-
+0.00%     9348  glide-source-th
+0.00%     9348  OkHttp Dispatch
+0.00%     8811  OkHttp Dispatch
+0.00%     8761  pool-26-thread-
+0.00%     8916  RequestFactoryE
+0.00%     8700  pool-18-thread-
+0.00%     8845  OkHttp Dispatch
+0.00%     9261  pool-14-thread-
+0.00%     8759  pool-28-thread-
+0.00%     8914  RequestFactoryE
+0.00%     8843  OkHttp Dispatch
+0.00%     8816  pool-14-thread-
+0.00%     8846  OkHttp Dispatch
+0.00%     8906  RequestFactoryE
+0.00%     8742  DefaultDispatch
+0.00%     8852  OkHttp Dispatch
+0.00%     8838  OkHttp Dispatch
+0.00%     8725  DefaultDispatch
+0.00%     8877  OkHttp TaskRunn
+0.00%     8894  RequestFactoryE
+0.00%     8699  pool-21-thread-
+0.00%     8744  DefaultDispatch
+0.00%     8741  DefaultDispatch
+0.00%     8794  OkHttp Dispatch
+0.00%     8882  PfRxCachedWorke
+0.00%     8913  RequestFactoryE
+0.00%     8912  RequestFactoryE
+0.00%     8904  RequestFactoryE
+0.00%     8903  RequestFactoryE
+0.00%     8724  DefaultDispatch
+0.00%     8873  pool-92-thread-
+0.00%     8908  RequestFactoryE
+0.00%     8909  RequestFactoryE
+0.00%     8698  pool-20-thread-
+0.00%     8743  DefaultDispatch
+0.00%     8910  RequestFactoryE
+0.00%     8911  RequestFactoryE
+0.00%     8726  DefaultDispatch
+0.00%     9344  yAndAckSettings
